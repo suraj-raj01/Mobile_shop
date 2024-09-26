@@ -58,6 +58,7 @@ const Home = () => {
               padding: "20px",
               width: "100%",
               alignItems: "center",
+              justifyContent:"space-between"
             }}
           >
             <div id="home-box1">
@@ -618,8 +619,9 @@ const Home = () => {
               height="400px"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>V30 | Vivo 30 Pro</h3>
+              <p>Delight every Moments</p>
+              <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -630,8 +632,9 @@ const Home = () => {
               height="400px"
             />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 style={{color:'black'}}>Reno 12 Pro 5G</h3>
+              <p style={{color:'black'}}>Your every day AI companion</p>
+              <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -642,40 +645,14 @@ const Home = () => {
               height="400px"
             />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              <h3 style={{color:'black'}}>Vivo V40 | Vivo V40 Pro</h3>
+              <p style={{color:'black'}}>
+                ZEISS Portrait SO Pro
               </p>
+              <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src="https://img.freepik.com/free-photo/happy-young-woman-showing-blank-screen-mobile-phone-hand-gesture-success-isolated-pink-background_74952-1294.jpg?w=1060&t=st=1727341964~exp=1727342564~hmac=acf935906f683a2b1c9c78ac7353f09ef1f130cd8a3cec621adad3ebf695a0bf"
-              alt=""
-              width="100%"
-              height="400px"
-            />
-            <Carousel.Caption>
-              <h3>Fourth slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src="https://img.freepik.com/free-photo/closeup-handsome-bearded-guy-orange-sweater-showing-smartphone-screen-smiling-showing-prom_1258-180745.jpg?w=1060&t=st=1727342065~exp=1727342665~hmac=bbcda32730ba2079d3ad2b58ef35e96c376c2416a95514529601f25cba1bdb1d"
-              alt=""
-              width="100%"
-              height="400px"
-            />
-            <Carousel.Caption>
-              <h3>Fifth slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
+         
         </Carousel>
       </div>
       <div id="items">
