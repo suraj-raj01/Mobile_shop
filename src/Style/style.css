@@ -34,7 +34,7 @@ button{
     display: grid;
     grid-template-columns: auto auto;
     align-items: start;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #search-opt{
     margin-top: 30px;
@@ -106,7 +106,7 @@ button{
     object-fit: contain;
 }
 #box2{
-    width: 80%;
+    width: 90%;
     text-transform: capitalize;
 }
 #box2 h3{
@@ -147,7 +147,7 @@ button{
     }
     #search-opt{
         left: 0;
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
     #items{
