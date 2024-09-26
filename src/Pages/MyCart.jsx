@@ -21,9 +21,6 @@ const MyCart = () => {
   const detail = (id) => {
     navigate(`/details/${id}`);
   };
-  const checkOut = () =>{
-    navigate("/checkout")
-  }
 
   let grandTotal = 0;
   const res = Data.map((key) => {
@@ -75,6 +72,14 @@ const MyCart = () => {
                     {".00 ₹"}
                   </span>{" "}
                   <span id="qnt">qnt : {key.qnty}</span>{" "}
+                 
+                  <button
+                    onClick={() => {
+                      dec(key.id);
+                    }}
+                  >
+                    –
+                  </button>
                   <button
                     onClick={() => {
                       inc(key.id);
@@ -82,14 +87,6 @@ const MyCart = () => {
                   >
                     +
                   </button>
-                  <button
-                    onClick={() => {
-                      dec(key.id);
-                    }}
-                  >
-                    -
-                  </button>
-                  
                   <img
                     src="https://th.bing.com/th/id/OIP.27oo8k0H9LFKrOL9HQ7EQQHaHa?rs=1&pid=ImgDetMain"
                     onClick={() => {
@@ -112,19 +109,13 @@ const MyCart = () => {
 
   return (
     <>
-      <div id="content">
-        <Container>
-          {/* <h4>Contents</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum laboriosam ratione, ipsam assumenda necessitatibus ea perspiciatis libero maxime provident corrupti excepturi, cumque error earum nulla quidem cupiditate eius voluptas ipsa itaque quia adipisci quod odit. Totam pariatur repellat sunt asperiores officia odio excepturi ea blanditiis recusandae eum iste, repudiandae dignissimos nam rem voluptatibus veritatis quia commodi quas. Est, nulla nisi? Sit aliquid alias cupiditate ea adipisci in, natus illum vitae eligendi totam impedit soluta dolorum cum voluptatum illo commodi consequuntur quae ipsum obcaecati quasi ullam? Quasi ullam praesentium ex velit necessitatibus deserunt animi repudiandae quae, harum, similique, omnis totam?</p> */}
-        </Container>
-      </div>
       <div id="header">
       <h1>My Carts</h1>
       </div>
       <div id="product">{res}</div>
       <div id="grandTotal">
         Grand Total : {grandTotal}{".00 ₹"}
-        <button onClick={checkOut} >Check Out</button>
+        <button>Check Out</button>
       </div>
     </>
   );
