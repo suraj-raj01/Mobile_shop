@@ -51,8 +51,8 @@ const CheckOut = () => {
           <div
             id="checkout-products"
           >
-            <div id="box1">
-              <img src={key.img} alt="" width="300px" height="300px" onClick={() => {
+            <div id="box1" style={{height:'450px', width:'450px'}}>
+              <img src={key.img} alt="" width="400px" height="400px" onClick={() => {
                       detail(key.id);
                     }}/>
             </div>
@@ -99,7 +99,7 @@ const CheckOut = () => {
                 <Form.Check type="radio" name="nm" aria-label="radio 1" />
               </div>
               <div id="opt">
-                <span>New Banking</span>{" "}
+                <span>Net Banking</span>{" "}
                 <Form.Check type="radio" name="nm" aria-label="radio 1" />
               </div>
               <Form.Select aria-label="Default select example" style={{marginTop:'5px'}}>
@@ -126,7 +126,7 @@ const CheckOut = () => {
                 <Form.Check type="radio" name="nm" aria-label="radio 1" />
               </div>
               <div id="opt">
-                <span>Cash on Delivery</span>{" "}
+                <span style={{color:'gray'}}>Cash on Delivery <br /> uavailabe!! now</span>{" "}
                 <Form.Check type="radio" name="nm" aria-label="radio 1" disabled/>
               </div>
               <button id="btn">Use this payment method</button>
