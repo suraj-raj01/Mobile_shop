@@ -26,7 +26,7 @@ const NavBar = () => {
   }
   return (
     <>
-      <Navbar expand="lg" id='navbar'>
+      <Navbar expand="lg" className="bg-body" id='navbar'>
       <Container>
         <Navbar.Brand as={Link} to="home" style={{fontWeight:'bold'}}>Mobileshop</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -39,18 +39,18 @@ const NavBar = () => {
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="products">Products</Nav.Link>
             <NavDropdown title="Brands" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to="oppo">Oppo</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="realme">Realme</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="vivo">Vivo</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="redmi">Redmi</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="samsung">Samsung</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="iphone">iphone</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="nothing">Nothing</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="oneplus">OnePlus</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="iqoo">IQOO</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="iphone">Apple</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="google">Google</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="iqoo">iQOO</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="motorola">Motorola</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="oneplus">OnePlus</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="nokia">Nokia</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="nothing">Nothing</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="oppo">Oppo</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="redmi">Redmi</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="realme">Realme</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="samsung">Samsung</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="vivo">Vivo</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="offer">
               Offers
