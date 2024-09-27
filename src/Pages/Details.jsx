@@ -30,7 +30,8 @@ const Details = () =>{
           OS:OS,
           price:price,
           img:img,
-          description:desc
+          description:desc,
+          qnty:1
         })
       );
     };
