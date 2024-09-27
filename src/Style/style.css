@@ -38,7 +38,7 @@ button{
 }
 #search-opt{
     margin-top: 30px;
-    width: 250px;
+    width: 240px;
     position: sticky;
 }
 #search-opt #search{
@@ -122,7 +122,7 @@ button{
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 20px;
-    width: 98%;
+    width: 100%;
     margin: auto;
     align-items: center;
     justify-content: space-between;
@@ -194,6 +194,11 @@ button{
     #homepage{
         grid-template-columns: auto;
     }
+
+    #crousel img{
+        height: 380px;
+    }
+
     #search-opt{
         left: 0;
         width: 350px;
@@ -329,6 +334,14 @@ button{
 /* footer */
 #f-product a{
     cursor: pointer;
+}
+.navbar-toggler-icon:target{
+    border: none;
+}
+.navbar-toggler span{
+    background-color: white;
+    color: #183961;
+    padding: 0;
 }
 .navbar-toggler-icon{
     display: flex;
