@@ -41,8 +41,8 @@ const MyCart = () => {
               <img
                 src={key.img}
                 alt=""
-                width="300px"
-                height="300px"
+                width="250px"
+                height="250px"
                 onClick={() => {
                   detail(key.id);
                 }}
