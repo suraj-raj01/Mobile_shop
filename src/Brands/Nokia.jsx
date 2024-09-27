@@ -106,13 +106,6 @@ const Nokia = () => {
 
   return (
     <>
-      
-      <div id="content">
-        <Container>
-        {/* <h4>Contents</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum laboriosam ratione, ipsam assumenda necessitatibus ea perspiciatis libero maxime provident corrupti excepturi, cumque error earum nulla quidem cupiditate eius voluptas ipsa itaque quia adipisci quod odit. Totam pariatur repellat sunt asperiores officia odio excepturi ea blanditiis recusandae eum iste, repudiandae dignissimos nam rem voluptatibus veritatis quia commodi quas. Est, nulla nisi? Sit aliquid alias cupiditate ea adipisci in, natus illum vitae eligendi totam impedit soluta dolorum cum voluptatum illo commodi consequuntur quae ipsum obcaecati quasi ullam? Quasi ullam praesentium ex velit necessitatibus deserunt animi repudiandae quae, harum, similique, omnis totam?</p> */}
-        </Container>
-      </div>
       <div id="header">
       <h1>Nokia Products</h1>
       </div>
