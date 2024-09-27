@@ -49,8 +49,8 @@ const Details = () =>{
                 alignItems: "center",
               }}
             >
-              <div id="box1">
-                <img src={key.img} alt="" width="300px" height="300px"/>
+              <div id="box1" style={{height:'500px',width:'500px'}}>
+                <img src={key.img} alt="" width="400px" height="400px"/>
               </div>
               <div id="box2">
                 <h3>{key.name}</h3>
