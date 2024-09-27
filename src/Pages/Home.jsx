@@ -15,7 +15,7 @@ const Home = () => {
   const [catVal, setCatVal] = useState("");
   const [myprice, setPrice] = useState("");
   const [priceData, setPriceData] = useState([]);
-  const [isVisible,setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
 
   const loadData = () => {
     let api = "http://localhost:3000/products";
@@ -58,7 +58,7 @@ const Home = () => {
               padding: "20px",
               width: "100%",
               alignItems: "center",
-              justifyContent:"space-between"
+              justifyContent: "space-between",
             }}
           >
             <div id="home-box1">
@@ -119,7 +119,7 @@ const Home = () => {
     axios.get(api).then((res) => {
       setMydata(res.data);
     });
-    setIsVisible(true)
+    setIsVisible(true);
   };
 
   const handlePrice = () => {
@@ -127,7 +127,7 @@ const Home = () => {
     axios.get(api).then((res) => {
       setPriceData(res.data);
     });
-    setIsVisible(false)
+    setIsVisible(false);
   };
 
   const res1 = priceData.map((key) => {
@@ -632,8 +632,8 @@ const Home = () => {
               height="400px"
             />
             <Carousel.Caption>
-              <h3 style={{color:'black'}}>Reno 12 Pro 5G</h3>
-              <p style={{color:'black'}}>Your every day AI companion</p>
+              <h3 style={{ color: "black" }}>Reno 12 Pro 5G</h3>
+              <p style={{ color: "black" }}>Your every day AI companion</p>
               <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
@@ -645,18 +645,19 @@ const Home = () => {
               height="400px"
             />
             <Carousel.Caption>
-              <h3 style={{color:'black'}}>Vivo V40 | Vivo V40 Pro</h3>
-              <p style={{color:'black'}}>
-                ZEISS Portrait SO Pro
-              </p>
+              <h3 style={{ color: "black" }}>Vivo V40 | Vivo V40 Pro</h3>
+              <p style={{ color: "black" }}>ZEISS Portrait SO Pro</p>
               <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
-         
         </Carousel>
       </div>
       <div id="items">
-        <h4>"Welcome To Mobileshop.com" Buy Mobile Online | Best Prices, Top Brands Premium Mobiles | Gaming, Business, & More Discover Your Perfect Mobile</h4>
+        <h4>
+          "Welcome To Mobileshop.com" Buy Mobile Online | Best Prices, Top
+          Brands Premium Mobiles | Gaming, Business, & More Discover Your
+          Perfect Mobile
+        </h4>
       </div>
       <div id="homepage">
         <div id="search-opt">
@@ -749,7 +750,6 @@ const Home = () => {
           <button id="search-btn" onClick={handlePrice}>
             Search
           </button>
-          <br />
           <br />
           <br />
           <p>Filter By Name </p>
@@ -903,12 +903,11 @@ const Home = () => {
             Search
           </button>
         </div>
-        {isVisible?(
+        {isVisible ? (
           <div id="home-product">{res}</div>
-        ):(
-          <div id="home-product">{res1}</div>    
+        ) : (
+          <div id="home-product">{res1}</div>
         )}
-        
       </div>
     </>
   );
