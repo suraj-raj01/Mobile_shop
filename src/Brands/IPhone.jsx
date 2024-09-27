@@ -63,7 +63,7 @@ const IPhone = () => {
             }}
           >
             <div id="box1">
-              <img src={key.img} alt="" width="300px" height="300px" onClick={()=>{detail(key.id)}}/>
+              <img src={key.img} alt="" width="400px" height="400px" onClick={()=>{detail(key.id)}}/>
             </div>
             <div id="box2">
               <h3>{key.name}</h3>
@@ -98,7 +98,6 @@ const IPhone = () => {
               >Add to Cart</Button>
             </div>
           </div>
-          <br />
         </Container>
       </>
     );
