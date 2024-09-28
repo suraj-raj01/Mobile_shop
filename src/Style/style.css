@@ -86,7 +86,11 @@ button{
     color: white;
 }
 #home-product{
-    width: 1000px;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 #crousel{
     width: 98%;
@@ -135,7 +139,7 @@ button{
 /* checkout products */
 #checkout-products{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 20px;
     width: 100%;
     margin: auto;
@@ -148,6 +152,26 @@ button{
     justify-content: center;
 }
 
+#checkout-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 4px;
+}
+#checkout-img #imgbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 55px;
+    box-shadow: 0px 0px 1px;
+    border-radius: 5px;
+}
+#checkout-img #imgbox img{
+    object-fit: contain;
+}
 
 
 /* Check out Payment */
