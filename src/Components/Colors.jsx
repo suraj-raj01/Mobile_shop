@@ -1,8 +1,8 @@
-const Color = () =>{
+const Colors = () =>{
     return(
         <>
         <p>Colors</p>
-          <div id="search">
+          <div id="Search">
             <div id="clr-box" style={{backgroundColor:'red'}}></div>
             <div id="clr-box" style={{backgroundColor:'grey'}}></div>
             <div id="clr-box" style={{backgroundColor:'pink'}}></div>
@@ -15,4 +15,4 @@ const Color = () =>{
         </>
     )
 }
-export default Color;
+export default Colors;
