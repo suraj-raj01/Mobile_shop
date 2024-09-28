@@ -8,6 +8,8 @@
             "OS":"Android 14",
             "price":8498,
             "img":"https://m.media-amazon.com/images/I/71-NQgckRZL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/71r0Ysx+oVL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/71DhTJ-bVGL._SL1500_.jpg",
             "description":"realme NARZO N61 (Marble Black,6GB RAM+128GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box ",
             "offers":"yes",
             "discount":25
@@ -20,6 +22,8 @@
             "OS":"Android 14",
             "price":11590,
             "img":"https://m.media-amazon.com/images/I/717OTCWgqoL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/61c7MoggTwL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/516RoRgqgML.jpg",
             "description":"realme C65 5G (Feather Green, 128 GB) (6 GB RAM) ",
             "offers":"yes",
             "discount":15
@@ -32,6 +36,8 @@
             "OS":"Android",
             "price":34940,
             "img":"https://m.media-amazon.com/images/I/61EscB6YhKL._SL1080_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/61yOSpcSejL._SL1080_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/51xMVmbUOkL._SL1080_.jpg",
             "description":"Vivo V40 5G Smartphone (Ganges Blue, 8GB RAM, 256GB Storage) ",
             "offers":"no",
             "discount":0
@@ -44,6 +50,8 @@
             "OS":"Android 14",
             "price":22999,
             "img":"https://m.media-amazon.com/images/I/81CFCXH1tVL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/81zSqgluuZL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/71+RLYtjGWL._SL1500_.jpg",
             "description":"OPPO F27 5G (Emerald Green, 8GB RAM, 128GB Storage) | 6.67 FHD+ AMOLED Display|32MP Sony IMX615 Selfie Camera |AI Portrait Expert| 45W SUPERVOOC| with No Cost EMI/Additional Exchange Offers ",
             "offers":"no",
             "discount":0
@@ -56,6 +64,8 @@
             "OS":"Android 14",
             "price":14999,
             "img":"https://m.media-amazon.com/images/I/81LJaRu0cZL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/81K450cOJML._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/81XXj6IKM8L._SL1500_.jpg",
             "description":"Samsung Galaxy M15 5G Prime Edition (Celestial Blue,6GB RAM,128GB Storage)| Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+| 4 Gen. OS Upgrade & 5 Year Security Update",
             "offers":"no",
             "discount":0
@@ -68,6 +78,8 @@
             "OS":"Android 14",
             "price":9199,
             "img":"https://m.media-amazon.com/images/I/81Z1scL6HvL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/81nMsYgIHdL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/81KFSdWCCEL._SL1500_.jpg",
             "description":"Redmi 13C 5G (Startrail Silver, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
             "offers":"no",
             "discount":0
@@ -80,19 +92,23 @@
             "OS":"iOS",
             "price":69900,
             "img":"https://m.media-amazon.com/images/I/71nvkHnPpZL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/71657TiFeHL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/71v2jVh6nIL._SL1500_.jpg",
             "description":"Apple iPhone 15 (128 GB) - Green",
             "offers":"yes",
             "discount":30
         },
         {
             "id":8,
-            "name":"Apple iPhone 16 (128 GB)",
-            "model":"A Series A10",
+            "name":"Apple iPhone 15 Plus",
+            "model":" iPhone 15 Plus",
             "brand":"Apple",
-            "OS":"iOS 17",
-            "price":69900,
-            "img":"https://m.media-amazon.com/images/I/713SsA7gftL._SL1500_.jpg",
-            "description":"Apple iPhone 16 (128 GB) - Ultramarine",
+            "OS":"iOS",
+            "price":79900,
+            "img":"https://m.media-amazon.com/images/I/71bErtQPC3L._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/71zFRCcMS2L._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/713d2it9mhL._SL1500_.jpg",
+            "description":"Apple iPhone 15 Plus (128 GB) - Pink",
             "offers":"yes",
             "discount":10
         },
@@ -101,10 +117,12 @@
             "name":"Samsung Galaxy S23 Ultra 5G",
             "model":"Snapdragon",
             "brand":"Samsung",
-            "OS":"Android",
-            "price":69900,
-            "img":"https://m.media-amazon.com/images/I/71lD7eGdW-L._SL1500_.jpg",
-            "description":"Samsung Galaxy S23 Ultra 5G AI Smartphone (Green, 12GB, 256GB Storage)",
+            "OS":"Android 13",
+            "price":110000,
+            "img":"https://m.media-amazon.com/images/I/51AJymISsfL._SL1200_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/41YLx9Wz0FL._SL1200_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/51gZ0uIgjzL._SL1200_.jpg",
+            "description":"SAMSUNG Galaxy S23 Ultra 5G (12GB Ram, 512GB Storage) (Phantom Black) ",
             "offers":"no",
             "discount":0
         },
@@ -116,6 +134,8 @@
             "OS":"Android",
             "price":24989,
             "img":"https://m.media-amazon.com/images/I/71Mw8ADJxCL._SX569_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/71m+dNHzoGL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/71ZJ6bsARtL._SL1500_.jpg",
             "description":"Motorola Edge 50 Fusion 5G (Marshmallow Blue, 8GB RAM, 128GB Storage)",
             "offers":"yes",
             "discount":15
@@ -128,6 +148,8 @@
             "OS":"Android 14",
             "price":29980,
             "img":"https://m.media-amazon.com/images/I/71ikMrfczDL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/71zQMN62N6L._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/812emNTxp-L._SL1500_.jpg",
             "description":"Nothing Phone (2a) Plus 5G (Black, 12GB RAM + 256GB Storage)",
             "offers":"yes",
             "discount":25
@@ -140,6 +162,7 @@
             "OS":"Android 14",
             "price":54999,
             "img":"https://m.media-amazon.com/images/I/619lW2YtVhL._SL1200_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/51kU1CQSvzL._SL1000_.jpg",
             "description":"iQOO 12 5G (Legend, 16GB RAM, 512GB Storage)",
             "offers":"no",
             "discount":0
@@ -152,6 +175,8 @@
             "OS":"Android 14",
             "price":54999,
             "img":"https://m.media-amazon.com/images/I/61CmWcmW98L._SL1102_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/41omPwwdcGL._SL1280_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/41XJ7GxZ96L.jpg",
             "description":"Pixel 8a 5G (Bay, 8GB RAM, 128GB Storage) New",
             "offers":"yes",
             "discount":30
@@ -188,6 +213,8 @@
             "OS":"Android 14 || Nothing OS 2.6",
             "price":15990,
             "img":"https://m.media-amazon.com/images/I/71jME4FPsdL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/71IuyUt8LZL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/71YSFux7ZxL._SL1500_.jpg",
             "description":"CMF BY NOTHING Phone 1 5G (128 GB) (6 GB RAM) (Black)",
             "offers":"yes",
             "discount":10
@@ -212,6 +239,8 @@
             "OS":"Android",
             "price":31999,
             "img":"https://m.media-amazon.com/images/I/71KnFaNjCGL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/51Mnm-UuUFL._SL1000_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/41XFxILcT9L._SL1000_.jpg",
             "description":"Vivo V30 5G 8GB RAM 256GB Storage Andaman Blue",
             "offers":"yes",
             "discount":15
@@ -224,6 +253,8 @@
             "OS":"Android 14",
             "price":11295,
             "img":"https://m.media-amazon.com/images/I/51mJWpZRLmL._SL1000_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/61VxzkiD1EL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/51lj6ZPA-LL._SL1000_.jpg",
             "description":"Vivo T3 Lite 5G Smartphone (Majestic Black, 4GB Ram 128GB Storage)",
             "offers":"yes",
             "discount":15
@@ -440,6 +471,8 @@
             "OS":"OxygenOS",
             "price":32998,
             "img":"https://m.media-amazon.com/images/I/616wnQmPQ-L._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/61JOYUJbhcL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/61NbiB1GU-L._SL1500_.jpg",
             "description":"OnePlus Nord 4 5G (Oasis Green, 8GB RAM, 256GB Storage)",
             "offers":"yes",
             "discount":8
@@ -452,6 +485,8 @@
             "OS":"OxygenOS",
             "price":19998,
             "img":"https://m.media-amazon.com/images/I/51KJE22BKrL._SL1000_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/5155PFA2N+L._SL1013_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/61Io5-ojWUL._SL1500_.jpg",
             "description":"OnePlus Nord CE4 Lite 5G (Ultra Orange, 8GB RAM, 128GB Storage)",
             "offers":"yes",
             "discount":15
@@ -536,6 +571,8 @@
             "OS":"Android 12.0",
             "price":9999,
             "img":"https://m.media-amazon.com/images/I/71v0HUpQqHL._SL1500_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/711ALzGUXnL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/716sFYLbyDL._SL1500_.jpg",
             "description":"Nokia C31, 6.74” HD+ Display, 13+2+2 MP Rear & 5MP Front Google Camera, 3-Day Battery Life, Android 12 | Cyan, 4+64GB",
             "offers":"no",
             "discount":0
@@ -572,6 +609,8 @@
             "OS":"Android 12.0",
             "price":27975,
             "img":"https://m.media-amazon.com/images/I/611Wgvjn0ZL._SL1190_.jpg",
+            "img1":"https://m.media-amazon.com/images/I/71gWyfyg-JL._SL1500_.jpg",
+            "img2":"https://m.media-amazon.com/images/I/518k7KRtPkL._SL1177_.jpg",
             "description":"Nothing Phone 1 5G White 8GB RAM 256GB ROM | 6.55 inch 120Hz OLED Display | 50MP + 50MP Rear | 16MP Front Camera | Glyph Interface | Qualcomn Snapdragon 778G+ Processor",
             "offers":"yes",
             "discount":10
