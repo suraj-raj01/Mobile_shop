@@ -22,6 +22,19 @@ const MyCart = () => {
     navigate(`/details/${id}`);
   };
 
+  const showImg1 = (img1) => {
+    let im = document.getElementById("orgImg");
+    im.src = img1;
+  };
+  const showImg2 = (img2) => {
+    let im = document.getElementById("orgImg");
+    im.src = img2;
+  };
+  const showImg3 = (img) => {
+    let im = document.getElementById("orgImg");
+    im.src = img;
+  };
+
   let grandTotal = 0;
   const res = Data.map((key) => {
     grandTotal += key.price * key.qnty;
@@ -71,7 +84,7 @@ const MyCart = () => {
                     Price : {key.price * key.qnty}
                     {".00 ₹"}
                   </span>{" "}
-                  <span id="qnt">qnt : {key.qnty}</span>{" "}
+                  <span id="qnt">Quantity : {key.qnty}</span>{" "}
                  
                   <button
                     onClick={() => {
