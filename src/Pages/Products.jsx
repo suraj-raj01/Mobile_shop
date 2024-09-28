@@ -40,6 +40,9 @@ const Products = () => {
   const detail = (id) => {
     navigate(`/details/${id}`);
   };
+  const checkOut = (id) =>{
+    navigate(`/checkout/${id}`)
+}
 
   const res = mydata.map((key) => {
     return (
@@ -101,6 +104,7 @@ const Products = () => {
               >
                 Add to Cart
               </Button>
+              <Button variant="outline-primary" style={{marginLeft:'10px'}} onClick={()=>{checkOut(key.id)}}>Buy Now</Button>
             </div>
           </div>
           <br />
