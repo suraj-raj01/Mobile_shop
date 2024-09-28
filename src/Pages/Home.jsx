@@ -7,6 +7,8 @@ import Carousel from "react-bootstrap/Carousel";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
+import Color from "../Components/Colors";
+import CustomerReview from "../Components/CustomerReview";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -902,119 +904,49 @@ const Home = () => {
           <button id="search-btn" onClick={catValHandle}>
             Search
           </button>
-          <br /><br />
-          <p>Customer Reviews </p>
-          <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-            <span>See all Reviews </span>{" "}
-          </div>
-          <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-            <span>⭐⭐⭐⭐⭐ <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" />  and up</span>{" "} 
-          </div>
-          <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-            <span>⭐⭐⭐⭐ <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" />  and up</span>{" "} 
-          </div>
-          <div id="search">
-            <Form.Check
-            
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-            <span>⭐⭐⭐ <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" />  and up</span>{" "} 
-          </div>
-          <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-            <span>⭐⭐ <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" />  and up</span>{" "} 
-          </div>
-          <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-            <span>⭐ <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" /> <img src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain" height='20px' width='20px' alt="" />  and up</span>{" "} 
-          </div>
-              <br />
+          <br />
+          <br />
+          {/* From CustomerReview Components */}
+          <CustomerReview/>
+          <br />
+          <button id="search-btn">
+            See Reviews
+          </button>
+          <br />
+          <br />
           <p>Offers </p>
           <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
+            <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>See all Offers</span>{" "}
           </div>
           <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
+            <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>10% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
+            <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>15% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
+            <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>20% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
+            <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>25% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check
-              
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
+            <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>30% Off or more</span>{" "}
           </div>
-        <br /><br />
+          <br />
+          <button id="search-btn">
+            Search
+          </button>
+          <br /><br />
+          {/* from color Components */}
+          <Color/>
+          <br /><br />
         </div>
         {isVisible ? (
           <div id="home-product">{res}</div>
