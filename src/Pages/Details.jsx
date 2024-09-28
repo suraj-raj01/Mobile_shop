@@ -3,74 +3,139 @@ import { useEffect, useState } from "react";
 import { Button, Container } from "react-bootstrap";
 
 import { useDispatch } from "react-redux";
-import {addCartData} from "../addToCartSlice";
+import { addCartData } from "../addToCartSlice";
 import { useParams } from "react-router-dom";
-const Details = () =>{
-    const dispatch = useDispatch();
-    const [mydata, setMydata] = useState([]);
-    const {id} = useParams();
-  
-    const loadData = () => {
-      let api = `http://localhost:3000/products/?id=${id}`;
-      axios.get(api).then((res) => {
-        setMydata(res.data);
-      });
-    };
-    useEffect(() => {
-      loadData();
-    }, []);
-  
-    const addDataToCart = (id,name,model,brand,OS,price,img,desc) =>{
-      dispatch(
-        addCartData({
-          id:id,
-          name:name,
-          model:model,
-          brand:brand,
-          OS:OS,
-          price:price,
-          img:img,
-          description:desc,
-          qnty:1
-        })
-      );
-    };
-  
-    const res = mydata.map((key) => {
-      return (
-        <>
-          <Container>
-            <div
-              id="products"
-              style={{
-                display: "flex",
-                padding: "20px",
-                width: "100%",
-                alignItems: "center",
-              }}
-            >
-              <div id="box1" style={{height:'500px',width:'500px'}}>
-                <img src={key.img} alt="" width="400px" height="400px"/>
+
+const Details = () => {
+  const dispatch = useDispatch();
+  const [mydata, setMydata] = useState([]);
+  const { id } = useParams();
+
+  const loadData = () => {
+    let api = `http://localhost:3000/products/?id=${id}`;
+    axios.get(api).then((res) => {
+      setMydata(res.data);
+    });
+  };
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  const addDataToCart = (id, name, model, brand, OS, price, img, desc) => {
+    dispatch(
+      addCartData({
+        id: id,
+        name: name,
+        model: model,
+        brand: brand,
+        OS: OS,
+        price: price,
+        img: img,
+        description: desc,
+        qnty: 1,
+      })
+    );
+  };
+
+  const showImg1 = (img1) => {
+    let im = document.getElementById("orgImg");
+    im.src = img1;
+  };
+  const showImg2 = (img2) => {
+    let im = document.getElementById("orgImg");
+    im.src = img2;
+  };
+  const showImg3 = (img) => {
+    let im = document.getElementById("orgImg");
+    im.src = img;
+  };
+
+  const res = mydata.map((key) => {
+    return (
+      <>
+        <Container>
+          <div
+            id="products"
+            style={{
+              display: "flex",
+              padding: "20px",
+              width: "100%",
+              alignItems: "center",
+            }}
+          >
+            <div id="box1" style={{ height: "500px", width: "500px" }}>
+              <img
+                id="orgImg"
+                src={key.img}
+                alt=""
+                width="400px"
+                height="400px"
+              />
+            </div>
+            <div id="box2">
+              <h3>{key.name}</h3>
+              <b>{key.description}</b>
+              <br />
+              <br />
+              <span>Model : {key.model}</span>
+              <br />
+              <span>Brand : {key.brand}</span>
+              <br />
+              <span>OS : {key.OS}</span>
+              <br />
+              <span>
+                Price : {key.price}
+                {".00 ₹"}
+              </span>
+              <br />
+              <br />
+
+              <div id="imgOpt">
+                <div id="imgbox">
+                  <img
+                    src={key.img1}
+                    onMouseEnter={() => {
+                      showImg1(key.img1);
+                    }}
+                    alt=""
+                    height="50px"
+                    width="55px"
+                    style={{ padding: "0px 5px" }}
+                  />
+                </div>
+
+                <div id="imgbox">
+                  <img
+                    src={key.img2}
+                    onMouseEnter={() => {
+                      showImg2(key.img2);
+                    }}
+                    alt=""
+                    height="50px"
+                    width="55px"
+                    style={{ padding: "0px 5px" }}
+                  />
+                </div>
+
+                <div id="imgbox">
+                  <img
+                    src={key.img}
+                    onMouseEnter={() => {
+                      showImg3(key.img);
+                    }}
+                    alt=""
+                    height="50px"
+                    width="55px"
+                    style={{ padding: "0px 5px" }}
+                  />
+                </div>
               </div>
-              <div id="box2">
-                <h3>{key.name}</h3>
-                <b>{key.description}</b>
-                <br />
-                <br />
-                <span>Model : {key.model}</span>
-                <br />
-                <span>Brand : {key.brand}</span>
-                <br />
-                <span>OS : {key.OS}</span>
-                <br />
-                <span>
-                  Price : {key.price}
-                  {".00 ₹"}
-                </span>
-                <br />
-                <br />
-                <Button variant="outline-primary"
-                onClick={()=>{
+
+              <br />
+              <br />
+              <Button
+                variant="outline-primary"
+                onClick={() => {
                   addDataToCart(
                     key.id,
                     key.name,
@@ -80,23 +145,25 @@ const Details = () =>{
                     key.price,
                     key.img,
                     key.description
-                  )
+                  );
                 }}
-                >Add to Cart</Button>
-              </div>
+              >
+                Add to Cart
+              </Button>
             </div>
-            <br />
-          </Container>
-        </>
-      );
-    });
-    return(
-        <>
-        <div id="header">
+          </div>
+          <br />
+        </Container>
+      </>
+    );
+  });
+  return (
+    <>
+      <div id="header">
         <h1>Product Details</h1>
-        </div>
-        <div id="product">{res}</div>
-        </>
-    )
-}
+      </div>
+      <div id="product">{res}</div>
+    </>
+  );
+};
 export default Details;
