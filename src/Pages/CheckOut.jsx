@@ -43,6 +43,19 @@ const CheckOut = () => {
     );
   };
 
+  const showImg1 = (img1) => {
+    let im = document.getElementById("orgImg");
+    im.src = img1;
+  };
+  const showImg2 = (img2) => {
+    let im = document.getElementById("orgImg");
+    im.src = img2;
+  };
+  const showImg3 = (img) => {
+    let im = document.getElementById("orgImg");
+    im.src = img;
+  };
+
   const res = mydata.map((key) => {
     const newPrice = key.price - ((key.price * key.discount) / 100).toFixed(0);
     return (
@@ -51,8 +64,52 @@ const CheckOut = () => {
           <div
             id="checkout-products"
           >
-            <div id="box1" style={{height:'450px', width:'450px'}}>
-              <img src={key.img} alt="" width="400px" height="400px" onClick={() => {
+
+
+            <div id="checkout-img">
+                <div id="imgbox">
+                  <img
+                    src={key.img1}
+                    onMouseEnter={() => {
+                      showImg1(key.img1);
+                    }}
+                    alt=""
+                    height="50px"
+                    width="55px"
+                    style={{ padding: "0px 5px" }}
+                  />
+                </div>
+
+                <div id="imgbox">
+                  <img
+                    src={key.img2}
+                    onMouseEnter={() => {
+                      showImg2(key.img2);
+                    }}
+                    alt=""
+                    height="50px"
+                    width="55px"
+                    style={{ padding: "0px 5px" }}
+                  />
+                </div>
+
+                <div id="imgbox">
+                  <img
+                    src={key.img}
+                    onMouseEnter={() => {
+                      showImg3(key.img);
+                    }}
+                    alt=""
+                    height="50px"
+                    width="55px"
+                    style={{ padding: "0px 5px" }}
+                  />
+                </div>
+              </div>
+
+
+            <div id="box1" style={{height:'350px', width:'350px'}}>
+              <img src={key.img} id="orgImg" alt="" width="350px" height="350px" onClick={() => {
                       detail(key.id);
                     }}/>
             </div>
