@@ -7,8 +7,8 @@ import Carousel from "react-bootstrap/Carousel";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
-import Color from "../Components/Colors";
 import CustomerReview from "../Components/CustomerReview";
+import Colors from "../Components/Colors";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -945,7 +945,7 @@ const Home = () => {
           </button>
           <br /><br />
           {/* from color Components */}
-          <Color/>
+          <Colors/>
           <br /><br />
         </div>
         {isVisible ? (
