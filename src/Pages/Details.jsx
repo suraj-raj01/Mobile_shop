@@ -5,8 +5,10 @@ import { Button, Container } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Details = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [mydata, setMydata] = useState([]);
   const { id } = useParams();
@@ -49,6 +51,10 @@ const Details = () => {
     let im = document.getElementById("orgImg");
     im.src = img;
   };
+
+  const checkOut = (id) =>{
+    navigate(`/checkout/${id}`)
+}
 
   const res = mydata.map((key) => {
     return (
@@ -132,7 +138,6 @@ const Details = () => {
               </div>
 
               <br />
-              <br />
               <Button
                 variant="outline-primary"
                 onClick={() => {
@@ -150,6 +155,7 @@ const Details = () => {
               >
                 Add to Cart
               </Button>
+              <Button variant="outline-primary" style={{marginLeft:'10px'}} onClick={()=>{checkOut(key.id)}}>Buy Now</Button>
             </div>
           </div>
           <br />
