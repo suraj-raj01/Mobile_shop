@@ -18,6 +18,8 @@ const Home = () => {
   const [myprice, setPrice] = useState("");
   const [priceData, setPriceData] = useState([]);
   const [isVisible, setIsVisible] = useState(true);
+  const [offers, setOffers] = useState("");
+  const [offerData,setOfferData] = useState([]);
 
   const loadData = () => {
     let api = "http://localhost:3000/products";
@@ -132,9 +134,17 @@ const Home = () => {
     setIsVisible(false);
   };
 
+  const handleOffer = () =>{
+    let api = "http://localhost:3000/products";
+    axios.get(api).then((res) => {
+      setOfferData(res.data);
+    });
+    setIsVisible(false);
+  }
+
   const res1 = priceData.map((key) => {
-    if (myprice == 10000) {
-      if (key.price > 0 && key.price <= 10000) {
+    if (myprice == 10000 || offers==10) {
+      if ((key.price > 0 && key.price <= 10000) || (key.discount>0 && key.discount<=10)) {
         return (
           <>
             <Container>
@@ -201,8 +211,8 @@ const Home = () => {
       }
     }
 
-    if (myprice == 20000) {
-      if (key.price > 10000 && key.price <= 20000) {
+    if (myprice == 20000 || offers==15) {
+      if ((key.price > 10000 && key.price <= 20000) || (key.discount>10 && key.discount<=15)) {
         return (
           <>
             <Container>
@@ -269,8 +279,8 @@ const Home = () => {
       }
     }
 
-    if (myprice == 30000) {
-      if (key.price > 20000 && key.price <= 30000) {
+    if (myprice == 30000 || offers==20) {
+      if ((key.price > 20000 && key.price <= 30000) || (key.discount>15 && key.discount<=20)) {
         return (
           <>
             <Container>
@@ -337,8 +347,8 @@ const Home = () => {
       }
     }
 
-    if (myprice == 40000) {
-      if (key.price > 30000 && key.price <= 40000) {
+    if (myprice == 40000 || offers==25) {
+      if ((key.price > 30000 && key.price <= 40000) || (key.discount>20 && key.discount<=25)) {
         return (
           <>
             <Container>
@@ -405,8 +415,8 @@ const Home = () => {
       }
     }
 
-    if (myprice == 50000) {
-      if (key.price > 40000 && key.price <= 50000) {
+    if (myprice == 50000 || offers==30) {
+      if ((key.price > 40000 && key.price <= 50000) || (key.discount>25 && key.discount<=30)) {
         return (
           <>
             <Container>
@@ -473,8 +483,8 @@ const Home = () => {
       }
     }
 
-    if (myprice == 60000) {
-      if (key.price > 50000 && key.price <= 60000) {
+    if (myprice == 60000 || offers==40) {
+      if ((key.price > 50000 && key.price <= 60000 || (key.discount>30))) {
         return (
           <>
             <Container>
@@ -916,31 +926,37 @@ const Home = () => {
           <br />
           <p>Offers </p>
           <div id="search">
-            <Form.Check type="radio" name="nm" aria-label="radio 1" />
+            <Form.Check type="radio" name="nm" value="10"
+                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
             <span>See all Offers</span>{" "}
           </div>
           <div id="search">
-            <Form.Check type="radio" name="nm" aria-label="radio 1" />
+            <Form.Check type="radio" name="nm" value="15"
+                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
             <span>10% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check type="radio" name="nm" aria-label="radio 1" />
+            <Form.Check type="radio" name="nm" value="20"
+                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
             <span>15% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check type="radio" name="nm" aria-label="radio 1" />
+            <Form.Check type="radio" name="nm" value="25"
+                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
             <span>20% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check type="radio" name="nm" aria-label="radio 1" />
+            <Form.Check type="radio" name="nm" value="30"
+                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
             <span>25% Off or more</span>{" "}
           </div>
           <div id="search">
-            <Form.Check type="radio" name="nm" aria-label="radio 1" />
+            <Form.Check type="radio" name="nm" value="40"
+                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
             <span>30% Off or more</span>{" "}
           </div>
           <br />
-          <button id="search-btn">
+          <button id="search-btn" onClick={handleOffer}>
             Search
           </button>
           <br /><br />
