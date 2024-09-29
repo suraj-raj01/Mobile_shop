@@ -6,6 +6,8 @@ import Form from "react-bootstrap/Form";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
+import Accordion from "react-bootstrap/Accordion";
+import Colors from "../Components/Colors";
 
 const Offer = () => {
   const navigate = useNavigate();
@@ -13,14 +15,14 @@ const Offer = () => {
   const [mydata, setMydata] = useState([]);
   const [offers, setOffers] = useState("");
   const [offerData, setOfferData] = useState([]);
-  const [isVisible,setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
 
   const loadData = () => {
     let api = "http://localhost:3000/products/?offers=yes";
     axios.get(api).then((res) => {
       setMydata(res.data);
     });
-    setIsVisible(true)
+    setIsVisible(true);
   };
   useEffect(() => {
     loadData();
@@ -146,7 +148,7 @@ const Offer = () => {
     axios.get(url).then((res) => {
       setOfferData(res.data);
     });
-    setIsVisible(false)
+    setIsVisible(false);
   };
 
   const res1 = offerData.map((key) => {
@@ -726,82 +728,95 @@ const Offer = () => {
       <div id="header">
         <h1>Today's Best Offer!!</h1>
       </div>
-      <br />
       <div id="offers">
         <div id="offer-opt">
-          <div id="search-opt">
-            <p>Offers </p>
-            <div id="search">
-              <Form.Check
-                type="radio"
-                name="nm"
-                value="40"
-                onChange={(e) => setOffers(e.target.value)}
-                aria-label="radio 1"
-              />
-              <span>See all Offers</span>{" "}
-            </div>
-            <div id="search">
-              <Form.Check
-                type="radio"
-                name="nm"
-                value="10"
-                onChange={(e) => setOffers(e.target.value)}
-                aria-label="radio 1"
-              />
-              <span>10% Off or more</span>{" "}
-            </div>
-            <div id="search">
-              <Form.Check
-                type="radio"
-                name="nm"
-                value="15"
-                onChange={(e) => setOffers(e.target.value)}
-                aria-label="radio 1"
-              />
-              <span>15% Off or more</span>{" "}
-            </div>
-            <div id="search">
-              <Form.Check
-                type="radio"
-                name="nm"
-                value="20"
-                onChange={(e) => setOffers(e.target.value)}
-                aria-label="radio 1"
-              />
-              <span>20% Off or more</span>{" "}
-            </div>
-            <div id="search">
-              <Form.Check
-                type="radio"
-                name="nm"
-                value="25"
-                onChange={(e) => setOffers(e.target.value)}
-                aria-label="radio 1"
-              />
-              <span>25% Off or more</span>{" "}
-            </div>
-            <div id="search">
-              <Form.Check
-                type="radio"
-                name="nm"
-                value="30"
-                onChange={(e) => setOffers(e.target.value)}
-                aria-label="radio 1"
-              />
-              <span>30% Off or more</span>{" "}
-            </div>
-            <br />
-            <button id="search-btn" onClick={handleOffers}>
-              Search
-            </button>
-          </div>
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>See Offers</Accordion.Header>
+              <Accordion.Body>
+                <div id="search-opt">
+                  <p>Offers</p>
+                  <div id="search">
+                    <Form.Check
+                      type="radio"
+                      name="nm"
+                      value="40"
+                      onChange={(e) => setOffers(e.target.value)}
+                      aria-label="radio 1"
+                    />
+                    <span>See all Offers</span>{" "}
+                  </div>
+                  <div id="search">
+                    <Form.Check
+                      type="radio"
+                      name="nm"
+                      value="10"
+                      onChange={(e) => setOffers(e.target.value)}
+                      aria-label="radio 1"
+                    />
+                    <span>10% Off or more</span>{" "}
+                  </div>
+                  <div id="search">
+                    <Form.Check
+                      type="radio"
+                      name="nm"
+                      value="15"
+                      onChange={(e) => setOffers(e.target.value)}
+                      aria-label="radio 1"
+                    />
+                    <span>15% Off or more</span>{" "}
+                  </div>
+                  <div id="search">
+                    <Form.Check
+                      type="radio"
+                      name="nm"
+                      value="20"
+                      onChange={(e) => setOffers(e.target.value)}
+                      aria-label="radio 1"
+                    />
+                    <span>20% Off or more</span>{" "}
+                  </div>
+                  <div id="search">
+                    <Form.Check
+                      type="radio"
+                      name="nm"
+                      value="25"
+                      onChange={(e) => setOffers(e.target.value)}
+                      aria-label="radio 1"
+                    />
+                    <span>25% Off or more</span>{" "}
+                  </div>
+                  <div id="search">
+                    <Form.Check
+                      type="radio"
+                      name="nm"
+                      value="30"
+                      onChange={(e) => setOffers(e.target.value)}
+                      aria-label="radio 1"
+                    />
+                    <span>30% Off or more</span>{" "}
+                  </div>
+                  <br />
+                  <button id="search-btn" onClick={handleOffers}>
+                    Search
+                  </button>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
           <br />
-          <br />
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Search by Color</Accordion.Header>
+              <Accordion.Body>
+                <Colors />
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
         </div>
-        {isVisible?(
+        {isVisible ? (
           <div id="product">{res}</div>
-        ):(
+        ) : (
           <div id="product">{res1}</div>
         )}
       </div>
