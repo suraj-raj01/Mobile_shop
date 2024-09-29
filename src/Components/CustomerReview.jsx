@@ -1,7 +1,12 @@
 import Form from "react-bootstrap/Form";
+import Accordion from 'react-bootstrap/Accordion';
 const CustomerReview = () =>{
     return(
         <>
+        <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>See Reviews </Accordion.Header>
+        <Accordion.Body>
         <p>Customer Reviews </p>
           <div id="search">
             <Form.Check type="radio" name="nm" aria-label="radio 1" />
@@ -10,128 +15,39 @@ const CustomerReview = () =>{
           <div id="search">
             <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>
-              ⭐⭐⭐⭐⭐{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>{" "}
+             {" "}
               and up
             </span>{" "}
           </div>
           <div id="search">
             <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>
-              ⭐⭐⭐⭐{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>{" "}
+             {" "}
               and up
             </span>{" "}
           </div>
           <div id="search">
             <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>
-              ⭐⭐⭐{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>{" "}
+             {" "}
               and up
             </span>{" "}
           </div>
           <div id="search">
             <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>
-              ⭐⭐{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
+            <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>{" "}
+             {" "}
               and up
             </span>{" "}
           </div>
-          <div id="search">
-            <Form.Check type="radio" name="nm" aria-label="radio 1" />
-            <span>
-              ⭐{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              <img
-                src="https://th.bing.com/th/id/OIP.6GHvGFJvbmo5Nf8b_I9g8AAAAA?rs=1&pid=ImgDetMain"
-                height="20px"
-                width="20px"
-                alt=""
-              />{" "}
-              and up
-            </span>{" "}
-          </div>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+        
         </>
     )
 }
