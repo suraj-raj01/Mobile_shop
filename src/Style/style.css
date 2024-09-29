@@ -257,6 +257,22 @@ button{
     object-fit: contain;
 }
 
+#offers{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+    justify-content: center;
+}
+#offers #offer-opt{
+    width: 300px;
+    padding: 0px 20px;
+    position: sticky;
+    top: 60px;
+}
+#offers #product{
+    width: 1100px;
+}
+
 @media(max-width:600px)
 {
     #home-product{
@@ -316,6 +332,17 @@ button{
     }
     #header h1{
         font-size: 30px;
+    }
+    #offers{
+        grid-template-columns: auto;
+    }
+    #offers #product{
+        width: 100%;
+    }
+    #offers #offer-opt{
+        width: 90%;
+        margin: auto;
+        position: inherit;
     }
 }
 
