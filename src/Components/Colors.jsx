@@ -1,7 +1,7 @@
 const Colors = () =>{
     return(
         <>
-        <p>Colors</p>
+        <p style={{fontWeight:'bold',color:'#183961'}}>Colors</p>
           <div id="Search">
             <div id="clr-box" style={{backgroundColor:'red'}}></div>
             <div id="clr-box" style={{backgroundColor:'grey'}}></div>
