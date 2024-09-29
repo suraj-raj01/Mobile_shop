@@ -5,6 +5,7 @@ import { Button, Container } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
 
 const Products = () => {
   const navigate = useNavigate();
@@ -117,6 +118,20 @@ const Products = () => {
     <>
       <div id="header">
         <h1>Our Premium Products!!</h1>
+      </div>
+      <div style={{
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        width:'100%',
+        padding:'5px 0px 40px 0px',
+        fontWeight:'bold',
+        gap:'10px',
+        fontSize:'18px',
+        color:'#183961'
+        }}>
+      <Nav.Link href="#home">All Products</Nav.Link> |
+      <Nav.Link href="#home">Premium Products</Nav.Link>
       </div>
       <div id="product">{res}</div>
     </>
