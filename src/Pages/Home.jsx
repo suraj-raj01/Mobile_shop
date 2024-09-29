@@ -9,6 +9,7 @@ import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
 import CustomerReview from "../Components/CustomerReview";
 import Colors from "../Components/Colors";
+import Accordion from 'react-bootstrap/Accordion';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -919,12 +920,11 @@ const Home = () => {
           {/* From CustomerReview Components */}
           <CustomerReview/>
           <br />
-          <button id="search-btn">
-            See Reviews
-          </button>
-          <br />
-          <br />
-          <p>Offers </p>
+          <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>See Offers</Accordion.Header>
+        <Accordion.Body>
+        <p>Offers </p>
           <div id="search">
             <Form.Check type="radio" name="nm" value="10"
                 onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
@@ -959,6 +959,10 @@ const Home = () => {
           <button id="search-btn" onClick={handleOffer}>
             Search
           </button>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+         
           <br /><br />
           {/* from color Components */}
           <Colors/>
