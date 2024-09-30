@@ -3,10 +3,6 @@ import Accordion from 'react-bootstrap/Accordion';
 const CustomerReview = () =>{
     return(
         <>
-        <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>See Reviews </Accordion.Header>
-        <Accordion.Body>
         <p>Customer Reviews </p>
           <div id="search">
             <Form.Check type="radio" name="nm" aria-label="radio 1" />
@@ -44,9 +40,6 @@ const CustomerReview = () =>{
               and up
             </span>{" "}
           </div>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
         
         </>
     )
