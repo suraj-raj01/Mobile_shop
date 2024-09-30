@@ -72,7 +72,11 @@ const Redmi = () => {
               <h3>{key.name}</h3>
               <b>{key.description}</b>
               <br />
-              <br />
+              <div style={{display:'flex',alignItems:'center',justifyContent:'start',gap:'2px',padding:'10px 0px',color:'goldenrod'}}>
+              <span style={{padding:'1px 10px 0px 0px',fontWeight:'bold',fontSize:'14px',color:'black'}}>3.1</span> 
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>1,321 ratings</span>
+              </div>
               <span>Model : {key.model}</span>
               <br />
               <span>Brand : {key.brand}</span>
