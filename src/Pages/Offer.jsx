@@ -730,7 +730,7 @@ const Offer = () => {
       </div>
       <div id="offers">
         <div id="offer-opt">
-          <Accordion>
+          <Accordion defaultActiveKey="1">
             <Accordion.Item eventKey="0">
               <Accordion.Header>See Offers</Accordion.Header>
               <Accordion.Body>
@@ -800,19 +800,18 @@ const Offer = () => {
                   <button id="search-btn" onClick={handleOffers}>
                     Search
                   </button>
+                  <br /><br />
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-          </Accordion>
-          <br />
-          <Accordion>
-            <Accordion.Item eventKey="0">
+            <Accordion.Item eventKey="1">
               <Accordion.Header>Search by Color</Accordion.Header>
               <Accordion.Body>
                 <Colors />
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
+          <br />
         </div>
         {isVisible ? (
           <div id="product">{res}</div>
