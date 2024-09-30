@@ -76,13 +76,13 @@
             "model":"Reno 12 Pro 5G",
             "brand":"Redmi",
             "OS":"Android 14",
-            "price":9199,
+            "price":16599,
             "img":"https://m.media-amazon.com/images/I/81Z1scL6HvL._SL1500_.jpg",
             "img1":"https://m.media-amazon.com/images/I/81nMsYgIHdL._SL1500_.jpg",
             "img2":"https://m.media-amazon.com/images/I/81KFSdWCCEL._SL1500_.jpg",
             "description":"Redmi 13C 5G (Startrail Silver, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
-            "offers":"no",
-            "discount":0
+            "offers":"yes",
+            "discount":20
         },
         {
             "id":7,
