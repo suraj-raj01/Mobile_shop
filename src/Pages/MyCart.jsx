@@ -130,6 +130,7 @@ const MyCart = () => {
         Grand Total : {grandTotal}{".00 ₹"}
         <button>Check Out</button>
       </div>
+      <br />
     </>
   );
 };
