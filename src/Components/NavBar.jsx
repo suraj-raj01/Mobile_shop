@@ -28,7 +28,7 @@ const NavBar = () => {
     <>
       <Navbar expand="lg" className="bg-body" id='navbar'>
       <Container>
-        <Navbar.Brand as={Link} to="home" style={{fontWeight:'bold'}}>Mobileshop</Navbar.Brand>
+        <Navbar.Brand as={Link} to="home" style={{fontWeight:'bold',color:'#183961'}}>Mobileshop</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" style={{backgroundColor:'white',padding:'5px 20px'}}>
           <Nav
@@ -43,9 +43,9 @@ const NavBar = () => {
               <NavDropdown.Item as={Link} to="google">Google</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="iqoo">iQOO</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="motorola">Motorola</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="oneplus">OnePlus</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="nokia">Nokia</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="nothing">Nothing</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="oneplus">OnePlus</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="oppo">Oppo</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="redmi">Redmi</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="realme">Realme</NavDropdown.Item>
