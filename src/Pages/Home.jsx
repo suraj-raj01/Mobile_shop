@@ -9,7 +9,7 @@ import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
 import CustomerReview from "../Components/CustomerReview";
 import Colors from "../Components/Colors";
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Home = () => {
   const [priceData, setPriceData] = useState([]);
   const [isVisible, setIsVisible] = useState(true);
   const [offers, setOffers] = useState("");
-  const [offerData,setOfferData] = useState([]);
+  const [offerData, setOfferData] = useState([]);
 
   const loadData = () => {
     let api = "http://localhost:3000/products";
@@ -81,7 +81,11 @@ const Home = () => {
               <h3>{key.name}</h3>
               <b>{key.description}</b>
               <br />
-              <br />
+              <div style={{display:'flex',alignItems:'center',justifyContent:'start',gap:'2px',padding:'10px 0px',color:'goldenrod'}}>
+              <span style={{padding:'1px 10px 0px 0px',fontWeight:'bold',fontSize:'14px',color:'black'}}>4.5</span> 
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>2,541 ratings</span>
+              </div>
               <span>Model : {key.model}</span>
               <br />
               <span>Brand : {key.brand}</span>
@@ -135,17 +139,18 @@ const Home = () => {
     setIsVisible(false);
   };
 
-  const handleOffer = () =>{
+  const handleOffer = () => {
     let api = "http://localhost:3000/products";
     axios.get(api).then((res) => {
       setOfferData(res.data);
     });
     setIsVisible(false);
-  }
-
+  };
   const res1 = priceData.map((key) => {
-    if (myprice == 10000 || offers==10) {
-      if ((key.price > 0 && key.price <= 10000) || (key.discount>0 && key.discount<=10)) {
+    if (myprice == 10000) {
+      if (
+        (key.price > 0 && key.price <= 10000)
+      ) {
         return (
           <>
             <Container>
@@ -212,8 +217,10 @@ const Home = () => {
       }
     }
 
-    if (myprice == 20000 || offers==15) {
-      if ((key.price > 10000 && key.price <= 20000) || (key.discount>10 && key.discount<=15)) {
+    if (myprice == 20000) {
+      if (
+        (key.price > 10000 && key.price <= 20000)
+      ) {
         return (
           <>
             <Container>
@@ -280,8 +287,81 @@ const Home = () => {
       }
     }
 
-    if (myprice == 30000 || offers==20) {
-      if ((key.price > 20000 && key.price <= 30000) || (key.discount>15 && key.discount<=20)) {
+    if (myprice == 30000) {
+      if (
+        (key.price > 20000 && key.price <= 30000)
+      ) {
+        return (
+          <>
+            <Container>
+              <div
+                id="products"
+                style={{
+                  display: "flex",
+                  padding: "20px",
+                  width: "100%",
+                  alignItems: "center",
+                }}
+              >
+                <div id="home-box1">
+                  <img
+                    src={key.img}
+                    alt=""
+                    width="300px"
+                    height="300px"
+                    onClick={() => {
+                      detail(key.id);
+                    }}
+                  />
+                </div>
+                <div id="box2">
+                  <h3>{key.name}</h3>
+                  <b>{key.description}</b>
+                  <div style={{padding:'15px 0px'}}>
+                  {key.stars}
+                  </div>
+                  <span>Model : {key.model}</span>
+                  <br />
+                  <span>Brand : {key.brand}</span>
+                  <br />
+                  <span>OS : {key.OS}</span>
+                  <br />
+                  <span>
+                    Price : {key.price}
+                    {".00 ₹"}
+                  </span>
+                  <br />
+                  <br />
+                  <Button
+                    variant="outline-primary"
+                    onClick={() => {
+                      addDataToCart(
+                        key.id,
+                        key.name,
+                        key.model,
+                        key.brand,
+                        key.OS,
+                        key.price,
+                        key.img,
+                        key.description
+                      );
+                    }}
+                  >
+                    Add to Cart
+                  </Button>
+                </div>
+              </div>
+              <br />
+            </Container>
+          </>
+        );
+      }
+    }
+
+    if (myprice == 40000) {
+      if (
+        (key.price > 30000 && key.price <= 40000)
+      ) {
         return (
           <>
             <Container>
@@ -348,8 +428,10 @@ const Home = () => {
       }
     }
 
-    if (myprice == 40000 || offers==25) {
-      if ((key.price > 30000 && key.price <= 40000) || (key.discount>20 && key.discount<=25)) {
+    if (myprice == 50000) {
+      if (
+        (key.price > 40000 && key.price <= 50000)
+      ) {
         return (
           <>
             <Container>
@@ -416,76 +498,8 @@ const Home = () => {
       }
     }
 
-    if (myprice == 50000 || offers==30) {
-      if ((key.price > 40000 && key.price <= 50000) || (key.discount>25 && key.discount<=30)) {
-        return (
-          <>
-            <Container>
-              <div
-                id="products"
-                style={{
-                  display: "flex",
-                  padding: "20px",
-                  width: "100%",
-                  alignItems: "center",
-                }}
-              >
-                <div id="home-box1">
-                  <img
-                    src={key.img}
-                    alt=""
-                    width="300px"
-                    height="300px"
-                    onClick={() => {
-                      detail(key.id);
-                    }}
-                  />
-                </div>
-                <div id="box2">
-                  <h3>{key.name}</h3>
-                  <b>{key.description}</b>
-                  <br />
-                  <br />
-                  <span>Model : {key.model}</span>
-                  <br />
-                  <span>Brand : {key.brand}</span>
-                  <br />
-                  <span>OS : {key.OS}</span>
-                  <br />
-                  <span>
-                    Price : {key.price}
-                    {".00 ₹"}
-                  </span>
-                  <br />
-                  <br />
-                  <Button
-                    variant="outline-primary"
-                    onClick={() => {
-                      addDataToCart(
-                        key.id,
-                        key.name,
-                        key.model,
-                        key.brand,
-                        key.OS,
-                        key.price,
-                        key.img,
-                        key.description
-                      );
-                    }}
-                  >
-                    Add to Cart
-                  </Button>
-                </div>
-              </div>
-              <br />
-            </Container>
-          </>
-        );
-      }
-    }
-
-    if (myprice == 60000 || offers==40) {
-      if ((key.price > 50000 && key.price <= 60000 || (key.discount>30))) {
+    if (myprice == 60000) {
+      if ((key.price > 50000 && key.price <= 60000)) {
         return (
           <>
             <Container>
@@ -918,55 +932,94 @@ const Home = () => {
           <br />
           <br />
           {/* From CustomerReview Components */}
-          <CustomerReview/>
+
           <br />
-          <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>See Offers</Accordion.Header>
-        <Accordion.Body>
-        <p>Offers </p>
-          <div id="search">
-            <Form.Check type="radio" name="nm" value="10"
-                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
-            <span>See all Offers</span>{" "}
-          </div>
-          <div id="search">
-            <Form.Check type="radio" name="nm" value="15"
-                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
-            <span>10% Off or more</span>{" "}
-          </div>
-          <div id="search">
-            <Form.Check type="radio" name="nm" value="20"
-                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
-            <span>15% Off or more</span>{" "}
-          </div>
-          <div id="search">
-            <Form.Check type="radio" name="nm" value="25"
-                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
-            <span>20% Off or more</span>{" "}
-          </div>
-          <div id="search">
-            <Form.Check type="radio" name="nm" value="30"
-                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
-            <span>25% Off or more</span>{" "}
-          </div>
-          <div id="search">
-            <Form.Check type="radio" name="nm" value="40"
-                onChange={(e) => setOffers(e.target.value)} aria-label="radio 1" />
-            <span>30% Off or more</span>{" "}
-          </div>
+
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0" >
+              <Accordion.Header>See Reviews</Accordion.Header>
+              <Accordion.Body>
+                <CustomerReview />
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>See Offers</Accordion.Header>
+              <Accordion.Body>
+                <p>Offers </p>
+                <div id="search">
+                  <Form.Check
+                    type="radio"
+                    name="nm"
+                    value="10"
+                    onChange={(e) => setOffers(e.target.value)}
+                    aria-label="radio 1"
+                  />
+                  <span>See all Offers</span>{" "}
+                </div>
+                <div id="search">
+                  <Form.Check
+                    type="radio"
+                    name="nm"
+                    value="15"
+                    onChange={(e) => setOffers(e.target.value)}
+                    aria-label="radio 1"
+                  />
+                  <span>10% Off or more</span>{" "}
+                </div>
+                <div id="search">
+                  <Form.Check
+                    type="radio"
+                    name="nm"
+                    value="20"
+                    onChange={(e) => setOffers(e.target.value)}
+                    aria-label="radio 1"
+                  />
+                  <span>15% Off or more</span>{" "}
+                </div>
+                <div id="search">
+                  <Form.Check
+                    type="radio"
+                    name="nm"
+                    value="25"
+                    onChange={(e) => setOffers(e.target.value)}
+                    aria-label="radio 1"
+                  />
+                  <span>20% Off or more</span>{" "}
+                </div>
+                <div id="search">
+                  <Form.Check
+                    type="radio"
+                    name="nm"
+                    value="30"
+                    onChange={(e) => setOffers(e.target.value)}
+                    aria-label="radio 1"
+                  />
+                  <span>25% Off or more</span>{" "}
+                </div>
+                <div id="search">
+                  <Form.Check
+                    type="radio"
+                    name="nm"
+                    value="40"
+                    onChange={(e) => setOffers(e.target.value)}
+                    aria-label="radio 1"
+                  />
+                  <span>30% Off or more</span>{" "}
+                </div>
+                <br />
+                <button id="search-btn" onClick={handleOffer}>
+                  Search
+                </button>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+
           <br />
-          <button id="search-btn" onClick={handleOffer}>
-            Search
-          </button>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-         
-          <br /><br />
+          <br />
           {/* from color Components */}
-          <Colors/>
-          <br /><br />
+          <Colors />
+          <br />
+          <br />
         </div>
         {isVisible ? (
           <div id="home-product">{res}</div>
