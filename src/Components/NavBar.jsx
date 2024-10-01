@@ -24,6 +24,9 @@ const NavBar = () => {
   const myCart = () =>{
     navigate("/mycart");
   }
+  const login = () =>{
+    navigate("/login");
+  }
   return (
     <>
       <Navbar expand="lg" className="bg-body" id='navbar'>
@@ -72,7 +75,7 @@ const NavBar = () => {
           <span onClick={myCart}>
           <MDBIcon fas icon="shopping-cart" style={{color:'#183961'}}/><sup id='count'>{dataCount}</sup>
           </span>
-          <span>
+          <span onClick={login}>
           <MDBIcon fas icon="circle-user" style={{color:'#183961',marginLeft:'10px',fontSize:'18px'}}/>
           </span>
           </div>
