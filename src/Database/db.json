@@ -672,5 +672,13 @@
             "offers":"yes",
             "discount":10
         }
+    ],
+    "login":[
+        {
+            "name":"suraj kumar",
+            "email":"surajk38656@gmail.com",
+            "phone":"6206546029",
+            "password":"suraj123"
+        }
     ]
 }
