@@ -66,6 +66,7 @@ const Register = () => {
       <InputGroup className="mb-3">
         <InputGroup.Text id="basic-addon1"><i class="fa-solid fa-key"></i></InputGroup.Text>
         <Form.Control
+          type="password"
           placeholder="create password"
           aria-describedby="basic-addon1"
           onChange={handleInput}

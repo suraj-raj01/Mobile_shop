@@ -67,6 +67,7 @@ const Login = () => {
               <i class="fa-solid fa-key"></i>
             </InputGroup.Text>
             <Form.Control
+              type="password"
               placeholder="password"
               aria-label="Password"
               aria-describedby="basic-addon1"
