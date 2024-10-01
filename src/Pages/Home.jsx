@@ -81,10 +81,42 @@ const Home = () => {
               <h3>{key.name}</h3>
               <b>{key.description}</b>
               <br />
-              <div style={{display:'flex',alignItems:'center',justifyContent:'start',gap:'2px',padding:'10px 0px',color:'goldenrod'}}>
-              <span style={{padding:'1px 10px 0px 0px',fontWeight:'bold',fontSize:'14px',color:'black'}}>4.5</span> 
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
-              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>2,541 ratings</span>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "start",
+                  gap: "2px",
+                  padding: "10px 0px",
+                  color: "goldenrod",
+                }}
+              >
+                <span
+                  style={{
+                    padding: "1px 10px 0px 0px",
+                    fontWeight: "bold",
+                    fontSize: "14px",
+                    color: "black",
+                  }}
+                >
+                  4.5
+                </span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <span
+                  style={{
+                    padding: "1px 0px 0px 10px",
+                    fontSize: "14px",
+                    color: "black",
+                    textTransform: "lowercase",
+                    color: "#183961",
+                  }}
+                >
+                  2,541 ratings
+                </span>
               </div>
               <span>Model : {key.model}</span>
               <br />
@@ -148,9 +180,7 @@ const Home = () => {
   };
   const res1 = priceData.map((key) => {
     if (myprice == 10000) {
-      if (
-        (key.price > 0 && key.price <= 10000)
-      ) {
+      if (key.price > 0 && key.price <= 10000) {
         return (
           <>
             <Container>
@@ -218,9 +248,7 @@ const Home = () => {
     }
 
     if (myprice == 20000) {
-      if (
-        (key.price > 10000 && key.price <= 20000)
-      ) {
+      if (key.price > 10000 && key.price <= 20000) {
         return (
           <>
             <Container>
@@ -288,9 +316,7 @@ const Home = () => {
     }
 
     if (myprice == 30000) {
-      if (
-        (key.price > 20000 && key.price <= 30000)
-      ) {
+      if (key.price > 20000 && key.price <= 30000) {
         return (
           <>
             <Container>
@@ -317,9 +343,7 @@ const Home = () => {
                 <div id="box2">
                   <h3>{key.name}</h3>
                   <b>{key.description}</b>
-                  <div style={{padding:'15px 0px'}}>
-                  {key.stars}
-                  </div>
+                  <div style={{ padding: "15px 0px" }}>{key.stars}</div>
                   <span>Model : {key.model}</span>
                   <br />
                   <span>Brand : {key.brand}</span>
@@ -359,9 +383,7 @@ const Home = () => {
     }
 
     if (myprice == 40000) {
-      if (
-        (key.price > 30000 && key.price <= 40000)
-      ) {
+      if (key.price > 30000 && key.price <= 40000) {
         return (
           <>
             <Container>
@@ -429,9 +451,7 @@ const Home = () => {
     }
 
     if (myprice == 50000) {
-      if (
-        (key.price > 40000 && key.price <= 50000)
-      ) {
+      if (key.price > 40000 && key.price <= 50000) {
         return (
           <>
             <Container>
@@ -499,7 +519,7 @@ const Home = () => {
     }
 
     if (myprice == 60000) {
-      if ((key.price > 50000 && key.price <= 60000)) {
+      if (key.price > 50000 && key.price <= 60000) {
         return (
           <>
             <Container>
@@ -688,255 +708,263 @@ const Home = () => {
       </div>
       <div id="homepage">
         <div id="search-opt">
-          <p>Filter By Price </p>
-          <div id="search">
-            <span>10000 & below</span>{" "}
-            <Form.Check
-              value="10000"
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>10000 - 20000</span>{" "}
-            <Form.Check
-              value="20000"
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>20000 - 30000</span>{" "}
-            <Form.Check
-              value="30000"
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>30000 - 40000</span>{" "}
-            <Form.Check
-              value="40000"
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>40000 - 50000</span>{" "}
-            <Form.Check
-              value="50000"
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>50000 - 60000</span>{" "}
-            <Form.Check
-              value="60000"
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>60000 & above</span>{" "}
-            <Form.Check
-              value="70000"
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <br />
-          <button id="search-btn" onClick={handlePrice}>
-            Search
-          </button>
-          <br />
-          <br />
-          <p>Filter By Name </p>
-          <div id="search">
-            <span>Realme</span>{" "}
-            <Form.Check
-              value="realme"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Redmi</span>{" "}
-            <Form.Check
-              value="Redmi"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Oppo</span>{" "}
-            <Form.Check
-              value="Oppo"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Motorola</span>{" "}
-            <Form.Check
-              value="Motorola"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>iPhone</span>{" "}
-            <Form.Check
-              value="Apple"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>IQOO</span>{" "}
-            <Form.Check
-              value="iQOO"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Nothing</span>{" "}
-            <Form.Check
-              value="Nothing"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Vivo</span>{" "}
-            <Form.Check
-              value="Vivo"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Oneplus</span>{" "}
-            <Form.Check
-              value="OnePlus"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Nokia</span>{" "}
-            <Form.Check
-              value="Nokia"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Google Pixel</span>{" "}
-            <Form.Check
-              value="Generic"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
-          <div id="search">
-            <span>Samsung</span>{" "}
-            <Form.Check
-              value="Samsung"
-              onChange={(e) => {
-                setCatVal(e.target.value);
-              }}
-              type="radio"
-              name="nm"
-              aria-label="radio 1"
-            />
-          </div>
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Filter by Price</Accordion.Header>
+              <Accordion.Body>
+                <p>Filter By Price </p>
+                <div id="search">
+                  <span>10000 & below</span>{" "}
+                  <Form.Check
+                    value="10000"
+                    onChange={(e) => {
+                      setPrice(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>10000 - 20000</span>{" "}
+                  <Form.Check
+                    value="20000"
+                    onChange={(e) => {
+                      setPrice(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>20000 - 30000</span>{" "}
+                  <Form.Check
+                    value="30000"
+                    onChange={(e) => {
+                      setPrice(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>30000 - 40000</span>{" "}
+                  <Form.Check
+                    value="40000"
+                    onChange={(e) => {
+                      setPrice(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>40000 - 50000</span>{" "}
+                  <Form.Check
+                    value="50000"
+                    onChange={(e) => {
+                      setPrice(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>50000 - 60000</span>{" "}
+                  <Form.Check
+                    value="60000"
+                    onChange={(e) => {
+                      setPrice(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>60000 & above</span>{" "}
+                  <Form.Check
+                    value="70000"
+                    onChange={(e) => {
+                      setPrice(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <br />
+                <button id="search-btn" onClick={handlePrice}>
+                  Search
+                </button>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Filter by Name</Accordion.Header>
+              <Accordion.Body>
+                <p>Filter By Name </p>
+                <div id="search">
+                  <span>Realme</span>{" "}
+                  <Form.Check
+                    value="realme"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Redmi</span>{" "}
+                  <Form.Check
+                    value="Redmi"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Oppo</span>{" "}
+                  <Form.Check
+                    value="Oppo"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Motorola</span>{" "}
+                  <Form.Check
+                    value="Motorola"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>iPhone</span>{" "}
+                  <Form.Check
+                    value="Apple"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>IQOO</span>{" "}
+                  <Form.Check
+                    value="iQOO"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Nothing</span>{" "}
+                  <Form.Check
+                    value="Nothing"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Vivo</span>{" "}
+                  <Form.Check
+                    value="Vivo"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Oneplus</span>{" "}
+                  <Form.Check
+                    value="OnePlus"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Nokia</span>{" "}
+                  <Form.Check
+                    value="Nokia"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Google Pixel</span>{" "}
+                  <Form.Check
+                    value="Generic"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
+                <div id="search">
+                  <span>Samsung</span>{" "}
+                  <Form.Check
+                    value="Samsung"
+                    onChange={(e) => {
+                      setCatVal(e.target.value);
+                    }}
+                    type="radio"
+                    name="nm"
+                    aria-label="radio 1"
+                  />
+                </div>
 
-          <br />
-          <button id="search-btn" onClick={catValHandle}>
-            Search
-          </button>
+                <br />
+                <button id="search-btn" onClick={catValHandle}>
+                  Search
+                </button>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
           <br />
           <br />
           {/* From CustomerReview Components */}
 
-          <br />
-
           <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0" >
+            <Accordion.Item eventKey="0">
               <Accordion.Header>See Reviews</Accordion.Header>
               <Accordion.Body>
                 <CustomerReview />
