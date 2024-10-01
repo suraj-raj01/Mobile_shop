@@ -300,6 +300,7 @@ button{
     margin: auto;
 }
 
+
 /* grand total */
 #grandTotal{
     display: flex;
@@ -393,6 +394,14 @@ button{
         margin: auto;
         position: inherit;
     }
+    #Search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
     #grandTotal{
         width: 98%;
         margin: auto;
