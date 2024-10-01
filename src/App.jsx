@@ -22,6 +22,7 @@ import OnePlus from "./Brands/OnePlus"
 import CheckOut from "./Pages/CheckOut"
 import Login from "./Login/Login"
 import Register from "./Login/Register"
+import Dashboard from "./Pages/Dashboard"
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="oneplus" element={<OnePlus/>}/>
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
+        <Route path="dashboard" element={<Dashboard/>}/>
       </Route>
      </Routes>
      </BrowserRouter>
