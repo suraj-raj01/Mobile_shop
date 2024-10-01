@@ -20,6 +20,8 @@ import Nokia from "./Brands/Nokia"
 import Iqoo from "./Brands/Iqoo"
 import OnePlus from "./Brands/OnePlus"
 import CheckOut from "./Pages/CheckOut"
+import Login from "./Login/Login"
+import Register from "./Login/Register"
 
 function App() {
 
@@ -49,6 +51,8 @@ function App() {
         <Route path="nokia" element={<Nokia/>}/>
         <Route path="iqoo" element={<Iqoo/>}/>
         <Route path="oneplus" element={<OnePlus/>}/>
+        <Route path="login" element={<Login/>}/>
+        <Route path="register" element={<Register/>}/>
       </Route>
      </Routes>
      </BrowserRouter>
