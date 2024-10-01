@@ -58,6 +58,7 @@ button{
     margin-top: 30px;
     width: 260px;
     position: sticky;
+    top: -200px;
 }
 #search-opt #search{
     display: flex;
