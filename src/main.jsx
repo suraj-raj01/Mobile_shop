@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Style/style.css";
+import "./Style/form.css";
 import { Provider } from 'react-redux';
 import store from './store.jsx';
 createRoot(document.getElementById('root')).render(
