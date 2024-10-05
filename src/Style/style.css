@@ -58,7 +58,7 @@ button{
     margin-top: 30px;
     width: 260px;
     position: sticky;
-    top: -200px;
+    top: 100px;
 }
 #search-opt #search{
     display: flex;
@@ -296,8 +296,12 @@ button{
 #offers #product{
     width: 1100px;
 }
-#offers #offer-opt #search{
-    width: 100%;
+#offers #Search{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     margin: auto;
 }
 
@@ -356,6 +360,7 @@ button{
         left: 0;
         width: 350px;
         margin: auto;
+        position: inherit;
     }
     #items{
         width: 95%;
