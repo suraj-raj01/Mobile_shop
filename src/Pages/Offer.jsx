@@ -7,7 +7,6 @@ import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
-import Colors from "../Components/Colors";
 
 const Offer = () => {
   const navigate = useNavigate();
@@ -800,14 +799,28 @@ const Offer = () => {
                   <button id="search-btn" onClick={handleOffers}>
                     Search
                   </button>
-                  <br /><br />
+                  <br />
+                  <br />
                 </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
               <Accordion.Header>Search by Color</Accordion.Header>
               <Accordion.Body>
-                <Colors />
+                <p style={{ fontWeight: "bold", color: "#183961" }}>Colors</p>
+                <div id="Search">
+                  <div id="clr-box" style={{ backgroundColor: "red" }}></div>
+                  <div id="clr-box"  style={{ backgroundColor: "grey" }}></div>
+                  <div id="clr-box"  style={{ backgroundColor: "pink" }}></div>
+                  <div id="clr-box"  style={{ backgroundColor: "blue" }}></div>
+                  <div id="clr-box" style={{ backgroundColor: "orange" }}></div>
+                  <div
+                    id="clr-box" 
+                    style={{ backgroundColor: "skyblue" }}
+                  ></div>
+                  <div id="clr-box" style={{ backgroundColor: "black" }}></div>
+                  <div id="clr-box" style={{ backgroundColor: "white" }}></div>
+                </div>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
