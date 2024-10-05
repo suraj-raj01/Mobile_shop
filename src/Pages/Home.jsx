@@ -952,25 +952,20 @@ const Home = () => {
                   />
                 </div>
 
-                <br />
                 <button id="search-btn" onClick={catValHandle}>
                   Search
                 </button>
               </Accordion.Body>
             </Accordion.Item>
-          </Accordion>
-          <br />
-          <br />
           {/* From CustomerReview Components */}
 
-          <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
+            <Accordion.Item eventKey="2">
               <Accordion.Header>See Reviews</Accordion.Header>
               <Accordion.Body>
                 <CustomerReview />
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="3">
               <Accordion.Header>See Offers</Accordion.Header>
               <Accordion.Body>
                 <p>Offers </p>
@@ -1041,11 +1036,19 @@ const Home = () => {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-
-          <br />
           <br />
           {/* from color Components */}
-          <Colors />
+          <p style={{fontWeight:'bold',color:'#183961'}}>Colors</p>
+          <div id="Search">
+            <div id="clr-box" style={{backgroundColor:'red'}}></div>
+            <div id="clr-box" style={{backgroundColor:'grey'}}></div>
+            <div id="clr-box" style={{backgroundColor:'pink'}}></div>
+            <div id="clr-box" style={{backgroundColor:'blue'}}></div>
+            <div id="clr-box" style={{backgroundColor:'orange'}}></div>
+            <div id="clr-box" style={{backgroundColor:'skyblue'}}></div>
+            <div id="clr-box" style={{backgroundColor:'black'}}></div>
+            <div id="clr-box" style={{backgroundColor:'white'}}></div>
+          </div>
           <br />
           <br />
         </div>
