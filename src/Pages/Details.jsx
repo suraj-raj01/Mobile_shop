@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Accordion from "react-bootstrap/Accordion";
 
 const Details = () => {
   const navigate = useNavigate();
@@ -52,9 +53,9 @@ const Details = () => {
     im.src = img;
   };
 
-  const checkOut = (id) =>{
-    navigate(`/checkout/${id}`)
-}
+  const checkOut = (id) => {
+    navigate(`/checkout/${id}`);
+  };
 
   const res = mydata.map((key) => {
     return (
@@ -136,7 +137,7 @@ const Details = () => {
                   />
                 </div>
               </div>
-
+              
               <br />
               <Button
                 variant="outline-primary"
@@ -155,7 +156,17 @@ const Details = () => {
               >
                 Add to Cart
               </Button>
-              <Button variant="outline-primary" style={{marginLeft:'10px'}} onClick={()=>{checkOut(key.id)}}>Buy Now</Button>
+              <Button
+                variant="outline-primary"
+                style={{ marginLeft: "10px" }}
+                onClick={() => {
+                  checkOut(key.id);
+                }}
+              >
+                Buy Now
+              </Button>
+              <div>
+              </div>
             </div>
           </div>
           <br />
