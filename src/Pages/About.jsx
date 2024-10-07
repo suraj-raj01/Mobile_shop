@@ -2,7 +2,6 @@ const About = () => {
   return (
     <>
       <div id="header">
-      <h1>About</h1>
       </div>
       <div id="about">
         <div id="box1">
