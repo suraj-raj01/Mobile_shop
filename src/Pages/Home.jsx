@@ -710,9 +710,8 @@ const Home = () => {
         <div id="search-opt">
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Filter by Price</Accordion.Header>
+              <Accordion.Header> <span style={{fontWeight:'bold'}}>Filter by Price</span> </Accordion.Header>
               <Accordion.Body>
-                <p>Filter By Price </p>
                 <div id="search">
                   <span>10000 & below</span>{" "}
                   <Form.Check
@@ -804,9 +803,8 @@ const Home = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Filter by Name</Accordion.Header>
+              <Accordion.Header><span style={{fontWeight:'bold'}}>Filter by Name</span></Accordion.Header>
               <Accordion.Body>
-                <p>Filter By Name </p>
                 <div id="search">
                   <span>Realme</span>{" "}
                   <Form.Check
@@ -951,7 +949,7 @@ const Home = () => {
                     aria-label="radio 1"
                   />
                 </div>
-
+                    <br />
                 <button id="search-btn" onClick={catValHandle}>
                   Search
                 </button>
@@ -960,15 +958,14 @@ const Home = () => {
           {/* From CustomerReview Components */}
 
             <Accordion.Item eventKey="2">
-              <Accordion.Header>See Reviews</Accordion.Header>
+              <Accordion.Header><span style={{fontWeight:'bold'}}>See Reviews</span></Accordion.Header>
               <Accordion.Body>
                 <CustomerReview />
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header>See Offers</Accordion.Header>
+              <Accordion.Header><span style={{fontWeight:'bold'}}>See Offers</span></Accordion.Header>
               <Accordion.Body>
-                <p>Offers </p>
                 <div id="search">
                   <Form.Check
                     type="radio"
