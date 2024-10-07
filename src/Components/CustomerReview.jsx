@@ -3,7 +3,6 @@ import Accordion from 'react-bootstrap/Accordion';
 const CustomerReview = () =>{
     return(
         <>
-        <p>Customer Reviews </p>
           <div id="search">
             <Form.Check type="radio" name="nm" aria-label="radio 1" />
             <span>See all Reviews </span>{" "}
