@@ -67,26 +67,21 @@ const Footer = () => {
               </MDBCol>
 
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+              {/* <h6 className="text-uppercase fw-bold mb-4">Products</h6> */}
                 <p>
-                  <a as={Link} to="#!" className="text-reset">
-                    Pricing
-                  </a>
+                <Nav.Link as={Link} to="nokia"> Nokia</Nav.Link>
                 </p>
                 <p>
-                  <a as={Link} to="#!" className="text-reset">
-                    Settings
-                  </a>
+                <Nav.Link as={Link} to="motorola">Motorola</Nav.Link>
                 </p>
                 <p>
-                  <a as={Link} to="#!" className="text-reset">
-                    Orders
-                  </a>
+                <Nav.Link as={Link} to="vivo">vivo</Nav.Link>
                 </p>
                 <p>
-                  <a as={Link} to="#!" className="text-reset">
-                    Help
-                  </a>
+                <Nav.Link as={Link} to="samsung">Samsung</Nav.Link>
+                </p>
+                <p>
+                <Nav.Link as={Link} to="iqoo">iQOO</Nav.Link>
                 </p>
               </MDBCol>
 
