@@ -14,6 +14,9 @@ const Register = () => {
     const handleInput=(e)=>{
         let name = e.target.name;
         let value = e.target.value;
+        if(value==""){
+          alert("enter")
+        }
         setInput(values=>({...values,[name]:value}))
     }
 
