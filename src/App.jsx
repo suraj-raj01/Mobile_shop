@@ -23,6 +23,8 @@ import CheckOut from "./Pages/CheckOut"
 import Login from "./Login/Login"
 import Register from "./Login/Register"
 import Dashboard from "./Pages/Dashboard"
+import Payment from "./Pages/Payments"
+import Services from "./Pages/Services"
 
 function App() {
 
@@ -36,6 +38,7 @@ function App() {
         <Route path="products" element={<Products/>}/>
         <Route path="offer" element={<Offer/>}/>
         <Route path="about" element={<About/>}/>
+        <Route path="services" element={<Services/>}/>
         <Route path="mycart" element={<MyCart/>}/>
         <Route path="checkout/:id" element={<CheckOut/>}/>
         <Route path="details/:id" element={<Details/>}/>
@@ -55,6 +58,7 @@ function App() {
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
         <Route path="dashboard" element={<Dashboard/>}/>
+        <Route path="payments" element={<Payment/>}/>
       </Route>
      </Routes>
      </BrowserRouter>
