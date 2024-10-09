@@ -59,6 +59,7 @@ const NavBar = () => {
               Offers
             </Nav.Link>
             <Nav.Link as={Link} to="about">About</Nav.Link>
+            <Nav.Link as={Link} to="services">Services</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
