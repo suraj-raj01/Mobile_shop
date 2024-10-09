@@ -26,7 +26,9 @@ const CheckOut = () => {
   const detail = (id) =>{
       navigate(`/details/${id}`)
   }
-
+  const handleSubmit=()=>{
+    navigate("/payments")
+  }
   const addDataToCart = (id, name, model, brand, OS, price, img, desc) => {
     dispatch(
       addCartData({
@@ -186,7 +188,7 @@ const CheckOut = () => {
                 <span style={{color:'gray'}}>Cash on Delivery <br /> uavailabe!! now</span>{" "}
                 <Form.Check type="radio" name="nm" aria-label="radio 1" disabled/>
               </div>
-              <button id="btn">Use this payment method</button>
+              <button id="btn" onClick={handleSubmit}>Use this payment method</button>
             </div>
           </div>
           <br />
