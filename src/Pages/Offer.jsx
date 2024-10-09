@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import Colors from "../Components/Colors.jsx"
 
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
@@ -807,20 +808,7 @@ const Offer = () => {
             <Accordion.Item eventKey="1">
               <Accordion.Header>Search by Color</Accordion.Header>
               <Accordion.Body>
-                <p style={{ fontWeight: "bold", color: "#183961" }}>Colors</p>
-                <div id="Search">
-                  <div id="clr-box" style={{ backgroundColor: "red" }}></div>
-                  <div id="clr-box"  style={{ backgroundColor: "grey" }}></div>
-                  <div id="clr-box"  style={{ backgroundColor: "pink" }}></div>
-                  <div id="clr-box"  style={{ backgroundColor: "blue" }}></div>
-                  <div id="clr-box" style={{ backgroundColor: "orange" }}></div>
-                  <div
-                    id="clr-box" 
-                    style={{ backgroundColor: "skyblue" }}
-                  ></div>
-                  <div id="clr-box" style={{ backgroundColor: "black" }}></div>
-                  <div id="clr-box" style={{ backgroundColor: "white" }}></div>
-                </div>
+                  <Colors/>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
