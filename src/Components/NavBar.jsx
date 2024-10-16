@@ -41,7 +41,7 @@ const NavBar = () => {
           >
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="products">Products</Nav.Link>
-            <NavDropdown title="Brands" id="navbarScrollingDropdown">
+            <NavDropdown title="Categories" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="iphone">Apple</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="google">Google</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="iqoo">iQOO</NavDropdown.Item>
