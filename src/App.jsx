@@ -25,6 +25,8 @@ import Register from "./Login/Register"
 import Dashboard from "./Pages/Dashboard"
 import Payment from "./Pages/Payments"
 import Services from "./Pages/Services"
+import Premium from "./Pages/Premium"
+import GenerateBill from "./Pages/GenerateBill"
 
 function App() {
 
@@ -35,7 +37,7 @@ function App() {
       <Route path="/" element={<LayOut/>}>
         <Route index element={<Home/>} />
         <Route path="home" element={<Home/>}/>
-        <Route path="products" element={<Products/>}/>
+        <Route path="products" element={<Products/>}/> 
         <Route path="offer" element={<Offer/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="services" element={<Services/>}/>
@@ -59,6 +61,7 @@ function App() {
         <Route path="register" element={<Register/>}/>
         <Route path="dashboard" element={<Dashboard/>}/>
         <Route path="payments" element={<Payment/>}/>
+        <Route path="generatebill" element={<GenerateBill/>}/>
       </Route>
      </Routes>
      </BrowserRouter>
