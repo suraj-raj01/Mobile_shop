@@ -37,7 +37,7 @@ const Footer = () => {
               <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <MDBIcon color="secondary" icon="gem" className="me-3" />
-                  Company name
+                  mobile shop
                 </h6>
                 <p>
                 "Welcome To Mobileshop.com" Buy Mobile Online | Best Prices, Top Brands Premium Mobiles | Gaming, Business, & More Discover Your Perfect Mobile
