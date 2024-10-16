@@ -4,7 +4,7 @@ import { Button, Container } from "react-bootstrap";
 
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
-import { useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 
 const Products = () => {
@@ -134,8 +134,8 @@ const Products = () => {
         fontSize:'18px',
         color:'#183961'
         }}>
-      <Nav.Link href="#home">All Products</Nav.Link> |
-      <Nav.Link href="#home">Premium Products</Nav.Link>
+      <Nav.Link as={Link} to="#">All Products</Nav.Link> |
+      <Nav.Link href="#">Premium Products</Nav.Link>
       </div>
       <div id="product">{res}</div>
     </>
