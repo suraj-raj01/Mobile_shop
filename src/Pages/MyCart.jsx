@@ -9,6 +9,10 @@ const MyCart = () => {
   const dispatch = useDispatch();
   const Data = useSelector((state) => state.addCart.cart);
 
+  const billgenerate =() =>{
+    navigate("/generatebill")
+  }
+
   const inc = (id) => {
     dispatch(qntinc({ id: id }));
   };
@@ -128,7 +132,7 @@ const MyCart = () => {
       <div id="product">{res}</div>
       <div id="grandTotal">
         Grand Total : {grandTotal}{".00 ₹"}
-        <button>Check Out</button>
+        <button onClick={billgenerate}>Generete Bill</button>
       </div>
       <br />
     </>
