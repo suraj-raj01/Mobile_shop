@@ -5,7 +5,6 @@ import { Button, Container } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate, useParams } from "react-router-dom";
-import { message } from "antd";
 
 const ProductSearch = () => {
   const navigate = useNavigate();
@@ -52,7 +51,7 @@ const ProductSearch = () => {
   };
   let count = 0;
   const res = mydata.map((key) => {
-    const status = key.name.toLowerCase().includes(txtdata);
+    const status = key.name.toLowerCase().includes(txtdata.toLowerCase());
     if (status) {
       return (
         <>
