@@ -6,19 +6,23 @@ import Products from "./Pages/Products"
 import Offer from "./Pages/Offer"
 import MyCart from "./Pages/MyCart"
 import Details from "./Pages/Details"
-import Realme from "./Brands/Realme"
-import Vivo from "./Brands/Vivo"
-import Oppo from "./Brands/Oppo"
+import Realme from "./Brand_Mobile/Realme"
+import Vivo from "./Brand_Mobile/Vivo"
+import Oppo from "./Brand_Mobile/Oppo"
 import ProductSearch from "./Pages/ProductSearch"
-import Redmi from "./Brands/Redmi"
-import Samsung from "./Brands/Samsung"
-import IPhone from "./Brands/IPhone"
-import Nothing from "./Brands/Nothing"
-import Motorola from "./Brands/Motorola"
-import Google from "./Brands/Google"
-import Nokia from "./Brands/Nokia"
-import Iqoo from "./Brands/Iqoo"
-import OnePlus from "./Brands/OnePlus"
+import Redmi from "./Brand_Mobile/Redmi"
+import Samsung from "./Brand_Mobile/Samsung"
+import IPhone from "./Brand_Mobile/IPhone"
+import Nothing from "./Brand_Mobile/Nothing"
+import Motorola from "./Brand_Mobile/Motorola"
+import Google from "./Brand_Mobile/Google"
+import Nokia from "./Brand_Mobile/Nokia"
+import Iqoo from "./Brand_Mobile/Iqoo"
+import OnePlus from "./Brand_Mobile/OnePlus"
+
+// laptop items
+
+
 import CheckOut from "./Pages/CheckOut"
 import Login from "./Login/Login"
 import Register from "./Login/Register"
@@ -27,6 +31,13 @@ import Payment from "./Pages/Payments"
 import Services from "./Pages/Services"
 import Premium from "./Pages/Premium"
 import GenerateBill from "./Pages/GenerateBill"
+import Acer from "./Brand_Laptop/Acer"
+import Asus from "./Brand_Laptop/Asus"
+import Dell from "./Brand_Laptop/Dell"
+import HP from "./Brand_Laptop/Hp"
+import Lenovo from "./Brand_Laptop/Lenovo"
+import Mac from "./Brand_Laptop/Mac"
+import Zebronics from "./Brand_Laptop/Zebronics"
 
 function App() {
 
@@ -57,6 +68,16 @@ function App() {
         <Route path="nokia" element={<Nokia/>}/>
         <Route path="iqoo" element={<Iqoo/>}/>
         <Route path="oneplus" element={<OnePlus/>}/>
+
+        // Laptops
+        <Route path="acer" element={<Acer/>}/>
+        <Route path="asus" element={<Asus/>}/>
+        <Route path="dell" element={<Dell/>}/>
+        <Route path="hp" element={<HP/>}/>
+        <Route path="lenovo" element={<Lenovo/>}/>
+        <Route path="mac" element={<Mac/>}/>
+        <Route path="zebronics" element={<Zebronics/>}/>
+
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
         <Route path="dashboard" element={<Dashboard/>}/>
