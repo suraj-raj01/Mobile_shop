@@ -42,6 +42,7 @@ const NavBar = () => {
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="products">Products</Nav.Link>
             <NavDropdown title="Categories" id="navbarScrollingDropdown">
+            <NavDropdown title="Mobile Products " id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="iphone">Apple</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="google">Google</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="iqoo">iQOO</NavDropdown.Item>
@@ -54,6 +55,19 @@ const NavBar = () => {
               <NavDropdown.Item as={Link} to="realme">Realme</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="samsung">Samsung</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="vivo">Vivo</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Laptop Products " id="navbarScrollingDropdown">
+              <NavDropdown.Item as={Link} to="acer">Acer</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="asus">Asus</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="dell">Dell</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="hp">HP</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="Lenovo">Nokia</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="mac">MAC</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="zebronics">Zebronics</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="TV LCD Products " id="navbarScrollingDropdown">
+
+            </NavDropdown>
             </NavDropdown>
             <Nav.Link as={Link} to="offer">
               Offers
