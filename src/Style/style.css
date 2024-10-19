@@ -159,7 +159,7 @@ button {
 }
 
 #box2 {
-    width: 90%;
+    width: 70%;
     text-transform: capitalize;
 }
 
@@ -390,13 +390,15 @@ button {
     height: 60vh;
 }
 #bill-gen th{
-    background-color: #183961;
-    color: white;
+    background-color: lightblue;
+    color: #183961;
     padding: 10px 10px;
-    border: 1px solid gray;
+    border: none;
+    border: 1px solid #e7e4e4;
 }
 #bill-gen td{
     font-weight: 500;
+    border: 1px solid #e7e4e4;
 }
 
 @media(max-width:600px) {
@@ -519,6 +521,10 @@ button {
         margin: auto;
     }
     #bill-gen td,th{
+        font-size: 12px;
+    }
+    #bill-gen Button{
+        padding: 8px;
         font-size: 12px;
     }
 }
