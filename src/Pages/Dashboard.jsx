@@ -18,7 +18,7 @@ const Dashboard = () =>{
     return(
         <>
         <div style={{display:'flex',flexDirection:'column', alignItems:'center',justifyContent:'center',height:'70vh'}}>
-        <h1>Welcome {username}</h1>
+        <h1>WELCOME Mr. <span style={{fontWeight:'600',color:'#183961'}}>{username}</span></h1>
         <br />
         <Button variant="outline-primary" onClick={logOut}>logOut</Button>
         </div>
