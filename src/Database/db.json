@@ -672,6 +672,11 @@
       "offers": "yes",
       "discount": 10
     },
+
+
+
+
+
     {
       "id": "101",
       "name": "Acer Aspire Lite AMD Ryzen 5 5500U Premium",
@@ -1007,7 +1012,44 @@
       "img": "https://m.media-amazon.com/images/I/716ThrQ2TsL._SL1500_.jpg",
       "discount": 30,
       "offer": "yes"
+    },
+
+
+    {
+      "id": "201",
+      "name": "Acer 109 cm (43 inches) Super Series 4K Ultra",
+      "resolution":"4k",
+      "model":"Super Series",
+      "OS":"Android 13",
+      "screen_size":"43 Inches",
+      "brand": "Acertv",
+      "display":"QLED",
+      "price": 29990,
+      "description": "Acer 109 cm (43 inches) Super Series 4K Ultra HD Smart QLED Google TV AR43QDXGU2875AT (Black) 2024 Model",
+      "img": "https://m.media-amazon.com/images/I/81V60oVKAYL._SL1500_.jpg",
+      "img1": "https://m.media-amazon.com/images/I/71m6UILWjgL._SL1500_.jpg",
+      "img2": "https://m.media-amazon.com/images/I/71lyBoxoaQL._SL1500_.jpg",
+      "discount": 0,
+      "offer": "no"
+    },
+    {
+      "id": "202",
+      "name": "Xiaomi 108 cm (43 inches) A Pro 4K",
+      "resolution":"4k",
+      "model":"A23 Series",
+      "OS":"Android",
+      "screen_size":"43 Inches",
+      "brand": "xiaomi",
+      "display":"LED",
+      "price": 24990,
+      "description": "Xiaomi 108 cm (43 inches) A Pro 4K Dolby Vision Smart Google TV L43MA-AUIN (Black)",
+      "img": "https://m.media-amazon.com/images/I/71HI+VF6ZXL._SL1500_.jpg",
+      "img1": "https://m.media-amazon.com/images/I/71HEVFytLeL._SL1500_.jpg",
+      "img2": "https://m.media-amazon.com/images/I/71-wshJnA3L._SL1500_.jpg",
+      "discount": 10,
+      "offer": "yes"
     }
+
   ],
   "login": [
     {
