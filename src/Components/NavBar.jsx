@@ -61,12 +61,13 @@ const NavBar = () => {
               <NavDropdown.Item as={Link} to="asus">Asus</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="dell">Dell</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="hp">HP</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="Lenovo">Nokia</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="Lenovo">Lenovo</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="mac">MAC</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="zebronics">Zebronics</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="TV LCD Products " id="navbarScrollingDropdown">
-
+              <NavDropdown.Item as={Link} to="acertv">Acer smart TV</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="mitv">Xiaomi smart TV</NavDropdown.Item>
             </NavDropdown>
             </NavDropdown>
             <Nav.Link as={Link} to="offer">
