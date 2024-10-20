@@ -51,7 +51,7 @@ const Footer = () => {
                 className="mx-auto mb-4"
                 id="f-product"
               >
-                <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+                <h6 className="text-uppercase fw-bold mb-4">Mobiles</h6>
                 <p>
                 <Nav.Link as={Link} to="iphone">IPhone</Nav.Link>
                 </p>
@@ -64,25 +64,44 @@ const Footer = () => {
                 <p>
                 <Nav.Link as={Link} to="nothing">Nothing</Nav.Link>
                 </p>
-              </MDBCol>
-
-              <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              {/* <h6 className="text-uppercase fw-bold mb-4">Products</h6> */}
-                <p>
-                <Nav.Link as={Link} to="nokia"> Nokia</Nav.Link>
-                </p>
                 <p>
                 <Nav.Link as={Link} to="motorola">Motorola</Nav.Link>
                 </p>
                 <p>
                 <Nav.Link as={Link} to="vivo">vivo</Nav.Link>
                 </p>
+              </MDBCol>
+
+              <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Laptops</h6>
                 <p>
-                <Nav.Link as={Link} to="samsung">Samsung</Nav.Link>
+                <Nav.Link as={Link} to="Acer"> Acer</Nav.Link>
                 </p>
                 <p>
-                <Nav.Link as={Link} to="iqoo">iQOO</Nav.Link>
+                <Nav.Link as={Link} to="Asus">ASUS</Nav.Link>
                 </p>
+                <p>
+                <Nav.Link as={Link} to="dell">Dell</Nav.Link>
+                </p>
+                <p>
+                <Nav.Link as={Link} to="Lenovo">Lenovo</Nav.Link>
+                </p>
+                <p>
+                <Nav.Link as={Link} to="zebronics">Zebronics</Nav.Link>
+                </p>
+                <p>
+                <Nav.Link as={Link} to="mac">Mac</Nav.Link>
+                </p>
+              </MDBCol>
+              <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Smarts TV</h6>
+                <p>
+                <Nav.Link as={Link} to="Acertv"> Acer TV</Nav.Link>
+                </p>
+                <p>
+                <Nav.Link as={Link} to="mitv">Xiaomi TV</Nav.Link>
+                </p>
+               
               </MDBCol>
 
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
