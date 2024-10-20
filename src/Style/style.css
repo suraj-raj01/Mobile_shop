@@ -395,6 +395,7 @@ button {
     padding: 10px 10px;
     border: none;
     border: 1px solid #e7e4e4;
+    font-weight: bold;
 }
 #bill-gen td{
     font-weight: 500;
