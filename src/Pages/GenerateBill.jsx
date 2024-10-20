@@ -34,7 +34,7 @@ const GenerateBill = () => {
             <tr>
               <th style={{borderTopLeftRadius:'15px',border:'none'}}>MOBLE NAME</th>
               <th>CPU MODEL</th>
-              <th>MOBILE PRICE</th>
+              <th>PRODUCT PRICE</th>
               <th style={{borderTopRightRadius:'15px',border:'none'}}>OPERATING SYSTEM</th>
             </tr>
           </thead>
