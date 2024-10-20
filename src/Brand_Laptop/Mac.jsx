@@ -114,7 +114,7 @@ const Mac = () => {
   return (
     <>
       <div id="header">
-      <h1>Acer Laptops</h1>
+      <h1>Mac Laptops</h1>
       </div>
       {isVisible?(
         <center>

@@ -114,7 +114,7 @@ const Asus = () => {
   return (
     <>
       <div id="header">
-      <h1>Acer Laptops</h1>
+      <h1>Asus Laptops</h1>
       </div>
       {isVisible?(
         <center>
