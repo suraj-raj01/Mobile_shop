@@ -21,7 +21,13 @@ import Iqoo from "./Brand_Mobile/Iqoo"
 import OnePlus from "./Brand_Mobile/OnePlus"
 
 // laptop items
-
+import Acer from "./Brand_Laptop/Acer"
+import Asus from "./Brand_Laptop/Asus"
+import Dell from "./Brand_Laptop/Dell"
+import HP from "./Brand_Laptop/Hp"
+import Lenovo from "./Brand_Laptop/Lenovo"
+import Mac from "./Brand_Laptop/Mac"
+import Zebronics from "./Brand_Laptop/Zebronics"
 
 import CheckOut from "./Pages/CheckOut"
 import Login from "./Login/Login"
@@ -30,14 +36,10 @@ import Dashboard from "./Pages/Dashboard"
 import Payment from "./Pages/Payments"
 import Services from "./Pages/Services"
 import Premium from "./Pages/Premium"
-import GenerateBill from "./Pages/GenerateBill"
-import Acer from "./Brand_Laptop/Acer"
-import Asus from "./Brand_Laptop/Asus"
-import Dell from "./Brand_Laptop/Dell"
-import HP from "./Brand_Laptop/Hp"
-import Lenovo from "./Brand_Laptop/Lenovo"
-import Mac from "./Brand_Laptop/Mac"
-import Zebronics from "./Brand_Laptop/Zebronics"
+import GenerateBill from "./Pages/GenerateBill";
+import AcerTv from "./Brand_Tv/AcerTv"
+import MiTv from "./Brand_Tv/MiTv"
+
 
 function App() {
 
@@ -77,6 +79,10 @@ function App() {
         <Route path="lenovo" element={<Lenovo/>}/>
         <Route path="mac" element={<Mac/>}/>
         <Route path="zebronics" element={<Zebronics/>}/>
+
+        // TV
+        <Route path="acertv" element={<AcerTv/>}/>
+        <Route path="mitv" element={<MiTv/>}/>
 
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
