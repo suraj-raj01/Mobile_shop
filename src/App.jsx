@@ -39,6 +39,8 @@ import Premium from "./Pages/Premium"
 import GenerateBill from "./Pages/GenerateBill";
 import AcerTv from "./Brand_Tv/AcerTv"
 import MiTv from "./Brand_Tv/MiTv"
+import SamsungTv from "./Brand_Tv/SamsungTv"
+import LgTv from "./Brand_Tv/LgTv"
 
 
 function App() {
@@ -83,6 +85,8 @@ function App() {
         // TV
         <Route path="acertv" element={<AcerTv/>}/>
         <Route path="mitv" element={<MiTv/>}/>
+        <Route path="samsungtv" element={<SamsungTv/>}/>
+        <Route path="lgtv" element={<LgTv/>}/>
 
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
