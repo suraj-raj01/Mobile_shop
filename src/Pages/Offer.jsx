@@ -736,7 +736,7 @@ const Offer = () => {
               <Accordion.Header>See Offers</Accordion.Header>
               <Accordion.Body>
                 <div id="search-opt">
-                  <p>Offers</p>
+                  {/* <p>Offers</p> */}
                   <div id="search">
                     <Form.Check
                       type="radio"
