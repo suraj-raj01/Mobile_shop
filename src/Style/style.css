@@ -124,7 +124,7 @@ button {
 }
 
 #crousel {
-    width: 98%;
+    width: 99%;
     margin: auto;
     padding: 20px 0px;
 }
@@ -402,6 +402,24 @@ button {
     border: 1px solid #e7e4e4;
 }
 
+/* Accordian items */
+#navbarScrollingDropdown .accordion-header{
+    border: none;
+    box-shadow: none;
+    width: 244px;
+    margin-left: 3px;
+}
+ .accordion-button{
+    font-weight: bold;
+    color: #183961;
+}
+.dropdown-menu{
+    border: none;
+    background-color: transparent;
+    width: 250px;
+    box-shadow: none;
+}
+
 @media(max-width:600px) {
     #home-product {
         width: 100%;
@@ -584,4 +602,18 @@ button {
 #search i {
     color: goldenrod;
     padding: 0px 1px;
+}
+
+#offer_time h5{
+    font-weight: 600;
+    color: #183961;
+}
+#offer_time span{
+    color: red;
+}
+.carousel-control-next-icon{
+    display: none;
+}
+.carousel-control-prev-icon{
+    display: none;
 }
