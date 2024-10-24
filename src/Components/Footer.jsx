@@ -22,12 +22,12 @@ const Footer = () => {
           </div>
 
           <div style={{display:'flex',gap:'15px'}}>
-            <Nav.Link as={Link} to="https://www.facebook.com/profile.php?id=100043314000200" target="_blank"><MDBIcon color="secondary" fab icon="facebook-f" /></Nav.Link>
-            <Nav.Link as={Link} to="https://x.com/im_suraj03" target="_blank"><MDBIcon color="secondary" fab icon="twitter" /></Nav.Link>
-            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon color="secondary" fab icon="google" /></Nav.Link>
-            <Nav.Link as={Link} to="https://www.instagram.com/its_suraj_kr__01/" target="_blank"><MDBIcon color="secondary" fab icon="instagram" /></Nav.Link>
-            <Nav.Link as={Link} to="https://www.linkedin.com/in/suraj-kumar-1965b0296/" target="_blank"><MDBIcon color="secondary" fab icon="linkedin" /></Nav.Link>
-            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon color="secondary" fab icon="github" /></Nav.Link>
+            <Nav.Link as={Link} to="https://www.facebook.com/profile.php?id=100043314000200" target="_blank"><MDBIcon color="primary" fab icon="facebook-f" /></Nav.Link>
+            <Nav.Link as={Link} to="https://x.com/im_suraj03" target="_blank"><MDBIcon color="primary" fab icon="twitter" /></Nav.Link>
+            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon color="primary" fab icon="google" /></Nav.Link>
+            <Nav.Link as={Link} to="https://www.instagram.com/its_suraj_kr__01/" target="_blank"><MDBIcon color="primary" fab icon="instagram" /></Nav.Link>
+            <Nav.Link as={Link} to="https://www.linkedin.com/in/suraj-kumar-1965b0296/" target="_blank"><MDBIcon color="primary" fab icon="linkedin" /></Nav.Link>
+            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon color="primary" fab icon="github" /></Nav.Link>
           </div>
         </section>
 
@@ -36,7 +36,7 @@ const Footer = () => {
             <MDBRow className="mt-3">
               <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <MDBIcon color="secondary" icon="gem" className="me-3" />
+                  <MDBIcon color="warning" icon="gem" className="me-3" />
                   mobile shop
                 </h6>
                 <p>
@@ -94,12 +94,18 @@ const Footer = () => {
                 </p>
               </MDBCol>
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Smarts TV</h6>
+              <h6 className="text-uppercase fw-bold mb-4">Smart's TV</h6>
                 <p>
                 <Nav.Link as={Link} to="Acertv"> Acer TV</Nav.Link>
                 </p>
                 <p>
                 <Nav.Link as={Link} to="mitv">Xiaomi TV</Nav.Link>
+                </p>
+                <p>
+                <Nav.Link as={Link} to="samsungtv">Samsung TV</Nav.Link>
+                </p>
+                <p>
+                <Nav.Link as={Link} to="lgtv">LG TV</Nav.Link>
                 </p>
                
               </MDBCol>
@@ -107,19 +113,19 @@ const Footer = () => {
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <MDBIcon color="secondary" icon="home" className="me-2" />
+                  <MDBIcon color="primary" icon="home" className="me-2" />
                   Bharti Niketan, Bhopal (MP)
                 </p>
                 <p>
-                  <MDBIcon color="secondary" icon="envelope" className="me-3" />
+                  <MDBIcon color="primary" icon="envelope" className="me-3" />
                   info@mobileshop.com
                 </p>
                 <p>
-                  <MDBIcon color="secondary" icon="phone" className="me-3" /> +
+                  <MDBIcon color="primary" icon="phone" className="me-3" /> +
                   91 620 654 460 29
                 </p>
                 <p>
-                  <MDBIcon color="secondary" icon="print" className="me-3" /> +
+                  <MDBIcon color="primary" icon="print" className="me-3" /> +
                   91 620 654 460 29
                 </p>
               </MDBCol>
