@@ -741,7 +741,7 @@ const Home = () => {
               src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg"
               alt=""
               width="100%"
-              height="450px"
+              height="400px"
             />
             <Carousel.Caption>
             <h3 style={{ color: "black" }}></h3>
