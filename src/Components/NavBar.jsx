@@ -135,6 +135,12 @@ const NavBar = () => {
                       <NavDropdown.Item as={Link} to="mitv">
                         Xiaomi smart TV
                       </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="samsungtv">
+                        Samsung TV
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="lgtv">
+                        LG Tv
+                      </NavDropdown.Item>
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
@@ -166,14 +172,15 @@ const NavBar = () => {
             <div id="icons">
               <span onClick={myCart}>
                 <MDBIcon
+                  color="primary"
                   fas
                   icon="shopping-cart"
-                  style={{ color: "#183961" }}
                 />
                 <sup id="count">{dataCount}</sup>
               </span>
               <span onClick={login}>
                 <MDBIcon
+                  color="primary"
                   fas
                   icon="circle-user"
                   style={{
