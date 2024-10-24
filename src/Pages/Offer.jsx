@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
+import Countdown from "react-countdown";
 
 const Offer = () => {
   const navigate = useNavigate();
@@ -731,7 +732,7 @@ const Offer = () => {
       <div id="offers">
         <div id="offer-opt">
           <Accordion defaultActiveKey="1">
-            <Accordion.Item eventKey="0">
+            <Accordion.Item eventKey="1">
               <Accordion.Header>See Offers</Accordion.Header>
               <Accordion.Body>
                 <div id="search-opt">
@@ -805,7 +806,7 @@ const Offer = () => {
                 </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="0">
               <Accordion.Header>Search by Color</Accordion.Header>
               <Accordion.Body>
                   <Colors/>
@@ -813,6 +814,10 @@ const Offer = () => {
             </Accordion.Item>
           </Accordion>
           <br />
+          <div id="offer_time">
+            <h5>Offer'll expire in {<spant><Countdown date={Date.now() + 10000000}/></spant>}</h5>
+        <h3></h3>
+      </div>
         </div>
         {isVisible ? (
           <div id="product">{res}</div>
@@ -820,6 +825,9 @@ const Offer = () => {
           <div id="product">{res1}</div>
         )}
       </div>
+
+      
+
     </>
   );
 };
