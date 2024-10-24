@@ -673,6 +673,19 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
+              src="https://media.product.which.co.uk/prod/images/ar_2to1_1500x750/22a475e555d7-best-laptop-deals.jpg"
+              alt=""
+              width="100%"
+              height="400px"
+            />
+            <Carousel.Caption>
+              <h3 style={{ color: "black" }}></h3>
+              <p style={{ color: "black" }}></p>
+              <Button variant="outline-primary">Info →</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
               src="https://www.top10mobileshop.com/images/top10mobiles.com/slider/270514103202408151136.jpg"
               alt=""
               width="100%"
@@ -686,6 +699,32 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
+              src="https://www.nicepng.com/png/detail/278-2782290_led-tvs-led-24-inch.png"
+              alt=""
+              width="100%"
+              height="400px"
+            />
+            <Carousel.Caption>
+              <h3 style={{ color: "black" }}></h3>
+              <p style={{ color: "black" }}></p>
+              <Button variant="outline-primary">Info →</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="https://assets2.razerzone.com/images/pnx.assets/7fb8deac5d3c73e360bc687ed62be6cf/gaming-laptops-og-image.webp"
+              alt=""
+              width="100%"
+              height="400px"
+            />
+            <Carousel.Caption>
+              <h3 style={{ color: "black" }}></h3>
+              <p style={{ color: "black" }}></p>
+              <Button variant="outline-primary">Info →</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
               src="https://www.top10mobileshop.com/images/top10mobiles.com/slider/747523986202408151132.jpg"
               alt=""
               width="100%"
@@ -694,6 +733,19 @@ const Home = () => {
             <Carousel.Caption>
               <h3 style={{ color: "black" }}>Vivo V40 | Vivo V40 Pro</h3>
               <p style={{ color: "black" }}>ZEISS Portrait SO Pro</p>
+              <Button variant="outline-primary">Info →</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item >
+            <img
+              src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg"
+              alt=""
+              width="100%"
+              height="450px"
+            />
+            <Carousel.Caption>
+            <h3 style={{ color: "black" }}></h3>
+              <p style={{ color: "black" }}></p>
               <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
