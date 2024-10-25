@@ -21,10 +21,13 @@ const Login = () => {
     if (pass == "") {
       message.error("Please enter password!!!");
     } else {
-      let url = `http://localhost:3000/login/?username=${name}`;
+      let url = `http://localhost:3000/login/?name=${name}`;
       axios.get(url).then((res) => {
         if (res.data.length >= 1) {
-          if (res.data[0].password == pass) {
+          if(res.data[0].adminpassword==pass){
+            navigate("/adddata")
+          }
+          else if (res.data[0].password == pass) {
             localStorage.setItem("username", res.data[0].name.toUpperCase());
             message.success(`Welcome ," ${res.data[0].name.toUpperCase()} "`);
             navigate("/dashboard")
