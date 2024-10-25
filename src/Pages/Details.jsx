@@ -104,10 +104,10 @@ const Details = () => {
                     onMouseEnter={() => {
                       showImg1(key.img1);
                     }}
-                    alt=""
+                    alt="error!"
                     height="50px"
                     width="55px"
-                    style={{ padding: "0px 5px" }}
+                    style={{ padding: "0px 5px" ,textTransform:'lowercase',color:'red'}}
                   />
                 </div>
 
@@ -117,10 +117,10 @@ const Details = () => {
                     onMouseEnter={() => {
                       showImg2(key.img2);
                     }}
-                    alt=""
+                    alt="error!"
                     height="50px"
                     width="55px"
-                    style={{ padding: "0px 5px" }}
+                    style={{ padding: "0px 5px" ,textTransform:'lowercase',color:'red'}}
                   />
                 </div>
 

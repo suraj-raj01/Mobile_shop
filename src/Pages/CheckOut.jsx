@@ -75,10 +75,10 @@ const CheckOut = () => {
                     onMouseEnter={() => {
                       showImg1(key.img1);
                     }}
-                    alt=""
+                    alt="error!"
                     height="50px"
                     width="55px"
-                    style={{ padding: "0px 5px" }}
+                    style={{ padding: "0px 5px",color:'red'}}
                   />
                 </div>
 
@@ -88,10 +88,10 @@ const CheckOut = () => {
                     onMouseEnter={() => {
                       showImg2(key.img2);
                     }}
-                    alt=""
+                    alt="error!"
                     height="50px"
                     width="55px"
-                    style={{ padding: "0px 5px" }}
+                    style={{ padding: "0px 5px",color:'red'}}
                   />
                 </div>
 
@@ -199,7 +199,7 @@ const CheckOut = () => {
   return (
     <>
       <div id="header">
-        <h1>CheckOut</h1>
+        <h1>CHECKOUT</h1>
       </div>
       <div id="product">{res}</div>
     </>

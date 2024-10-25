@@ -727,7 +727,7 @@ const Offer = () => {
   return (
     <>
       <div id="header">
-        <h1>Today's Best Offer!!</h1>
+        <h1>Today's Best Offers!!</h1>
       </div>
       <div id="offers">
         <div id="offer-opt">
@@ -801,7 +801,6 @@ const Offer = () => {
                   <button id="search-btn" onClick={handleOffers}>
                     Search
                   </button>
-                  <br />
                   <br />
                 </div>
               </Accordion.Body>
