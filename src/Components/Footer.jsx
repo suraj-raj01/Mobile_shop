@@ -40,7 +40,7 @@ const Footer = () => {
                   mobile shop
                 </h6>
                 <p>
-                "Welcome To Mobileshop.com" Buy Mobile Online | Best Prices, Top Brands Premium Mobiles | Gaming, Business, & More Discover Your Perfect Mobile
+                "Welcome To Mobileshop.com" Buy Mobiles, Laptops, TV and Mores . . . Online | Best Prices, Top Brands Premium Mobiles, Laptops, TV and many more | Gaming, Business, & More Discover Your Perfect Products.
                 </p>
               </MDBCol>
 
@@ -59,7 +59,7 @@ const Footer = () => {
                 <Nav.Link as={Link} to="oppo">Oppo</Nav.Link>
                 </p>
                 <p>
-                <Nav.Link as={Link} to="realme">RealMe</Nav.Link>
+                <Nav.Link as={Link} to="realme">Realme</Nav.Link>
                 </p>
                 <p>
                 <Nav.Link as={Link} to="nothing">Nothing</Nav.Link>
@@ -68,7 +68,7 @@ const Footer = () => {
                 <Nav.Link as={Link} to="motorola">Motorola</Nav.Link>
                 </p>
                 <p>
-                <Nav.Link as={Link} to="vivo">vivo</Nav.Link>
+                <Nav.Link as={Link} to="vivo">Vivo</Nav.Link>
                 </p>
               </MDBCol>
 
@@ -90,7 +90,7 @@ const Footer = () => {
                 <Nav.Link as={Link} to="zebronics">Zebronics</Nav.Link>
                 </p>
                 <p>
-                <Nav.Link as={Link} to="mac">Mac</Nav.Link>
+                <Nav.Link as={Link} to="mac">Apple</Nav.Link>
                 </p>
               </MDBCol>
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
@@ -113,19 +113,19 @@ const Footer = () => {
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <MDBIcon color="primary" icon="home" className="me-2" />
+                  <MDBIcon color="secondary" icon="home" className="me-2" />
                   Bharti Niketan, Bhopal (MP)
                 </p>
                 <p>
-                  <MDBIcon color="primary" icon="envelope" className="me-3" />
+                  <MDBIcon color="secondary" icon="envelope" className="me-3" />
                   info@mobileshop.com
                 </p>
                 <p>
-                  <MDBIcon color="primary" icon="phone" className="me-3" /> +
+                  <MDBIcon color="secondary" icon="phone" className="me-3" /> +
                   91 620 654 460 29
                 </p>
                 <p>
-                  <MDBIcon color="primary" icon="print" className="me-3" /> +
+                  <MDBIcon color="secondary" icon="print" className="me-3" /> +
                   91 620 654 460 29
                 </p>
               </MDBCol>
