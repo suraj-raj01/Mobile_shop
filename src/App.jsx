@@ -41,6 +41,13 @@ import AcerTv from "./Brand_Tv/AcerTv"
 import MiTv from "./Brand_Tv/MiTv"
 import SamsungTv from "./Brand_Tv/SamsungTv"
 import LgTv from "./Brand_Tv/LgTv"
+import AddData from "./AddData"
+import Laptop from "./DatabaseForm/laptop"
+import Mobile from "./DatabaseForm/mobile"
+import TV from "./DatabaseForm/TV"
+import Keyboard from "./DatabaseForm/Keyboard"
+import Mouse from "./DatabaseForm/Mouse"
+import Remote from "./DatabaseForm/Remote"
 
 
 function App() {
@@ -60,6 +67,17 @@ function App() {
         <Route path="checkout/:id" element={<CheckOut/>}/>
         <Route path="details/:id" element={<Details/>}/>
         <Route path="productsearch/:txtdata" element={<ProductSearch/>}/>
+
+        <Route path="/" element={<AddData/>}>
+          <Route path="adddata" element={<Laptop/>}/>
+          <Route index element={<Laptop/>}/>
+          <Route path="laptopdata" element={<Laptop/>}/>
+          <Route path="mobiledata" element={<Mobile/>}/>
+          <Route path="tvdata" element={<TV/>}/>
+          <Route path="keyboarddata" element={<Keyboard/>}/>
+          <Route path="mousedata" element={<Mouse/>}/>
+          <Route path="remotedata" element={<Remote/>}/>
+        </Route>
         <Route path="realme" element={<Realme/>}/>
         <Route path="vivo" element={<Vivo/>}/>
         <Route path="oppo" element={<Oppo/>}/>
