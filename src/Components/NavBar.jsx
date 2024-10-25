@@ -143,6 +143,60 @@ const NavBar = () => {
                       </NavDropdown.Item>
                     </Accordion.Body>
                   </Accordion.Item>
+
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header>Keyboards</Accordion.Header>
+                    <Accordion.Body>
+                      <NavDropdown.Item as={Link} to="acertv">
+                        Zebronics
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="mitv">
+                        Intex
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="samsungtv">
+                        Dell
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="lgtv">
+                        Micromax
+                      </NavDropdown.Item>
+                    </Accordion.Body>
+                  </Accordion.Item>
+
+                  <Accordion.Item eventKey="4">
+                    <Accordion.Header>Mouse</Accordion.Header>
+                    <Accordion.Body>
+                      <NavDropdown.Item as={Link} to="acertv">
+                        Zebronics
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="mitv">
+                        Intex
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="samsungtv">
+                        Dell
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="lgtv">
+                        Micromax
+                      </NavDropdown.Item>
+                    </Accordion.Body>
+                  </Accordion.Item>
+
+                  <Accordion.Item eventKey="">
+                    <Accordion.Header>Remotes</Accordion.Header>
+                    <Accordion.Body>
+                      <NavDropdown.Item as={Link} to="acertv">
+                        TV Remote
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="mitv">
+                        AC Remote
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="samsungtv">
+                        Car Remote
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="lgtv">
+                        Box Remote
+                      </NavDropdown.Item>
+                    </Accordion.Body>
+                  </Accordion.Item>
                 </Accordion>
               </NavDropdown>
               <Nav.Link as={Link} to="offer">
@@ -157,7 +211,7 @@ const NavBar = () => {
             </Nav>
             <Form className="d-flex">
               <Form.Control
-                placeholder="search..."
+                placeholder="Search . . ."
                 className="me-2"
                 aria-label="Search"
                 value={searchData}
@@ -165,17 +219,13 @@ const NavBar = () => {
                   setSearchData(e.target.value);
                 }}
               />
-              <Button variant="outline-primary" onClick={handleSearch}>
+              <Button variant="outline-primary" onClick={handleSearch} style={{textTransform:'capitalize'}}>
                 Search
               </Button>
             </Form>
             <div id="icons">
               <span onClick={myCart}>
-                <MDBIcon
-                  color="primary"
-                  fas
-                  icon="shopping-cart"
-                />
+                <MDBIcon color="primary" fas icon="shopping-cart" />
                 <sup id="count">{dataCount}</sup>
               </span>
               <span onClick={login}>
@@ -187,9 +237,11 @@ const NavBar = () => {
                     color: "#183961",
                     marginLeft: "10px",
                     fontSize: "18px",
+                    cursor:'pointer'
                   }}
                 />
               </span>
+              
               {/* <span >
           <MDBIcon fas icon="circle-half-stroke" style={{color:'#183961',marginLeft:'10px',fontSize:'18px'}}/>
           </span> */}
