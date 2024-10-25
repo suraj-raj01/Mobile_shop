@@ -1045,11 +1045,11 @@
   ],
   "login": [
     {
+      "id": "0843",
       "name": "suraj kumar",
       "email": "surajk38656@gmail.com",
       "phone": "6206546029",
-      "password": "suraj123",
-      "id": "0843"
+      "password": "suraj123"
     },
     {
       "id": "c79f",
@@ -1071,6 +1071,13 @@
       "email": "rajaks123@gmail.com",
       "phone": "1234567890",
       "password": "rajak123"
+    },
+    {
+      "id": "c3a4",
+      "name": "mobileshop123",
+      "email": "mobileshop123@gmail.com",
+      "phone": "3214569870",
+      "adminpassword": "mobileshop@123"
     }
   ]
 }
