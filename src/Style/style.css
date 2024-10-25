@@ -44,7 +44,6 @@ button {
     width: 85%;
     text-align: center;
     height: 230px;
-    background-color: white;
     margin: auto;
     display: flex;
     align-items: center;
@@ -135,7 +134,7 @@ button {
 
 /* Home */
 #home-box1 {
-    width: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,6 +186,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px 20px;
 }
 
 #checkout-img {
@@ -202,8 +202,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    width: 55px;
+    height: 70px;
+    width: 65px;
     box-shadow: 0px 0px 1px;
     border-radius: 5px;
 }
@@ -215,8 +215,10 @@ button {
 
 /* Check out Payment */
 #checkout-payment {
-    width: 300px;
-    padding: 10px 15px;
+    width: 320px;
+    padding: 20px 25px;
+    box-shadow: 0px 0px 1px;
+    border-radius: 10px;
 }
 
 #checkout-payment h5 {
@@ -419,6 +421,54 @@ button {
     width: 250px;
     box-shadow: none;
 }
+.dropdown-item{
+    font-weight: 600;
+}
+.dropdown-item:hover{
+    background-color: lightblue;
+}
+
+
+/* Data insert into database */
+#dataInsert{
+    margin: 10px auto;
+    /* box-shadow: 0px 0px 2px; */
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 600px;
+}
+#dataInsert Form{
+    width: 70%;
+    margin: auto;
+    box-shadow: 0px 0px 1px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+#dataInsert Form input::placeholder{
+    color: #b2afaf;
+}
+
+#add_data_hero{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#add_data{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    width: 400px;
+    font-weight: 600;
+    color: #183961;
+    margin: 10px auto;
+}
+#add_data a:hover{
+    color: deepskyblue;
+}
 
 @media(max-width:600px) {
     #home-product {
@@ -546,6 +596,16 @@ button {
         padding: 8px;
         font-size: 12px;
     }
+    /* database form */
+    #add_data_hero{
+        grid-template-columns: auto ;
+    }
+    #dataInsert{
+        width: 350px;
+    }
+    #dataInsert Form{
+        width: 350px;
+    }
 }
 
 
@@ -616,4 +676,11 @@ button {
 }
 .carousel-control-prev-icon{
     display: none;
+}
+
+#mode{
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+    right: 10px;
 }
