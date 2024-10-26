@@ -147,17 +147,20 @@ const NavBar = () => {
                   <Accordion.Item eventKey="3">
                     <Accordion.Header>Keyboards</Accordion.Header>
                     <Accordion.Body>
-                      <NavDropdown.Item as={Link} to="acertv">
+                      <NavDropdown.Item as={Link} to="zebronics_key">
                         Zebronics
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="mitv">
-                        Intex
+                      <NavDropdown.Item as={Link} to="logitech">
+                        Logitech
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="samsungtv">
+                      <NavDropdown.Item as={Link} to="dell_key">
                         Dell
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="lgtv">
-                        Micromax
+                      <NavDropdown.Item as={Link} to="hp_key">
+                        HP
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="portronics">
+                        Portronics
                       </NavDropdown.Item>
                     </Accordion.Body>
                   </Accordion.Item>
