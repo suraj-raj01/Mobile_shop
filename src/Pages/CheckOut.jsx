@@ -8,7 +8,7 @@ import { addCartData } from "../addToCartSlice";
 import { useParams, useNavigate} from "react-router-dom";
 
 const CheckOut = () => {
-  const navigate =  useNavigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [mydata, setMydata] = useState([]);
   const { id } = useParams();
@@ -24,7 +24,7 @@ const CheckOut = () => {
   }, []);
 
   const detail = (id) =>{
-      navigate(`/details/${id}`)
+    navigate(`/details/${id}`)
   }
   const handleSubmit=()=>{
     navigate("/payments")
