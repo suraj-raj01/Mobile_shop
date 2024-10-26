@@ -37,13 +37,15 @@ import Payment from "./Pages/Payments"
 import Services from "./Pages/Services"
 import Premium from "./Pages/Premium"
 import GenerateBill from "./Pages/GenerateBill";
+
+// brands tv
 import AcerTv from "./Brand_Tv/AcerTv"
 import MiTv from "./Brand_Tv/MiTv"
 import SamsungTv from "./Brand_Tv/SamsungTv"
 import LgTv from "./Brand_Tv/LgTv"
-import AddData from "./AddData"
-import Laptop from "./DatabaseForm/laptop"
-import Mobile from "./DatabaseForm/mobile"
+import AddData from "./DatabaseForm/AddData"
+import Laptop from "./DatabaseForm/Laptop"
+import Mobile from "./DatabaseForm/Mobile"
 import TV from "./DatabaseForm/TV"
 import Keyboard from "./DatabaseForm/Keyboard"
 import Mouse from "./DatabaseForm/Mouse"
