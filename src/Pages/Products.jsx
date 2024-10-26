@@ -138,6 +138,10 @@ const Products = () => {
       <Nav.Link href="#">Premium Products</Nav.Link>
       </div>
       <div id="product">{res}</div>
+      {/* Up Down page */}
+      <div id="updown">
+            <Nav.Link href="#header"><i class="fa-solid fa-circle-up"></i></Nav.Link>
+        </div>
     </>
   );
 };
