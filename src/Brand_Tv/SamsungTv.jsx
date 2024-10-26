@@ -20,7 +20,7 @@ const SamsungTv = () => {
   },[])
   
   const loadData = () => {
-    let api = `http://localhost:3000/products/?brand=xiaomi`;
+    let api = `http://localhost:3000/products/?brand=samsung`;
     axios.get(api).then((res) => {
       setMydata(res.data);
     });
