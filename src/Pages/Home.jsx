@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Nav } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 
 import Carousel from "react-bootstrap/Carousel";
@@ -1133,6 +1133,9 @@ const Home = () => {
           <div id="home-product">{res1}</div>
         )}
       </div>
+      <div id="updown">
+            <Nav.Link href="#crousel"><i class="fa-solid fa-circle-up"></i></Nav.Link>
+        </div>
     </>
   );
 };
