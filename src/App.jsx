@@ -43,13 +43,18 @@ import AcerTv from "./Brand_Tv/AcerTv"
 import MiTv from "./Brand_Tv/MiTv"
 import SamsungTv from "./Brand_Tv/SamsungTv"
 import LgTv from "./Brand_Tv/LgTv"
-import AddData from "./DatabaseForm/AddData"
+import AddData from "./AddData"
 import Laptop from "./DatabaseForm/Laptop"
 import Mobile from "./DatabaseForm/Mobile"
 import TV from "./DatabaseForm/TV"
 import Keyboard from "./DatabaseForm/Keyboard"
 import Mouse from "./DatabaseForm/Mouse"
 import Remote from "./DatabaseForm/Remote"
+import Zebronics_keyboards from "./Brand_Keyboard/Zebronics_keyboard"
+import Logitech from "./Brand_Keyboard/Logitech"
+import Dell_Keyboard from "./Brand_Keyboard/Dell_Keyboard"
+import Portronics from "./Brand_Keyboard/Portronics"
+import Hp_Keyboards from "./Brand_Keyboard/Hp_Keyboard"
 
 
 function App() {
@@ -107,6 +112,13 @@ function App() {
         <Route path="mitv" element={<MiTv/>}/>
         <Route path="samsungtv" element={<SamsungTv/>}/>
         <Route path="lgtv" element={<LgTv/>}/>
+
+        // Keyboards
+        <Route path="zebronics_key" element={<Zebronics_keyboards/>}/>
+        <Route path="logitech" element={<Logitech/>}/>
+        <Route path="dell_key" element={<Dell_Keyboard/>}/>
+        <Route path="portronics" element={<Portronics/>}/>
+        <Route path="hp_key" element={<Hp_Keyboards/>}/>
 
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
