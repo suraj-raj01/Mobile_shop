@@ -422,10 +422,10 @@ button {
     box-shadow: none;
 }
 .dropdown-item{
-    font-weight: 600;
+    font-weight: 500;
 }
 .dropdown-item:hover{
-    background-color: lightblue;
+    background-color: #eaeef0;
 }
 
 
@@ -435,40 +435,102 @@ button {
     /* box-shadow: 0px 0px 2px; */
     padding: 10px 15px;
     border-radius: 10px;
-    width: 600px;
+    width: 700px;
 }
-#dataInsert Form{
-    width: 70%;
+#dataInsert #form{
+    width: 100%;
     margin: auto;
-    box-shadow: 0px 0px 1px;
+    box-shadow: 0px 0px 1px #183961;
     padding: 10px 30px;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color:ghostwhite;
 }
-#dataInsert Form input::placeholder{
-    color: #b2afaf;
+#dataInsert #form #box1{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#dataInsert #form #box2{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+#dataInsert #form input{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #e7e4e4;
+}
+#dataInsert #form input::placeholder{
+    color: gray;
+    text-transform: capitalize;
+    font-size: 14px;
 }
 
 #add_data_hero{
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #add_data{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     padding: 10px;
-    gap: 20px;
-    width: 400px;
-    font-weight: 600;
+    gap: 15px;
+    width: 300px;
+    height: 410px;
+    font-weight: 500;
     color: #183961;
     margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px;
+}
+#add_data a{
+    background-color: white;
+    box-shadow: 0px 0px 2px;
+    border-radius: 5px;
+    width: 200px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 15px;
+    color: gray;
 }
 #add_data a:hover{
-    color: deepskyblue;
+    color: white;
+    background-color: #183961;
+    box-shadow: 0px 0px 2px;
 }
+
+/* UpDoun Button */
+#updown{
+    position: fixed;
+    top: 92%;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* background-color: deepskyblue; */
+    color: #183961;
+    font-size: 20px;
+    padding: 10px;
+}
+
 
 @media(max-width:600px) {
     #home-product {
@@ -597,14 +659,39 @@ button {
         font-size: 12px;
     }
     /* database form */
+    #add_data{
+        align-items: start;
+        justify-content: start;
+        height: 370px;
+        padding: 20px 40px;
+    }
     #add_data_hero{
-        grid-template-columns: auto ;
+        grid-template-columns: auto;
     }
     #dataInsert{
         width: 350px;
     }
-    #dataInsert Form{
-        width: 350px;
+    #dataInsert #form{
+        width: 100%;
+    }
+    #dataInsert #form{
+        grid-template-columns: auto;
+    }
+    #adddata-btn{
+        margin-top: 10px;
+    }
+    #adddata-btn Button{
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    /* up-down */
+    #updown{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        padding: 15px;
     }
 }
 
