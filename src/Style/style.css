@@ -141,19 +141,21 @@ button {
 }
 
 #home-box1 img {
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
     object-fit: contain;
 }
 
 #box1 {
-    width: 30%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #box1 img {
+    height: 250px;
+    width: 250px;
     object-fit: contain;
 }
 
@@ -257,6 +259,7 @@ button {
     align-items: center;
     justify-content: start;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 #icons a {
@@ -495,20 +498,21 @@ button {
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 1px;
+    text-align: center;
 }
 #add_data a{
-    background-color: white;
+    background-color: whitesmoke;
     box-shadow: 0px 0px 2px;
-    border-radius: 5px;
-    width: 200px;
-    font-weight: 500;
+    border-radius: 25px;
+    width: 180px;
+    font-weight: 600;
     font-size: 14px;
     padding: 8px 15px;
-    color: gray;
+    color: #183961;
 }
 #add_data a:hover{
-    color: white;
-    background-color: #183961;
+    color: #183961;
+    background-color: white;
     box-shadow: 0px 0px 2px;
 }
 
