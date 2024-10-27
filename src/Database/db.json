@@ -418,7 +418,8 @@
       "img2": "https://m.media-amazon.com/images/I/61hSVtNLerL._SL1500_.jpg",
       "description": "realme GT 6 5G (256, Fluid Silver, New)",
       "offers": "yes",
-      "discount": 9
+      "discount": 9,
+      "premium": "yes"
     },
     {
       "id": "31",
@@ -502,7 +503,8 @@
       "img2": "https://m.media-amazon.com/images/I/71c3EH8FoWL._SL1500_.jpg",
       "description": "OnePlus 12R (Iron Gray, 16GB RAM, 256GB Storage)",
       "offers": "yes",
-      "discount": 12
+      "discount": 12,
+      "premium": "yes"
     },
     {
       "id": "37",
@@ -516,7 +518,8 @@
       "img2": "https://m.media-amazon.com/images/I/61NbiB1GU-L._SL1500_.jpg",
       "description": "OnePlus Nord 4 5G (Oasis Green, 8GB RAM, 256GB Storage)",
       "offers": "yes",
-      "discount": 8
+      "discount": 8,
+      "premium": "yes"
     },
     {
       "id": "38",
@@ -530,7 +533,8 @@
       "img2": "https://m.media-amazon.com/images/I/61Io5-ojWUL._SL1500_.jpg",
       "description": "OnePlus Nord CE4 Lite 5G (Ultra Orange, 8GB RAM, 128GB Storage)",
       "offers": "yes",
-      "discount": 15
+      "discount": 15,
+      "premium": "yes"
     },
     {
       "id": "39",
@@ -544,7 +548,8 @@
       "img2": "https://m.media-amazon.com/images/I/61-E0V81kBL._SL1500_.jpg",
       "description": "SAMSUNG Galaxy S23 FE 5G (Mint 128 GB Storage) (8 GB RAM)",
       "offers": "yes",
-      "discount": 15
+      "discount": 15,
+      "premium": "yes"
     },
     {
       "id": "40",
@@ -682,7 +687,8 @@
       "description": "Acer Aspire Lite AMD Ryzen 5 5500U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6) Full HD Display, Metal Body, Steel Gray, 1.59 KG ",
       "img": "https://m.media-amazon.com/images/I/513p8BwV-RL._SL1080_.jpg",
       "discount": 20,
-      "offer": "yes"
+      "offer": "yes",
+      "premium": "yes"
     },
     {
       "id": "102",
@@ -718,7 +724,8 @@
       "description": "(Refurbished) Lenovo ThinkPad 5th Gen Intel Core i5 Thin & Light HD Laptop (8 GB RAM/256 GB SSD/14 (35.6 cm) HD/Windows 10 Pro/MS Office/WiFi/Webcam/Intel Graphics), Black ",
       "img": "https://m.media-amazon.com/images/I/617Ykb5YvLL._SL1300_.jpg",
       "discount": 10,
-      "offer": "yes"
+      "offer": "yes",
+      "premium": "yes"
     },
     {
       "id": "105",
@@ -1045,7 +1052,7 @@
     {
       "id": "7b4b",
       "description": "Acer Travelmate Business Laptop Intel Core i7-1165G7 Processor (Windows 11 Home/16 GB DDR4/512 GB SSD/Intel Iris Xe Graphics) TMP214-53 with 35.56 cm (14\") Full HD Display",
-      "price": "39990",
+      "price": 39990,
       "img": "https://m.media-amazon.com/images/I/51UGfQexl7L._SL1000_.jpg",
       "img1": "https://m.media-amazon.com/images/I/81e469Ra1RL._SL1500_.jpg",
       "img2": "https://m.media-amazon.com/images/I/81cKJl9bz-L._SL1500_.jpg",
@@ -1059,7 +1066,7 @@
     {
       "id": "b04b",
       "description": "Cosmic Byte CB-GK-25 Pandora TKL Mechanical Keyboard Upgraded with Swappable Outemu Blue Switches and Rainbow LED (Black/Grey)",
-      "price": "1549",
+      "price": 1549,
       "brand": "zebronics_key",
       "model": "new",
       "img": "https://m.media-amazon.com/images/I/71keMYO9t4L._SL1500_.jpg",
@@ -1078,7 +1085,7 @@
       "img2": "https://m.media-amazon.com/images/I/51-XFbQujyL._SL1024_.jpg",
       "offers": "yes",
       "discount": "8",
-      "price": "999",
+      "price": 999,
       "brand": "zebronics_key",
       "model": "new",
       "connectivity": "wireless",
@@ -1088,7 +1095,7 @@
       "id": "1415",
       "name": " Logitech MK345 Wireless Keyboard and Mouse Set Full-Sized Keyboard",
       "description": "Logitech MK345 Wireless Keyboard and Mouse Set Full-Sized Keyboard with Palm Rest and Comfortable Right-Handed Mouse, 2.4 GHz Wireless USB Receiver, Compatible with PC, Laptop - Black",
-      "price": "2199",
+      "price": 2199,
       "img": "https://m.media-amazon.com/images/I/5153ETSQ7+L._SL1500_.jpg",
       "img1": "https://m.media-amazon.com/images/I/71kAmUmQXCL._SL1500_.jpg",
       "img2": "https://m.media-amazon.com/images/I/61nBC+1imzL._SL1500_.jpg",
@@ -1103,7 +1110,7 @@
       "description": "Dell KM3322W Wireless USB Keyboard and Mouse Combo, Anti-Fade & Spill-Resistant Keys, up to 36 Month Battery Life, 3Y Advance Exchange Warranty - Black",
       "offers": "no",
       "discount": "0",
-      "price": "1399",
+      "price": 1399,
       "img": "https://m.media-amazon.com/images/I/71bjej3ZelL._SL1500_.jpg",
       "img1": "https://m.media-amazon.com/images/I/61LGu-YmZBL._SL1500_.jpg",
       "img2": "https://m.media-amazon.com/images/I/61nmukrEK9L._SL1500_.jpg",
@@ -1115,7 +1122,7 @@
     {
       "id": "007f",
       "description": "Portronics Key7 Combo Wireless Keyboard & Mouse Set with 2.4 GHz USB Receiver, 10m Working Range, 12 Shortcut Keys, Adjustable DPI, 10 Million Key Life & Click Life for PC, Laptop, Mac (Grey+Orange)",
-      "price": "1099",
+      "price": 1099,
       "img": "https://m.media-amazon.com/images/I/61urVxLeYPL._SL1500_.jpg",
       "img1": "https://m.media-amazon.com/images/I/61H1hy0YV6L._SL1500_.jpg",
       "img2": "https://m.media-amazon.com/images/I/71EVhpTLNdL._SL1500_.jpg",
@@ -1129,7 +1136,7 @@
     {
       "id": "53b4",
       "description": "HP K160 Wireless Keyboard/Quick Comfy accurate/12 Fn Shortcut Keys/Plug and Play USB/ 3 Years Warranty, Black",
-      "price": "959",
+      "price": 959,
       "connectivity": "Wireless",
       "img": "https://m.media-amazon.com/images/I/61NtLfnCK0L._SL1500_.jpg",
       "img1": "https://m.media-amazon.com/images/I/81TAMrbVApL._SL1500_.jpg",
@@ -1138,12 +1145,13 @@
       "discount": "0",
       "model": "New",
       "brand": "hp",
-      "name": " HP K160 Wireless Keyboard"
+      "name": " HP K160 Wireless Keyboard",
+      "premium": "yes"
     },
     {
       "id": "d685",
       "description": "HP 330 Wireless Black Keyboard and Mouse Set with Numeric Keypad, 2.4GHz Wireless Connection and 1600 DPI, USB Receiver, LED Indicators, Black",
-      "price": "999",
+      "price": 999,
       "img": "https://m.media-amazon.com/images/I/5176+OS3fjL._SL1200_.jpg",
       "img1": "https://m.media-amazon.com/images/I/51BIO9im0tL._SL1200_.jpg",
       "img2": "https://m.media-amazon.com/images/I/518L87bFJZL._SL1200_.jpg",
@@ -1157,7 +1165,7 @@
     {
       "id": "a3b6",
       "description": "TOSHIBA 108 cm (43 inches) V Series Full HD Smart Android LED TV 43V35MP (Black)",
-      "price": "19999",
+      "price": 19999,
       "brand": "samsung",
       "display": "LED",
       "resolution": "1080p",
@@ -1174,7 +1182,7 @@
     {
       "id": "7f61",
       "description": "LG 108 cm (43 inches) 4K Ultra HD Smart LED TV 43UR7500PSC (Dark Iron Gray)",
-      "price": "29980",
+      "price": 29980,
       "img": "https://m.media-amazon.com/images/I/71ydzmWXW0L._SL1500_.jpg",
       "img1": "https://m.media-amazon.com/images/I/61tDktEggtL._SL1500_.jpg",
       "img2": "https://m.media-amazon.com/images/I/51Kl3bxQqRL._SL1500_.jpg",
@@ -1184,7 +1192,22 @@
       "brand": "lg",
       "OS": "WebOS",
       "model": "New Model",
-      "name": "LG 108 cm (43 inches) 4K Ultra HD Smart LED TV"
+      "name": "LG 108 cm (43 inches) 4K Ultra HD Smart LED TV",
+      "premium": "yes"
+    },
+    {
+      "id": "114c",
+      "description": "ZEBRONICS Companion 301 2.4GHz wireless keyboard & mouse combo with UV Printed, Retro style keys, 104 + 12 Integrated Multimedia Keys, 1600 DPI, High Precision (Black + Grey)",
+      "price": "899",
+      "img": "https://m.media-amazon.com/images/I/61QNaY7PMpL._SL1500_.jpg",
+      "img1": "https://m.media-amazon.com/images/I/717F33yAUdL._SL1500_.jpg",
+      "img2": "https://m.media-amazon.com/images/I/61JoNEo1bzL._SL1500_.jpg",
+      "connectivity": "Wireless",
+      "offers": "no",
+      "discount": "0",
+      "model": "New Model",
+      "brand": "zebronics_key",
+      "name": " ZEBRONICS Companion 301 2.4GHz wireless keyboard & mouse combo"
     }
   ],
   "login": [
