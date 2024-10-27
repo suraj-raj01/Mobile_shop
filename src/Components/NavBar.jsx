@@ -228,12 +228,12 @@ const NavBar = () => {
             </Form>
             <div id="icons">
               <span onClick={myCart}>
-                <MDBIcon color="primary" fas icon="shopping-cart" />
+                <MDBIcon color="#183961" fas icon="shopping-cart" />
                 <sup id="count">{dataCount}</sup>
               </span>
               <span onClick={login}>
                 <MDBIcon
-                  color="primary"
+                  color="#183961"
                   fas
                   icon="circle-user"
                   style={{
