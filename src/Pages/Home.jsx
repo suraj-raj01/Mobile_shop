@@ -175,6 +175,7 @@ const Home = () => {
     let api = "http://localhost:3000/products";
     axios.get(api).then((res) => {
       setOfferData(res.data);
+      navigate("/offer")
     });
     setIsVisible(false);
   };
