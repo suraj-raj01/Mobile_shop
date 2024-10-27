@@ -5,7 +5,7 @@ const GenerateBill = () => {
   const Data = useSelector((state) => state.addCart.cart);
   let totalBill=0;
   const res = Data.map((key) => {
-    totalBill+=key.price;
+    totalBill+=Number(key.price);
     return (
       <>
         <tr>
