@@ -55,6 +55,7 @@ import Logitech from "./Brand_Keyboard/Logitech"
 import Dell_Keyboard from "./Brand_Keyboard/Dell_Keyboard"
 import Portronics from "./Brand_Keyboard/Portronics"
 import Hp_Keyboards from "./Brand_Keyboard/Hp_Keyboard"
+import All_Products from "./Pages/All_Products"
 
 
 function App() {
@@ -66,7 +67,12 @@ function App() {
       <Route path="/" element={<LayOut/>}>
         <Route index element={<Home/>} />
         <Route path="home" element={<Home/>}/>
-        <Route path="products" element={<Products/>}/> 
+        <Route path="/" element={<Products/>}>
+          <Route index element={<All_Products/>}/>
+          <Route path="products" element={<All_Products/>}/>
+          <Route path="allproducts" element={<All_Products/>}/>
+          <Route path="premiumproducts" element={<Premium/>}/>
+        </Route> 
         <Route path="offer" element={<Offer/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="services" element={<Services/>}/>
