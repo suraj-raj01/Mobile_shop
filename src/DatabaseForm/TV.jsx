@@ -72,6 +72,7 @@ const TV = () => {
             
             <InputGroup className="mb-3">
               <Form.Control
+                type="number"
                 placeholder="price"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
