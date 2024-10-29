@@ -54,6 +54,7 @@ const All_Products = () => {
 }
 
   const res = mydata.map((key) => {
+    const rating = Math.floor(Math.random()*1000)+50;
     return (
       <>
         <Container>
@@ -85,7 +86,7 @@ const All_Products = () => {
               <div style={{display:'flex',alignItems:'center',justifyContent:'start',gap:'2px',padding:'10px 0px',color:'goldenrod'}}>
               <span style={{padding:'1px 10px 0px 0px',fontWeight:'bold',fontSize:'14px',color:'black'}}>4.3</span> 
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
-              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>1,541 ratings</span>
+              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>{rating} ratings</span>
               </div>
               <span>Model : {key.model}</span>
               <br />
