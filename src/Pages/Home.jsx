@@ -53,6 +53,7 @@ const Home = () => {
   };
 
   const res = mydata.map((key) => {
+    const rating = Math.floor(Math.random()*1000)+50;
     return (
       <>
         <Container>
@@ -115,7 +116,7 @@ const Home = () => {
                     color: "#183961",
                   }}
                 >
-                  2,541 ratings
+                  {rating} ratings
                 </span>
               </div>
               <span>Model : {key.model}</span>
