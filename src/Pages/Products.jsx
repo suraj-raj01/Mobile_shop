@@ -159,13 +159,13 @@ const Products = () =>{
         justifyContent:'center',
         width:'100%',
         padding:'40px 0px 30px 0px',
-        fontWeight:'bold',
+        fontWeight:'600',
         gap:'10px',
         fontSize:'20px',
         color:'#183961'
         }}>
       <Nav.Link as={Link} to="allproducts">All Products</Nav.Link> |
-      <Nav.Link as={Link} to="premiumproducts">Premium Products </Nav.Link>
+      <Nav.Link as={Link} to="premiumproducts"><i class="fa-brands fa-square-web-awesome"></i> Premium  </Nav.Link>
       </div>
       <hr />
     <div>
