@@ -21,13 +21,13 @@ const Footer = () => {
             <span>Get connected with us on social networks:</span>
           </div>
 
-          <div style={{display:'flex',gap:'15px'}}>
-            <Nav.Link as={Link} to="https://www.facebook.com/profile.php?id=100043314000200" target="_blank"><MDBIcon color="primary" fab icon="facebook-f" /></Nav.Link>
-            <Nav.Link as={Link} to="https://x.com/im_suraj03" target="_blank"><MDBIcon color="primary" fab icon="twitter" /></Nav.Link>
-            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon color="primary" fab icon="google" /></Nav.Link>
-            <Nav.Link as={Link} to="https://www.instagram.com/its_suraj_kr__01/" target="_blank"><MDBIcon color="primary" fab icon="instagram" /></Nav.Link>
-            <Nav.Link as={Link} to="https://www.linkedin.com/in/suraj-kumar-1965b0296/" target="_blank"><MDBIcon color="primary" fab icon="linkedin" /></Nav.Link>
-            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon color="primary" fab icon="github" /></Nav.Link>
+          <div style={{display:'flex',gap:'15px',color:'#183961'}}>
+            <Nav.Link as={Link} to="https://www.facebook.com/profile.php?id=100043314000200" target="_blank"><MDBIcon  fab icon="facebook-f" /></Nav.Link>
+            <Nav.Link as={Link} to="https://x.com/im_suraj03" target="_blank"><MDBIcon  fab icon="twitter" /></Nav.Link>
+            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon  fab icon="google" /></Nav.Link>
+            <Nav.Link as={Link} to="https://www.instagram.com/its_suraj_kr__01/" target="_blank"><MDBIcon  fab icon="instagram" /></Nav.Link>
+            <Nav.Link as={Link} to="https://www.linkedin.com/in/suraj-kumar-1965b0296/" target="_blank"><MDBIcon  fab icon="linkedin" /></Nav.Link>
+            <Nav.Link as={Link} to="https://github.com/suraj-raj01" target="_blank"><MDBIcon  fab icon="github" /></Nav.Link>
           </div>
         </section>
 

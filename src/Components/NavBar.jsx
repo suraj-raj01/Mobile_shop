@@ -166,19 +166,19 @@ const NavBar = () => {
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="4">
-                    <Accordion.Header>Mouse</Accordion.Header>
+                    <Accordion.Header>Smart Watches</Accordion.Header>
                     <Accordion.Body>
-                      <NavDropdown.Item as={Link} to="acertv">
-                        Zebronics
+                      <NavDropdown.Item as={Link} to="fastrack">
+                        Fastrack
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="mitv">
-                        Intex
+                      <NavDropdown.Item as={Link} to="limestone">
+                        Limestone
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="samsungtv">
-                        Dell
+                      <NavDropdown.Item as={Link} to="realme">
+                        Realme
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="lgtv">
-                        Micromax
+                      <NavDropdown.Item as={Link} to="apple">
+                        Apple
                       </NavDropdown.Item>
                     </Accordion.Body>
                   </Accordion.Item>
@@ -239,7 +239,7 @@ const NavBar = () => {
                   style={{
                     color: "#183961",
                     marginLeft: "10px",
-                    fontSize: "18px",
+                    fontSize: "22px",
                     cursor:'pointer'
                   }}
                 />
