@@ -53,6 +53,7 @@ const Premium = () => {
     navigate(`/checkout/${id}`)
 }
   const res = mydata.map((key) => {
+    const rating = Math.floor(Math.random()*1000)+50;
     if(key.premium=="yes"){
     return (
       <>
@@ -76,8 +77,12 @@ const Premium = () => {
               <div style={{display:'flex',alignItems:'center',justifyContent:'start',gap:'2px',padding:'10px 0px',color:'goldenrod'}}>
               <span style={{padding:'1px 10px 0px 0px',fontWeight:'bold',fontSize:'14px',color:'black'}}>3.5</span> 
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
-              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>1,167 ratings</span>
+              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>{rating} ratings</span>
               </div>
+              <span style={{fontWeight:'bold',color:'goldenrod'}}>
+              <i style={{color:'goldenrod'}} class="fa-brands fa-square-web-awesome"></i>  Premium
+              </span>
+              <br />
               <span>Model : {key.model}</span>
               <br />
               <span>Brand : {key.brand}</span>
@@ -88,6 +93,8 @@ const Premium = () => {
                 Price : {key.price}
                 {" ₹"}
               </span>
+              <br />
+              
               <br />
               <br />
               <Button variant="outline-primary"
