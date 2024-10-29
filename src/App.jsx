@@ -56,6 +56,9 @@ import Dell_Keyboard from "./Brand_Keyboard/Dell_Keyboard"
 import Portronics from "./Brand_Keyboard/Portronics"
 import Hp_Keyboards from "./Brand_Keyboard/Hp_Keyboard"
 import All_Products from "./Pages/All_Products"
+import Fastrack from "./Smart_Watch/Fastrack"
+import Limestone from "./Smart_Watch/Limestone"
+import Apple from "./Smart_Watch/Apple"
 
 
 function App() {
@@ -82,8 +85,8 @@ function App() {
         <Route path="productsearch/:txtdata" element={<ProductSearch/>}/>
 
         <Route path="/" element={<AddData/>}>
-          <Route path="adddata" element={<Laptop/>}/>
-          <Route index element={<Laptop/>}/>
+          <Route path="adddata" element={<Mobile/>}/>
+          <Route index element={<Mobile/>}/>
           <Route path="laptopdata" element={<Laptop/>}/>
           <Route path="mobiledata" element={<Mobile/>}/>
           <Route path="tvdata" element={<TV/>}/>
@@ -131,7 +134,12 @@ function App() {
         <Route path="dashboard" element={<Dashboard/>}/>
         <Route path="payments" element={<Payment/>}/>
         <Route path="generatebill" element={<GenerateBill/>}/>
-      </Route>
+       </Route>
+
+        <Route path="realme"  element={<Realme/>}/> 
+        <Route path="fastrack"  element={<Fastrack/>}/> 
+        <Route path="limestone"  element={<Limestone/>}/> 
+        <Route path="apple"  element={<Apple/>}/> 
      </Routes>
      </BrowserRouter>
     </>
