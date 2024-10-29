@@ -11,14 +11,23 @@ const Mobile = () => {
   const handleInput = (e) => {
     let name = e.target.name;
     let value = e.target.value;
+    if(name==""){
+      alert("please enter")
+    }
     setInput((values) => ({ ...values, [name]: value }));
   };
   const handleSubmit = () => {
+    if(name==""){
+      message.error("Please fill the input field!!")
+      return false;
+    }
+    else{
     let url = "http://localhost:3000/products";
     axios.post(url, input).then((res) => {
       message.success("data saved successfully!!");
       console.log(res.data);
     });
+  }
   };
   const gotohome =()=>{
     navigate("/home")
