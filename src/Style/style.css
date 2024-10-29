@@ -267,12 +267,13 @@ button {
 }
 
 #count {
-    padding: 1px 5px;
+    padding: 3px 5px;
     border-radius: 50px;
-    font-weight: bold;
+    font-weight: 700;
     color: #183961;
-    box-shadow: 0px 0px 2px;
+    box-shadow: 0px 0px 3px;
     cursor: pointer;
+    font-size: 10px;
 }
 
 #header {
