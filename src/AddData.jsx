@@ -18,8 +18,8 @@ const AddData = () => {
           <Nav.Link as={Link} to="keyboarddata">
             Keyboard Data
           </Nav.Link>
-          <Nav.Link as={Link} to="mousedata">
-            Mouse Data
+          <Nav.Link as={Link} to="watchdata">
+            Watches Data
           </Nav.Link>
           <Nav.Link as={Link} to="remotedata">
             Remote Data

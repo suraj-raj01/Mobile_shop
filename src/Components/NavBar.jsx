@@ -144,7 +144,28 @@ const NavBar = () => {
                     </Accordion.Body>
                   </Accordion.Item>
 
+                  {/* Smart watches */}
+
                   <Accordion.Item eventKey="3">
+                    <Accordion.Header>Watches</Accordion.Header>
+                    <Accordion.Body>
+                      <NavDropdown.Item as={Link} to="allwatch">
+                        All Watches
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="malewatch">
+                        Male Watches
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="femalewatch">
+                        Female Watches
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="kidswatch">
+                        Kids Watches
+                      </NavDropdown.Item>
+                    </Accordion.Body>
+                  </Accordion.Item>
+
+                  {/* Keyboards */}
+                  <Accordion.Item eventKey="4">
                     <Accordion.Header>Keyboards</Accordion.Header>
                     <Accordion.Body>
                       <NavDropdown.Item as={Link} to="zebronics_key">
@@ -165,25 +186,7 @@ const NavBar = () => {
                     </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item eventKey="4">
-                    <Accordion.Header>Smart Watches</Accordion.Header>
-                    <Accordion.Body>
-                      <NavDropdown.Item as={Link} to="fastrack">
-                        Fastrack
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="limestone">
-                        Limestone
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="realme">
-                        Realme
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="apple">
-                        Apple
-                      </NavDropdown.Item>
-                    </Accordion.Body>
-                  </Accordion.Item>
-
-                  <Accordion.Item eventKey="">
+                  <Accordion.Item eventKey="5">
                     <Accordion.Header>Remotes</Accordion.Header>
                     <Accordion.Body>
                       <NavDropdown.Item as={Link} to="acertv">

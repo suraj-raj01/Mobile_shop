@@ -66,8 +66,6 @@ const CheckOut = () => {
           <div
             id="checkout-products"
           >
-
-
             <div id="checkout-img">
                 <div id="imgbox">
                   <img
@@ -110,8 +108,8 @@ const CheckOut = () => {
               </div>
 
 
-            <div id="box1" style={{height:'350px', width:'350px'}}>
-              <img src={key.img} id="orgImg" alt="" width="350px" height="350px" onClick={() => {
+            <div id="box1">
+              <img src={key.img} id="orgImg" alt="" width="320px" height="320px" onClick={() => {
                       detail(key.id);
                     }}/>
             </div>

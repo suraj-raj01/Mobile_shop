@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import Accordion from "react-bootstrap/Accordion";
+// import Accordion from "react-bootstrap/Accordion";
 
 const Details = () => {
   const navigate = useNavigate();
@@ -68,9 +68,10 @@ const Details = () => {
               padding: "20px",
               width: "100%",
               alignItems: "center",
+              justifyContent:'space-between'
             }}
           >
-            <div id="box1" style={{ height: "500px", width: "500px" }}>
+            <div id="box1">
               <img
                 id="orgImg"
                 src={key.img}

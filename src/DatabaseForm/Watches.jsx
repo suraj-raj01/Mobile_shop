@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { useNavigate } from "react-router-dom";
-const Mouse = () => {
+const Watches = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState({});
   const handleInput = (e) => {
@@ -13,18 +13,12 @@ const Mouse = () => {
     let value = e.target.value;
     setInput((values) => ({ ...values, [name]: value }));
   };
-  const handleSubmit = () => {
-    if(name==""){
-      message.error("Please fill the input field!!")
-      return false;
-    }
-    else{
+  const handleSubmit = (e) => {
     let url = "http://localhost:3000/products";
     axios.post(url, input).then((res) => {
       message.success("data saved successfully!!");
       console.log(res.data);
     });
-  }
   };
   const gotohome =()=>{
     navigate("/home")
@@ -35,7 +29,7 @@ const Mouse = () => {
   return (
     <>
       <div id="header">
-        <h1>Mouse data insert form</h1>
+        <h1>Watches data insert form</h1>
       </div>
       <div id="dataInsert">
         <Form id="form">
@@ -45,7 +39,7 @@ const Mouse = () => {
             <br />
             <InputGroup className="mb-3">
               <Form.Control
-                placeholder="Mouse name"
+                placeholder="Watches name"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
                 name="name"
@@ -53,10 +47,10 @@ const Mouse = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
-                placeholder="model"
+                placeholder="connectivity"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
-                name="model"
+                name="connectivity"
               />
             </InputGroup>
             <InputGroup className="mb-3">
@@ -96,6 +90,7 @@ const Mouse = () => {
           </div>
 
           <div id="box2">
+            <br />
             <InputGroup className="mb-3">
               <Form.Control
                 placeholder="img1"
@@ -110,6 +105,14 @@ const Mouse = () => {
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
                 name="img2"
+              />
+            </InputGroup>
+            <InputGroup className="mb-3">
+              <Form.Control
+                placeholder="Gender"
+                aria-describedby="basic-addon1"
+                onChange={handleInput}
+                name="gender"
               />
             </InputGroup>
             <InputGroup className="mb-3">
@@ -176,4 +179,4 @@ const Mouse = () => {
     </>
   );
 };
-export default Mouse;
+export default Watches;

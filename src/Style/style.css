@@ -5,6 +5,7 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-transform: capitalize;
 }
 
 button {
@@ -134,10 +135,14 @@ button {
 
 /* Home */
 #home-box1 {
-    width: 25%;
+    width: 30%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px .7px;
+    border-radius: 5px;
+    object-fit: contain;
 }
 
 #home-box1 img {
@@ -147,20 +152,24 @@ button {
 }
 
 #box1 {
-    width: 35%;
+    width: 30%;
+    height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* border: 1px solid; */
+    box-shadow: 0px 0px .7px;
+    border-radius: 5px;
 }
 
 #box1 img {
-    height: 250px;
-    width: 250px;
+    height: 260px;
+    width: 260px;
     object-fit: contain;
 }
 
 #box2 {
-    width: 70%;
+    width: 65%;
     text-transform: capitalize;
 }
 
@@ -170,6 +179,9 @@ button {
 
 #box2 span {
     font-weight: 500;
+}
+#products{
+    justify-content: space-between;
 }
 
 
@@ -185,10 +197,16 @@ button {
 }
 
 #checkout-products #box1 {
+    margin: auto;
+    height: 330px;
+    width: 330px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px 20px;
+}
+#checkout-products #box2{
+    width: 400px;
 }
 
 #checkout-img {
@@ -217,7 +235,7 @@ button {
 
 /* Check out Payment */
 #checkout-payment {
-    width: 320px;
+    width: 340px;
     padding: 20px 25px;
     box-shadow: 0px 0px 1px;
     border-radius: 10px;
@@ -267,13 +285,13 @@ button {
 }
 
 #count {
-    padding: 3px 5px;
+    padding: 1px 5px;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: 800;
     color: #183961;
     box-shadow: 0px 0px 3px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #header {
@@ -459,6 +477,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: none;
 }
 #dataInsert #form #box2{
     width: 270px;
@@ -531,11 +550,121 @@ button {
     justify-content: center;
     cursor: pointer;
     /* background-color: deepskyblue; */
-    color: #183961;
+    color: grey;
     font-size: 20px;
     padding: 10px;
 }
+#updown:hover{
+    /* background-color: ; */
+    color: darkslategray;
+}
 
+/* watch layout */
+#watch_layout{
+        display:grid;
+        grid-template-columns: auto auto;
+        align-items: start;
+        justify-content: start;
+        width:100%;
+        margin:30px auto;
+        font-weight: 600;
+        gap:20px;
+        color:#183961;
+        padding:15px;
+}
+#navigatehero{
+    width:280px;
+    height:900px;
+    margin: 0 auto;
+}
+#navigate{
+    width: 380px;
+    /* height: 1000px; */
+    /* border: 1px solid; */
+    position: sticky;
+    top: 100px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 15px;
+}
+#navigate a{
+    padding: 10px;
+    box-shadow: 0px 0px 2px;
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+}
+#navigate a:hover{
+    background-color: whitesmoke;
+}
+#watch_layout #outlet{
+    width:1200px;
+}
+#watch_layout #outlet b{
+    font-weight: 600;
+}
+
+/* Dashboard */
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75vh;
+    width: 100%;
+}
+#main #box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 20%;
+    height: 60vh;
+    color: #183961;
+    font-weight: bold;
+    box-shadow: 0px 0px 1px;
+    text-transform: lowercase;
+}
+#main #box1 #profile{
+    margin: 10px 0px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0px 0px 2px black;
+    text-transform: lowercase;
+    border-radius: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: #183961;
+    background-color: black;
+}
+#main #box1 #profile #camera{
+    height: 50px;
+    background-color: #80808040;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    display: none;
+    color: #183961;
+    transition: .6s;
+}
+
+#main #box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 60vh;
+}
 
 @media(max-width:600px) {
     #home-product {
@@ -550,6 +679,11 @@ button {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #box1{
+        width: 90%;
+        box-shadow: 0px 0px 2px;
+        border-radius: 5px;
     }
 
     #box2 {
@@ -592,6 +726,7 @@ button {
 
     #checkout-products {
         grid-template-columns: auto;
+        margin: auto;
     }
 
     #checkout-img {
@@ -600,8 +735,11 @@ button {
     }
 
     #checkout-products #box1 {
-        width: 95%;
+        width: 350px;
         margin: auto;
+    }
+    #checkout-products #box2{
+        width: 320px;
     }
 
     #checkout-payment {
@@ -698,6 +836,45 @@ button {
         font-size: 15px;
         padding: 15px;
     }
+    #watch_layout{
+        grid-template-columns: auto;
+    }
+    #navigatehero{
+        height: 300px;
+    }
+    #navigate{
+        position: static;
+        width: 100%;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    #watch_layout #outlet{
+        width: 100%;
+    }
+    /* Dashboard */
+    #main{
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    #main #box1{
+        width: 70%;
+        height: 800px;
+    }
+    #main #box1 #profile{
+        height: 80px;
+        width: 80px;
+    }
+    #main #box2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        text-align: center;
+        height: 500px;
+    }
 }
 
 
@@ -775,4 +952,7 @@ button {
     top: 20px;
     z-index: 10;
     right: 10px;
+}
+#products Button{
+    text-transform: capitalize;
 }

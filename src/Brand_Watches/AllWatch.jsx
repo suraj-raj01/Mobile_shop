@@ -1,13 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Nav } from "react-bootstrap";
 
 
 import { useDispatch } from "react-redux";
 import {addCartData} from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
 
-const Vivo = () => {
+const AllWatch = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [mydata, setMydata] = useState([]);
@@ -21,7 +21,7 @@ const Vivo = () => {
   },[])
   
   const loadData = () => {
-    let api = `http://localhost:3000/products/?brand=Vivo`;
+    let api = `http://localhost:3000/products/?brand=watch`;
     axios.get(api).then((res) => {
       setMydata(res.data);
     });
@@ -53,6 +53,7 @@ const Vivo = () => {
     navigate(`/checkout/${id}`)
 }
   const res = mydata.map((key) => {
+    const rating = Math.floor(Math.random()*1000)+50;
     return (
       <>
         <Container>
@@ -73,11 +74,11 @@ const Vivo = () => {
               <b>{key.description}</b>
               <br />
               <div style={{display:'flex',alignItems:'center',justifyContent:'start',gap:'2px',padding:'10px 0px',color:'goldenrod'}}>
-              <span style={{padding:'1px 10px 0px 0px',fontWeight:'bold',fontSize:'14px',color:'black'}}>4.5</span> 
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
-              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>1,485 ratings</span>
+              <span style={{padding:'1px 10px 0px 0px',fontWeight:'bold',fontSize:'14px',color:'black'}}>3.5</span> 
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+              <span style={{padding:'1px 0px 0px 10px',fontSize:'14px',color:'black',textTransform:'lowercase',color:'#183961'}}>{rating} ratings</span>
               </div>
-              <span>Model : {key.model}</span>
+              <span>Connectivity : {key.connectivity}</span>
               <br />
               <span>Brand : {key.brand}</span>
               <br />
@@ -115,16 +116,21 @@ const Vivo = () => {
   return (
     <>
       <div id="header">
-      <h1>Vivo Products</h1>
+      <h1>All Watches</h1>
       </div>
       {isVisible?(
         <center>
            <img src="https://ima.alfatango.org/images/loader.gif" alt="" height='60px' width='60px'/>
         </center>
+        
       ):(
       <div id="product">{res}</div>
       )}
+      {/* up down */}
+      <div id="updown">
+            <Nav.Link href="#header"><i class="fa-solid fa-angles-up fa-xl"></i></Nav.Link>
+        </div>
     </>
   );
 };
-export default Vivo;
+export default AllWatch;

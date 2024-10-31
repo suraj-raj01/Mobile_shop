@@ -1136,7 +1136,7 @@ const Home = () => {
         )}
       </div>
       <div id="updown">
-            <Nav.Link href="#crousel"><i class="fa-solid fa-circle-up"></i></Nav.Link>
+            <Nav.Link href="#crousel"><i class="fa-solid fa-angles-up fa-xl"></i></Nav.Link>
         </div>
     </>
   );

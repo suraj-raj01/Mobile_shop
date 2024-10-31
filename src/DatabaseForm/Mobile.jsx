@@ -17,17 +17,11 @@ const Mobile = () => {
     setInput((values) => ({ ...values, [name]: value }));
   };
   const handleSubmit = () => {
-    if(name==""){
-      message.error("Please fill the input field!!")
-      return false;
-    }
-    else{
     let url = "http://localhost:3000/products";
     axios.post(url, input).then((res) => {
       message.success("data saved successfully!!");
       console.log(res.data);
     });
-  }
   };
   const gotohome =()=>{
     navigate("/home")
@@ -45,7 +39,7 @@ const Mobile = () => {
           {/* <h3>Database insert Form</h3> */}
           <div id="box1">
             <br />
-            <br />
+            <br /><br />
             <InputGroup className="mb-3">
               <Form.Control
                 placeholder="Mobile name"
@@ -95,7 +89,7 @@ const Mobile = () => {
                 name="img"
               />
             </InputGroup>
-            <br />
+            <br /><br />
           </div>
 
           <div id="box2">

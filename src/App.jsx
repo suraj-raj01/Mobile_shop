@@ -48,7 +48,7 @@ import Laptop from "./DatabaseForm/Laptop"
 import Mobile from "./DatabaseForm/Mobile"
 import TV from "./DatabaseForm/TV"
 import Keyboard from "./DatabaseForm/Keyboard"
-import Mouse from "./DatabaseForm/Mouse"
+import Watches from "./DatabaseForm/Watches"
 import Remote from "./DatabaseForm/Remote"
 import Zebronics_keyboards from "./Brand_Keyboard/Zebronics_keyboard"
 import Logitech from "./Brand_Keyboard/Logitech"
@@ -56,9 +56,11 @@ import Dell_Keyboard from "./Brand_Keyboard/Dell_Keyboard"
 import Portronics from "./Brand_Keyboard/Portronics"
 import Hp_Keyboards from "./Brand_Keyboard/Hp_Keyboard"
 import All_Products from "./Pages/All_Products"
-import Fastrack from "./Smart_Watch/Fastrack"
-import Limestone from "./Smart_Watch/Limestone"
-import Apple from "./Smart_Watch/Apple"
+import AllWatch from "./Brand_Watches/AllWatch"
+import MaleWatch from "./Brand_Watches/MaleWatch"
+import FemaleWatch from "./Brand_Watches/FemaleWatch"
+import KidsWatch from "./Brand_Watches/KidsWatch"
+import Watch_Layout from "./Brand_Watches/Watch_Layout"
 
 
 function App() {
@@ -91,7 +93,7 @@ function App() {
           <Route path="mobiledata" element={<Mobile/>}/>
           <Route path="tvdata" element={<TV/>}/>
           <Route path="keyboarddata" element={<Keyboard/>}/>
-          <Route path="mousedata" element={<Mouse/>}/>
+          <Route path="watchdata" element={<Watches/>}/>
           <Route path="remotedata" element={<Remote/>}/>
         </Route>
         <Route path="realme" element={<Realme/>}/>
@@ -122,7 +124,16 @@ function App() {
         <Route path="samsungtv" element={<SamsungTv/>}/>
         <Route path="lgtv" element={<LgTv/>}/>
 
-        // Keyboards
+        {/*  watches */}
+        <Route path="/"  element={<Watch_Layout/>}>
+        <Route index element={<AllWatch/>}/>
+        <Route path="allwatch" element={<AllWatch/>}/>
+        <Route path="malewatch" element={<MaleWatch/>}/>
+        <Route path="femalewatch" element={<FemaleWatch/>}/>
+        <Route path="kidswatch" element={<KidsWatch/>}/>
+        </Route>
+
+        {/* // Keyboards */}
         <Route path="zebronics_key" element={<Zebronics_keyboards/>}/>
         <Route path="logitech" element={<Logitech/>}/>
         <Route path="dell_key" element={<Dell_Keyboard/>}/>
@@ -136,10 +147,6 @@ function App() {
         <Route path="generatebill" element={<GenerateBill/>}/>
        </Route>
 
-        <Route path="realme"  element={<Realme/>}/> 
-        <Route path="fastrack"  element={<Fastrack/>}/> 
-        <Route path="limestone"  element={<Limestone/>}/> 
-        <Route path="apple"  element={<Apple/>}/> 
      </Routes>
      </BrowserRouter>
     </>

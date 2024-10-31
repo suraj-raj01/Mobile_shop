@@ -65,6 +65,7 @@ const All_Products = () => {
               padding: "20px",
               width: "100%",
               alignItems: "center",
+              justifyContent:'space-between'
             }}
           >
             <div id="box1">
@@ -141,7 +142,7 @@ const All_Products = () => {
       )}
       {/* Up Down page */}
       <div id="updown">
-            <Nav.Link href="#head"><i class="fa-solid fa-circle-up"></i></Nav.Link>
+            <Nav.Link href="#head"><i class="fa-solid fa-angles-up fa-xl"></i></Nav.Link>
         </div>
     </>
   );

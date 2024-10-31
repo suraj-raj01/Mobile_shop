@@ -29,6 +29,7 @@ const Login = () => {
           }
           else if (res.data[0].password == pass) {
             localStorage.setItem("username", res.data[0].name.toUpperCase());
+            localStorage.setItem("usermail",res.data[0].email.toLowerCase());
             message.success(`Welcome ," ${res.data[0].name.toUpperCase()} "`);
             navigate("/dashboard")
           } else {
