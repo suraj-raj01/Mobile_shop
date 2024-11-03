@@ -37,7 +37,7 @@ const NavBar = () => {
             to="home"
             style={{ fontWeight: "bold", color: "#183961" }}
           >
-            Mobileshop
+          MobileShop
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse
