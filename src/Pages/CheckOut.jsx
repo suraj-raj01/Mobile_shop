@@ -57,6 +57,14 @@ const CheckOut = () => {
     let im = document.getElementById("orgImg");
     im.src = img;
   };
+  const showBigImg = (img) =>{
+    let bigImg = document.getElementById("bigimg");
+    bigImg.src = img;
+    document.getElementById("bigimg").style.display="block"
+  }
+  const hideBigImg = () =>{
+    document.getElementById("bigimg").style.display="none"
+  }
 
   const res = mydata.map((key) => {
     const newPrice = key.price - ((key.price * key.discount) / 100).toFixed(0);
@@ -108,7 +116,7 @@ const CheckOut = () => {
               </div>
 
 
-            <div id="box1">
+            <div id="box1" onMouseOver={()=>{showBigImg(key.img)}} onMouseLeave={hideBigImg}>
               <img src={key.img} id="orgImg" alt="" width="320px" height="320px" onClick={() => {
                       detail(key.id);
                     }}/>
@@ -191,6 +199,7 @@ const CheckOut = () => {
           </div>
           <br />
         </Container>
+        <img id="bigimg" src={key.img3} alt="" />
       </>
     );
   });
