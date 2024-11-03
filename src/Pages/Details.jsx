@@ -39,6 +39,7 @@ const Details = () => {
       })
     );
   };
+  
 
   const showImg1 = (img1) => {
     let im = document.getElementById("orgImg");
@@ -52,6 +53,16 @@ const Details = () => {
     let im = document.getElementById("orgImg");
     im.src = img;
   };
+
+  const showBigImg = (img) =>{
+    let bigImg = document.getElementById("bigimg");
+    bigImg.src = img;
+    document.getElementById("bigimg").style.display="block"
+  }
+  const hideBigImg = () =>{
+    document.getElementById("bigimg").style.display="none"
+  }
+
 
   const checkOut = (id) => {
     navigate(`/checkout/${id}`);
@@ -71,7 +82,7 @@ const Details = () => {
               justifyContent:'space-between'
             }}
           >
-            <div id="box1">
+            <div id="box1" onMouseOver={()=>{showBigImg(key.img)}} onMouseLeave={hideBigImg}>
               <img
                 id="orgImg"
                 src={key.img}
@@ -172,6 +183,7 @@ const Details = () => {
           </div>
           <br />
         </Container>
+          <img id="bigimg" src={key.img3} alt="" />
       </>
     );
   });
