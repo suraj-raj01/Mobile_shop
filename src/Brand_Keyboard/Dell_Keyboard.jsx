@@ -116,7 +116,7 @@ const Dell_Keyboard = () => {
   return (
     <>
       <div id="header">
-      <h1>Dell_Keyboard Keyboards</h1>
+      <h1>Dell Keyboards</h1>
       </div>
       {isVisible?(
         <center>
