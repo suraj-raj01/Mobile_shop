@@ -39,10 +39,15 @@ const Dashboard = () => {
   return (
     <>
       <div id="main">
+        {/* logout function */}
         <div id="box1">
+          <div id="logout">
+          <button id="logoutbtn" onClick={logOut}>
+            LogOut
+          </button>
+          </div>
           <div id="profile" onMouseOver={camera} onMouseLeave={camera1}>
             {/* camera iconn */}
-
             <div id="camera">
               <i class="fa-solid fa-camera"></i>
             </div>
@@ -55,7 +60,7 @@ const Dashboard = () => {
               width: "90%",
               margin: "auto",
               // boxShadow:'0px 0px .9px',
-              fontSize: "14px",
+              fontSize: "12px",
               textAlign: "start",
               height: "185px",
               padding: "0px 20px",
@@ -63,12 +68,13 @@ const Dashboard = () => {
               flexDirection: "column",
               borderRadius: "7px",
               gap: "5px",
+              textTransform:'none'
             }}
           >
-            <span style={{ textTransform: "lowercase" }}>
+            <span>
               Email : {usermail}
             </span>
-            <span style={{ textTransform: "lowercase" }}>
+            <span>
               Mobile : {usermobile}
             </span>
           </div>
@@ -113,9 +119,7 @@ const Dashboard = () => {
             </center>{" "}
           </h2>
           <br />
-          <Button variant="outline-primary" onClick={logOut}>
-            logOut
-          </Button>
+          
         </div>
       </div>
     </>
