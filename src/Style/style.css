@@ -275,8 +275,8 @@ button {
 #icons {
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding: 10px 15px;
+    justify-content: center;
+    padding: 10px 0px 0px 20px;
     cursor: pointer;
 }
 
@@ -301,6 +301,9 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
+    /* position: sticky;
+    top: 50px;
+    background-color: white; */
 }
 
 #header h1 {
@@ -628,13 +631,29 @@ button {
     box-shadow: 0px 0px 1px;
     text-transform: lowercase;
 }
+#main #box1 #logout{
+    position: sticky;
+    left: 100%;
+}
+#main #box1 #logout #logoutbtn{
+    font-weight: bold;
+    border: none;
+    background-color: deepskyblue;
+    color: #eaeef0;
+    font-size: 12px;
+    padding: 5px;
+    margin: 1px;
+    box-shadow: 1px 1px 2px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 #main #box1 hr{
     width: 100%;
 }
 #main #box1 #profile{
     margin: 10px 0px;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 75px;
     box-shadow: 0px 0px 2px black;
     text-transform: lowercase;
     border-radius: 50px;
@@ -650,7 +669,7 @@ button {
     /* border: 1px solid; */
 }
 #main #box1 #profile #camera{
-    height: 50px;
+    height: 40px;
     background-color: #80808040;
     width: 100%;
     text-align: center;
@@ -686,6 +705,84 @@ button {
     z-index: 12;
 }
 
+/* Payment method styling */
+#payment_method{
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border: none;
+    box-shadow: 0px 0px 2px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #183961;
+    padding: 20px 0px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+#cards{
+    width: 40%;
+    height: 350px;
+    border: none;
+    box-shadow: 0px 0px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px auto;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: start;
+    padding: 10px;
+}
+#cards ::placeholder{
+    font-size: 13px;
+}
+#cards input{
+    width: 60%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px;
+    border: none;
+    font-weight: 600;
+}
+#cards Button{
+    text-transform: capitalize;
+    font-weight: 500;
+    width: 60%;
+    padding: 8px;
+}
+
+@media(max-width:790px){
+    #home-product {
+        width: 100%;
+    }
+    #products{
+        width: 100%;
+    }
+    .home_products{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #home-box1{
+        width: 40%;
+    }
+    #box1{
+        width: 280px;
+        box-shadow: 0px 0px 1px;
+        border-radius: 5px;
+    }
+
+    #box2 {
+        margin-top: 20px;
+        width: 350px;
+        text-transform: capitalize;
+    }
+}
+
 @media(max-width:600px) {
     #home-product {
         width: 100%;
@@ -702,7 +799,7 @@ button {
     }
     #box1{
         width: 90%;
-        box-shadow: 0px 0px 2px;
+        box-shadow: 0px 0px 1px;
         border-radius: 5px;
     }
 
@@ -769,6 +866,7 @@ button {
 
     #icons {
         padding: 10px 0px;
+        justify-content: start;
     }
 
     #header h1 {
@@ -909,6 +1007,20 @@ button {
         left: 5%;
         /* display: none; */
     }
+    /* Payment method */
+    #payment_method{
+        width: 95%;
+        box-shadow: none;
+    }
+    #cards{
+        width: 95%;
+    }
+    #cards input{
+        width: 90%;
+    }
+    #cards Button{
+        width: 90%;
+    }
 }
 
 
@@ -990,3 +1102,4 @@ button {
 #products Button{
     text-transform: capitalize;
 }
+
