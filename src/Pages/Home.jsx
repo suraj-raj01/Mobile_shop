@@ -255,6 +255,7 @@ const Home = () => {
           <>
             <Container>
               <div
+                class="home_products"
                 id="products"
                 style={{
                   display: "flex",
