@@ -8,8 +8,8 @@ const Watch_Layout = () =>{
         <div id="navigatehero">
         <span id="navigate" >
         <Nav.Link as={Link} to="allwatch">All Watches</Nav.Link>
-        <Nav.Link as={Link} to="malewatch">Male Watches</Nav.Link>
-        <Nav.Link as={Link} to="femalewatch">Female Watches</Nav.Link>
+        <Nav.Link as={Link} to="malewatch">Men Watches</Nav.Link>
+        <Nav.Link as={Link} to="femalewatch">Women Watches</Nav.Link>
         <Nav.Link as={Link} to="kidswatch">Kids Watches</Nav.Link>
         </span>
         </div>
