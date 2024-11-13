@@ -143,7 +143,7 @@ function App() {
         <Route path="login" element={<Login/>}/>
         <Route path="register" element={<Register/>}/>
         <Route path="dashboard" element={<Dashboard/>}/>
-        <Route path="payments" element={<Payment/>}/>
+        <Route path="payments/:payopt" element={<Payment/>}/>
         <Route path="generatebill" element={<GenerateBill/>}/>
        </Route>
 
