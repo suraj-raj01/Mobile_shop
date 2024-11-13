@@ -172,7 +172,7 @@ const FemaleWatch = () => {
   return (
     <>
       <div id="header">
-        <h1>Female Watches</h1>
+        <h1>Women Watches</h1>
       </div>
       {isVisible ? (
         <center>
