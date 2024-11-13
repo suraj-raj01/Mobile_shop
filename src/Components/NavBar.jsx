@@ -231,7 +231,7 @@ const NavBar = () => {
             </Form>
             <div id="icons">
               <span onClick={myCart}>
-                <MDBIcon color="#183961" fas icon="shopping-cart" />
+                <MDBIcon fas icon="shopping-cart" style={{color:'#183961'}}/>
                 <sup id="count">{dataCount}</sup>
               </span>
               <span onClick={login}>
