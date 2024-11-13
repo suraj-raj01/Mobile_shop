@@ -173,7 +173,7 @@ const MaleWatch = () => {
   return (
     <>
       <div id="header">
-        <h1>Male Watches</h1>
+        <h1>Men Watches</h1>
       </div>
       {isVisible ? (
         <center>
