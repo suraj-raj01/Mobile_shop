@@ -19,12 +19,18 @@ button {
     z-index: 10;
     background-color: white;
 }
+#navbar .container{
+    background-color: white;
+}
 
 /* navbar  */
 .navbar-toggler span {
     background-color: white;
     color: #183961;
     padding: 0;
+}
+.navbar-toggler span:focus{
+    outline: none;
 }
 
 .navbar-toggler-icon {
@@ -754,6 +760,9 @@ button {
     width: 60%;
     padding: 8px;
 }
+#cards Select{
+    width: 60%;
+}
 
 @media(max-width:790px){
     #home-product {
@@ -1019,6 +1028,9 @@ button {
         width: 90%;
     }
     #cards Button{
+        width: 90%;
+    }
+    #cards Select{
         width: 90%;
     }
 }
