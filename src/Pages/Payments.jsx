@@ -9,7 +9,7 @@ const Payment = () => {
       <>
         <br />
         <div id="payment_method">
-          <p>Paymennt Option {payopt} Card</p>
+          <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'capitalize'}}>{payopt}</span> Card</p>
           <Form>
             <div id="cards">
               <input type="text" placeholder="Name on Card" />
@@ -29,7 +29,7 @@ const Payment = () => {
       <>
         <br />
         <div id="payment_method">
-          <p>Paymennt Option {payopt}</p>
+          <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'capitalize'}}>{payopt}</span></p>
           <Form>
             <div id="cards">
               <Form.Select>
@@ -61,7 +61,18 @@ const Payment = () => {
       <>
         <br />
         <div id="payment_method">
-          <p>Paymennt Option {payopt}</p>
+          <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'uppercase'}}>{payopt} </span>Apps</p>
+          <Form>
+            <div id="cards">
+              <div id="box"><input type="radio" name="upi"/><i class="fab fa-google-pay"></i></div>
+              <div id="box"><input type="radio" name="upi"/><img src="https://cdn.worldvectorlogo.com/logos/phonepe-1.svg" alt="paytm" height="15px" /></div>
+              <div id="box"><input type="radio" name="upi"/><i class="fab fa-paypal"></i></div>
+              <div id="box"><input type="radio" name="upi"/><i class="fab fa-amazon-pay"></i></div>
+              <div id="box"><input type="radio" name="upi"/><i class="fab fa-apple-pay"></i></div>
+              <div id="box"><input type="radio" name="upi"/><img src="https://cdn.iconscout.com/icon/free/png-256/free-paytm-logo-icon-download-in-svg-png-gif-file-formats--online-payment-brand-logos-pack-icons-226448.png?f=webp&w=256" alt="paytm" height="30px" /></div>
+              <Button variant="outline-primary">Conform</Button>
+            </div>
+          </Form>
         </div>
         <br />
       </>
@@ -72,7 +83,7 @@ const Payment = () => {
       <>
         <br />
         <div id="payment_method">
-          <p>Paymennt Option {payopt}</p>
+          <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'uppercase'}}>{payopt} </span></p>
         </div>
         <br />
       </>
