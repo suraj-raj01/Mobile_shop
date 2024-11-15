@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate } from "react-router-dom";
 import CustomerReview from "../Components/CustomerReview";
-import Colors from "../Components/Colors";
+// import Colors from "../Components/Colors";
 import Accordion from "react-bootstrap/Accordion";
 
 const Home = () => {
