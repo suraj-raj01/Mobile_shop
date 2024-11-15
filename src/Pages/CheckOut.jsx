@@ -46,21 +46,36 @@ const CheckOut = () => {
     );
   };
 
+  const [showimage,setShowImage]  = useState(0);
   const showImg1 = (img1) => {
     let im = document.getElementById("orgImg");
     im.src = img1;
+    setShowImage(1);
   };
   const showImg2 = (img2) => {
     let im = document.getElementById("orgImg");
     im.src = img2;
+    setShowImage(2);
   };
   const showImg3 = (img) => {
     let im = document.getElementById("orgImg");
     im.src = img;
+    setShowImage(3);
   };
-  const showBigImg = (img) => {
+  const showBigImg = (img1,img2,img) => {
     let bigImg = document.getElementById("bigimg");
-    bigImg.src = img;
+    if(showimage==1){
+      bigImg.src = img1;
+    }
+    else if(showimage==2){
+      bigImg.src = img2;
+    }
+    else if(showimage==3){
+      bigImg.src = img;
+    }
+    else{
+      bigImg.src = img;
+    }
     document.getElementById("bigimg").style.display = "block";
   };
   const hideBigImg = () => {
@@ -117,7 +132,7 @@ const CheckOut = () => {
             <div
               id="box1"
               onMouseOver={() => {
-                showBigImg(key.img);
+                showBigImg(key.img1,key.img2,key.img);
               }}
               onMouseLeave={hideBigImg}
             >
