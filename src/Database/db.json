@@ -723,6 +723,8 @@
       "price": 38990,
       "description": "(Refurbished) Lenovo ThinkPad 5th Gen Intel Core i5 Thin & Light HD Laptop (8 GB RAM/256 GB SSD/14 (35.6 cm) HD/Windows 10 Pro/MS Office/WiFi/Webcam/Intel Graphics), Black ",
       "img": "https://m.media-amazon.com/images/I/617Ykb5YvLL._SL1300_.jpg",
+      "img1": "https://m.media-amazon.com/images/I/41ewWWNJVjL._SL1000_.jpg",
+      "img2": "https://m.media-amazon.com/images/I/51qmrz+UVqL._SL1380_.jpg",
       "discount": 10,
       "offer": "yes",
       "premium": "yes"
@@ -796,6 +798,8 @@
       "price": 16560,
       "description": "(Refurbished) Lenovo ThinkPad 8th Gen Intel Core i5 Thin & Light HD Laptop (8 GB DDR4 RAM/256 GB SSD/14 (35.6 cm) HD/Windows 11/MS Office/WiFi/Webcam/Intel Graphics)  ",
       "img": "https://m.media-amazon.com/images/I/51W7yr0NrIL._SL1300_.jpg",
+      "img1": "https://m.media-amazon.com/images/I/31NMkFxrAhL._SL1000_.jpg",
+      "img2": "https://m.media-amazon.com/images/I/21047y+tcRS.jpg",
       "discount": 20,
       "offer": "yes"
     },
@@ -844,6 +848,8 @@
       "price": 93990,
       "description": " Apple 2022 MacBook Air Laptop with M2 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone/iPad; Space Grey ",
       "img": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._SL1500_.jpg",
+      "img1": "https://m.media-amazon.com/images/I/610TpF8jQyL._SL1500_.jpg",
+      "img2": "https://m.media-amazon.com/images/I/81v8DvchdSL._SL1500_.jpg",
       "discount": 0,
       "offer": "no"
     },
@@ -856,6 +862,8 @@
       "price": 127990,
       "description": "Apple 2024 MacBook Air 13 Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 8GB Unified Memory, 512GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Midnight  ",
       "img": "https://m.media-amazon.com/images/I/71-D1xCuVwL._SL1500_.jpg",
+      "img1": "https://m.media-amazon.com/images/I/61S2t5yhVSL._SL1500_.jpg",
+      "img2": "https://m.media-amazon.com/images/I/61LbQpnFNvL._SL1500_.jpg",
       "discount": 40,
       "offer": "yes"
     },
