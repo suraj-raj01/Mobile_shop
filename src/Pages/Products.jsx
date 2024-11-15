@@ -20,7 +20,7 @@ const Products = () =>{
         color:'#183961'
         }}>
       <Nav.Link as={Link} to="allproducts">All Products</Nav.Link> |
-      <Nav.Link as={Link} to="premiumproducts"><i class="fa-brands fa-square-web-awesome"></i> Premium  </Nav.Link>
+      <Nav.Link as={Link} to="premiumproducts"><i class="fa-brands fa-square-web-awesome"></i> Premium  Products</Nav.Link>
       </div>
       <hr />
     <div>
