@@ -13,12 +13,19 @@ const Laptop = () => {
     let value = e.target.value;
     setInput((values) => ({ ...values, [name]: value }));
   };
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(e.target.name==""){
+      message.error("Please fill the input fields!!");
+      return false;
+    }
+    else{
     let url = "http://localhost:3000/products";
     axios.post(url, input).then((res) => {
       message.success("data saved successfully!!");
       console.log(res.data);
     });
+  }
   };
   const gotohome =()=>{
     navigate("/home")
