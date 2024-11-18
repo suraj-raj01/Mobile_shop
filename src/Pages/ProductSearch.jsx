@@ -5,6 +5,7 @@ import { Button, Container } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { addCartData } from "../addToCartSlice";
 import { useNavigate, useParams } from "react-router-dom";
+import { message } from "antd";
 
 const ProductSearch = () => {
   const navigate = useNavigate();
@@ -118,7 +119,6 @@ const ProductSearch = () => {
       );
     }
   });
-
   return (
     <>
       <div id="header">
