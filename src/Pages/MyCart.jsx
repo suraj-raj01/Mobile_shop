@@ -9,9 +9,9 @@ const MyCart = () => {
   const dispatch = useDispatch();
   const Data = useSelector((state) => state.addCart.cart);
 
-  const billgenerate =() =>{
-    navigate("/generatebill")
-  }
+  const billgenerate = () => {
+    navigate("/generatebill");
+  };
 
   const inc = (id) => {
     dispatch(qntinc({ id: id }));
@@ -85,11 +85,10 @@ const MyCart = () => {
               <div id="update">
                 <div id="inc-dec">
                   <span>
-                    Price : {key.price * key.qnty}
+                    Total : {key.price * key.qnty}
                     {".00 ₹"}
                   </span>{" "}
                   <span id="qnt">Quantity : {key.qnty}</span>{" "}
-                 
                   <button
                     onClick={() => {
                       dec(key.id);
@@ -104,16 +103,24 @@ const MyCart = () => {
                   >
                     +
                   </button>
-                  <img
-                    src="https://th.bing.com/th/id/OIP.27oo8k0H9LFKrOL9HQ7EQQHaHa?rs=1&pid=ImgDetMain"
+                  <button
                     onClick={() => {
                       delData(key.id);
                     }}
                     alt=""
                     height="30px"
-                    style={{ marginLeft: "15px", cursor: "pointer" }}
-                  />
-                 
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "16px",
+                      border: "1px solid",
+                      border: "none",
+                      boxShadow: "0px 0px 1px",
+                      borderRadius: "2px",
+                      color:'#183961'
+                    }}
+                  >
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -127,11 +134,12 @@ const MyCart = () => {
   return (
     <>
       <div id="header">
-      <h1>My Carts</h1>
+        <h1>My Carts</h1>
       </div>
       <div id="product">{res}</div>
       <div id="grandTotal">
-        Grand Total : {grandTotal}{".00 ₹"}
+        Grand Total : {grandTotal}
+        {".00 ₹"}
         <button onClick={billgenerate}>Generete Bill</button>
       </div>
       <br />
