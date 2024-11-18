@@ -18,13 +18,19 @@ const Register = () => {
     }
 
 
-    const handleSubmit = () =>{
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        if(e.target.name==""){
+          message.error("Please fill the input fields !!")
+          return false;
+        }else{
         let url = "http://localhost:3000/login";
         axios.post(url,input).then((res)=>{
           message.success("registration successfully!!");
           console.log(res.data);
           navigate("/login");
         })
+      }
     }
   return (
     <>
