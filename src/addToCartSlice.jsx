@@ -38,7 +38,8 @@ const addToCartSlice = createSlice({
                 {
                     if(state.cart[i].qnty<=1)
                     {
-                        message.error("Item can't be less than 1")
+                        state.cart = state.cart.filter(item=>item.id!=action.payload.id);
+                        message.success("Item Successfully removed!!")
                     }
                     else{
                     state.cart[i].qnty--;
