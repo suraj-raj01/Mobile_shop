@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { message } from "antd";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -20,7 +21,13 @@ const NavBar = () => {
 
   const [searchData, setSearchData] = useState("");
   const handleSearch = () => {
+    if(searchData==""){
+      message.error("please enter product name !!");
+      document.getElementById("searching").focus();
+      return false;
+    }else{
     navigate(`/productsearch/${searchData}`);
+    }
   };
   const myCart = () => {
     navigate("/mycart");
@@ -220,6 +227,7 @@ const NavBar = () => {
                 placeholder="Search . . ."
                 className="me-2"
                 aria-label="Search"
+                id="searching"
                 value={searchData}
                 onChange={(e) => {
                   setSearchData(e.target.value);
