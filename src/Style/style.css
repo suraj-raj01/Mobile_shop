@@ -531,7 +531,7 @@ button {
     text-align: center;
 }
 #add_data a{
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: 0px 0px 2px;
     border-radius: 25px;
     width: 180px;
@@ -540,9 +540,9 @@ button {
     padding: 8px 15px;
     color: #183961;
 }
-#add_data a:hover{
-    color: #183961;
-    background-color: white;
+#add_data a:focus{
+    background-color: #183961;
+    color: white;
     box-shadow: 0px 0px 2px;
 }
 
@@ -554,20 +554,21 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    box-shadow: 0px 0px 2px;
+    box-shadow: 1px 1px 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     /* background-color: deepskyblue; */
-    color: lightsalmon;
+    color: #18396193;
     font-size: 20px;
     padding: 10px;
 }
 #updown:hover{
     /* background-color: ; */
-    color: red;
+    color: #183961;
 }
+
 
 /* watch layout */
 #watch_layout{
@@ -607,8 +608,9 @@ button {
     border-radius: 25px;
     text-align: center;
 }
-#navigate a:hover{
-    background-color: whitesmoke;
+#navigate a:focus{
+    background-color: #183961;
+    color: white;
 }
 #watch_layout #outlet{
     width:1200px;
@@ -1052,6 +1054,10 @@ button {
     #cards Select{
         width: 90%;
     }
+    /* data not found */
+    /* #data_notfound img{
+        height: 250px;
+    } */
 }
 
 
@@ -1134,3 +1140,22 @@ button {
     text-transform: capitalize;
 }
 
+/* Product layout */
+#product_lyt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#product_lyt a{
+    padding: 10px 20px;
+    box-shadow: 0px 0px 3px;
+    background-color: #183961;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#product_lyt a:focus{
+    background-color: white;
+    color: #183961;
+}
