@@ -36,7 +36,7 @@ import Dashboard from "./Pages/Dashboard"
 import Payment from "./Pages/Payments"
 import Services from "./Pages/Services"
 import Premium from "./Pages/Premium"
-import GenerateBill from "./Pages/GenerateBill";
+// import GenerateBill from "./Pages/GenerateBill";
 
 // brands tv
 import AcerTv from "./Brand_Tv/AcerTv"
@@ -61,6 +61,7 @@ import MaleWatch from "./Brand_Watches/MaleWatch"
 import FemaleWatch from "./Brand_Watches/FemaleWatch"
 import KidsWatch from "./Brand_Watches/KidsWatch"
 import Watch_Layout from "./Brand_Watches/Watch_Layout"
+import BillCheckout from "./Pages/BillCheckout"
 
 
 function App() {
@@ -144,7 +145,8 @@ function App() {
         <Route path="register" element={<Register/>}/>
         <Route path="dashboard" element={<Dashboard/>}/>
         <Route path="payments/:payopt" element={<Payment/>}/>
-        <Route path="generatebill" element={<GenerateBill/>}/>
+        {/* <Route path="generatebill" element={<GenerateBill/>}/> */}
+        <Route path="billcheckout/:total" element={<BillCheckout/>}/>
        </Route>
 
      </Routes>
