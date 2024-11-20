@@ -117,7 +117,8 @@ const Home = () => {
                     fontSize: "14px",
                     color: "black",
                     textTransform: "lowercase",
-                    color: "#183961",
+                    color: "#000",
+                    fontWeight:'600'
                   }}
                 >
                   {rating} ratings

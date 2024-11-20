@@ -9,9 +9,12 @@ const MyCart = () => {
   const dispatch = useDispatch();
   const Data = useSelector((state) => state.addCart.cart);
 
-  const billgenerate = () => {
-    navigate("/generatebill");
-  };
+  // const billgenerate = () => {
+  //   navigate("/generatebill");
+  // };
+  const BillCheckout = (total) =>{
+    navigate(`/billcheckout/${total}`)
+  }
 
   const inc = (id) => {
     dispatch(qntinc({ id: id }));
@@ -24,19 +27,6 @@ const MyCart = () => {
   };
   const detail = (id) => {
     navigate(`/details/${id}`);
-  };
-
-  const showImg1 = (img1) => {
-    let im = document.getElementById("orgImg");
-    im.src = img1;
-  };
-  const showImg2 = (img2) => {
-    let im = document.getElementById("orgImg");
-    im.src = img2;
-  };
-  const showImg3 = (img) => {
-    let im = document.getElementById("orgImg");
-    im.src = img;
   };
 
   let grandTotal = 0;
@@ -140,7 +130,8 @@ const MyCart = () => {
       <div id="grandTotal">
         Grand Total : {grandTotal}
         {".00 ₹"}
-        <button onClick={billgenerate}>Generete Bill</button>
+        {/* <button onClick={billgenerate}>Generete Bill</button> */}
+        <button onClick={()=>{BillCheckout(grandTotal)}}>Checkout Bill</button>
       </div>
       <br />
     </>
