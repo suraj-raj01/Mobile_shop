@@ -165,6 +165,7 @@ const CheckOut = () => {
               <br />
               <br />
               <Button
+                style={{textTransform:'capitalize'}}
                 variant="outline-primary"
                 onClick={() => {
                   addDataToCart(
