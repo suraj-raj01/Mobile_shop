@@ -13,11 +13,14 @@ button {
 }
 
 #navbar {
-    height: 10vh;
+    height: 11vh;
     position: sticky;
     top: 0;
     z-index: 10;
     background-color: white;
+}
+#navbar a{
+    font-weight: 500;
 }
 #navbar .container{
     background-color: white;
@@ -130,9 +133,14 @@ button {
 }
 
 #crousel {
-    width: 99%;
+    width: 100%;
     margin: auto;
     padding: 20px 0px;
+}
+#items{
+    width: 100%;
+    /* background-color: #EEEEEE; */
+    margin-top: -20px;
 }
 
 #content {
@@ -511,7 +519,7 @@ button {
 #add_data_hero{
     display: grid;
     grid-template-columns: auto auto;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
 }
 #add_data{
@@ -525,13 +533,13 @@ button {
     height: 410px;
     font-weight: 500;
     color: #183961;
-    margin: 10px auto;
+    margin: 80px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 1px;
     text-align: center;
 }
 #add_data a{
-    background-color: white;
+    background-color: #EEEEEE;
     box-shadow: 0px 0px 2px;
     border-radius: 25px;
     width: 180px;
@@ -542,7 +550,7 @@ button {
 }
 #add_data a:focus{
     background-color: #183961;
-    color: white;
+    color: #EEEEEE;
     box-shadow: 0px 0px 2px;
 }
 
@@ -708,7 +716,8 @@ button {
     object-fit: contain;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 2px 2px 15px #80808040;
     display: none;
     z-index: 12;
 }
@@ -783,6 +792,122 @@ button {
 #cards #box i{
     font-size: 22px;
     font-weight: bold;
+}
+/* Home cards */
+#home_cards{
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid; */
+    height: 50vh;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    gap: 10px;
+    background-color: #EEEEEE;
+}
+#home_cards::-webkit-scrollbar{
+    display: none;
+}
+#home_cards #card{
+    height: 35vh;
+    width: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("https://phonefinder.co.za/api/v1/serve-image/upload/aa7d4e70-ebcb-11ec-81ec-05026fc906cd/article-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#home_cards h3{
+    padding: 10px;
+    font-weight: 500;
+    color: #183961;
+    text-shadow: 0px 0px 2px ;
+}
+#home_cards button{
+    color: #183961;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0px 0px 1px;
+}
+#home_cards button:hover{
+    background-color: #183961;
+    color: #fff;
+}
+#home_cards #card1{
+    height: 35vh;
+    width: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW1j4vi?ver=2227");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#home_cards #card2{
+    height: 35vh;
+    width: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("https://karbonn.in/wp-content/uploads/2023/02/img-smart-tv-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#home_cards #card3{
+    height: 35vh;
+    width: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("https://antesports.com/wp-content/uploads/2023/04/KM500W_Listing__1_-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* for mini laptop */
+@media(max-width:1024px){
+    #navbar{
+        height: 12vh;
+    }
+    #navbar a{
+        font-size: 12px;
+    }
+    #bigimg{
+        height: 380px;
+        width: 380px;
+        position: fixed ;
+        top: 120px;
+        right: 45%;
+    }
+    #checkout-products {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #checkout-products #box1{
+        margin-bottom: 40px;
+    }
 }
 
 @media(max-width:790px){
