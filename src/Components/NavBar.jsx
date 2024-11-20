@@ -27,7 +27,8 @@ const NavBar = () => {
       return false;
     }else{
     navigate(`/productsearch/${searchData}`);
-    }
+    setSearchData("")
+  }
   };
   const myCart = () => {
     navigate("/mycart");
