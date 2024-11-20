@@ -20,17 +20,17 @@ const Register = () => {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if(e.target.name==""){
-          message.error("Please fill the input fields !!")
-          return false;
-        }else{
+        // if(e.target.name==""){
+        //   message.error("Please fill the input fields !!")
+        //   return false;
+        // }else{
         let url = "http://localhost:3000/login";
         axios.post(url,input).then((res)=>{
           message.success("registration successfully!!");
           console.log(res.data);
           navigate("/login");
         })
-      }
+      // }
     }
   return (
     <>
@@ -49,6 +49,7 @@ const Register = () => {
           aria-describedby="basic-addon1"
           onChange={handleInput}
           name="name"
+          required
         />
       </InputGroup>
       <InputGroup className="mb-3">
@@ -58,6 +59,7 @@ const Register = () => {
           aria-describedby="basic-addon1"
           onChange={handleInput}
           name="email"
+          required
         />
       </InputGroup>
       <InputGroup className="mb-3">
@@ -67,6 +69,7 @@ const Register = () => {
           aria-describedby="basic-addon1"
           onChange={handleInput}
           name="phone"
+          required
         />
       </InputGroup>
       <InputGroup className="mb-3">
@@ -77,6 +80,7 @@ const Register = () => {
           aria-describedby="basic-addon1"
           onChange={handleInput}
           name="password"
+          required
         />
       </InputGroup>
 
