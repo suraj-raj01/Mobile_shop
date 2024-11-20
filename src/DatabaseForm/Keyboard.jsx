@@ -19,6 +19,7 @@ const Keyboard = () => {
       message.success("data saved successfully!!");
       console.log(res.data);
       navigate("/adddata");
+      setInput("");
     });
   };
   const gotohome =()=>{
@@ -40,6 +41,7 @@ const Keyboard = () => {
             <br />
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="Keyboard name"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -48,6 +50,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="brand"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -56,6 +59,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="Model"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -64,6 +68,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 type="number"
                 placeholder="price"
                 aria-describedby="basic-addon1"
@@ -73,6 +78,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="img"
                 aria-describedby="basic-addon1"
                   onChange={handleInput}
@@ -81,6 +87,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="img1"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -93,6 +100,7 @@ const Keyboard = () => {
           <div id="box2">
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="img2"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -101,6 +109,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="Connectivity"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -109,6 +118,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="description"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -117,6 +127,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="offers"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -125,6 +136,7 @@ const Keyboard = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+                required
                 placeholder="discount"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}

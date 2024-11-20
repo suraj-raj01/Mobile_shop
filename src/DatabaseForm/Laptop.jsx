@@ -15,17 +15,11 @@ const Laptop = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(e.target.name==""){
-      message.error("Please fill the input fields!!");
-      return false;
-    }
-    else{
     let url = "http://localhost:3000/products";
     axios.post(url, input).then((res) => {
       message.success("data saved successfully!!");
       console.log(res.data);
     });
-  }
   };
   const gotohome =()=>{
     navigate("/home")
@@ -46,6 +40,7 @@ const Laptop = () => {
             <br />
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="Laptop name"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -54,6 +49,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="model"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -62,6 +58,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="brand"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -70,6 +67,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="OS"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -78,6 +76,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                type="number"
                 placeholder="price"
                 aria-describedby="basic-addon1"
@@ -87,6 +86,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="img"
                 aria-describedby="basic-addon1"
                   onChange={handleInput}
@@ -99,6 +99,7 @@ const Laptop = () => {
           <div id="box2">
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="img1"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -107,6 +108,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="img2"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -115,6 +117,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="description"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -123,6 +126,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="offers"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
@@ -131,6 +135,7 @@ const Laptop = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
+              required
                 placeholder="discount"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
