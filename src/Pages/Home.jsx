@@ -32,6 +32,10 @@ const Home = () => {
     loadData();
   }, []);
 
+  const checkout = (id) =>{
+    navigate(`/checkout/${id}`)
+  }
+
   const addDataToCart = (id, name, model, brand, OS, price, img, desc) => {
     dispatch(
       addCartData({
@@ -240,6 +244,9 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
+                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
                 </div>
               </div>
               <br />
@@ -309,6 +316,9 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
+                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
                 </div>
               </div>
               <br />
@@ -376,6 +386,9 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
+                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
                 </div>
               </div>
               <br />
@@ -444,6 +457,9 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
+                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
                 </div>
               </div>
               <br />
@@ -512,6 +528,9 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
+                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
                 </div>
               </div>
               <br />
@@ -580,6 +599,9 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
+                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
                 </div>
               </div>
               <br />
@@ -647,6 +669,9 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
+                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
                 </div>
               </div>
               <br />
@@ -784,9 +809,27 @@ const Home = () => {
       </div>
       <div id="items">
         <h4>
-        "Welcome To Mobileshop.com" Buy Mobiles, Laptops, TV and many Mores . . .<br/> Online | Best Prices, Top Brands Premium Mobiles, Laptops, TV and many more | Gaming, Business, & More Discover Your Perfect Products
+        "Welcome To Mobileshop.com" Buy Mobiles, Laptops, TV and many Mores . . .<br/> Online | Best Prices, Top Brands Premium Mobiles, Laptops, TV and many more | Gaming, Business, & More Discover Your Perfect Products.
         </h4>
       </div>
+      {/* <div id="home_cards">
+        <div id="card">
+          <h3>Mobile Products</h3>
+          <button>See Mobiles</button>
+        </div>
+        <div id="card1">
+        <h3>Laptop Products</h3>
+        <button>See Laptops</button>
+        </div>
+        <div id="card2">
+        <h3>Tv Products</h3>
+        <button>See Tv</button>
+        </div>
+        <div id="card3">
+        <h3>Keyboard Products</h3>
+        <button>See Keyboards</button>
+        </div>
+      </div> */}
       <div id="homepage">
         <div id="search-opt">
           <Accordion defaultActiveKey="0">
