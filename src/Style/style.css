@@ -886,6 +886,87 @@ button {
     background-size: contain;
 }
 
+/*********BillCheckout************/
+#billcheckout{
+    width: 90%;
+    margin: auto;
+}
+#billcheckout th{
+    background-color: #18396193;
+    font-weight: bold;
+    color: white;
+    padding: 15px 10px;
+}
+#billcheckout #desc{
+    width: 50%;
+    font-weight: normal;
+}
+#billcheckout #price{
+    width: 20%;
+}
+#billcheckout td{
+    align-content: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* checkout form */
+#checkout_form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    /* height: 50vh; */
+}
+#checkout_form #shiped{
+    width: 40%;
+    /* background-color: red; */
+}
+#checkout_form #shiped button{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: white;
+    color: #183961;
+}
+#checkout_form #shiped button:hover{
+    background-color: #183961;
+    color: white;
+}
+#checkout_form #shiped Form{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+#checkout_form #shiped Form input{
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 1.2px;
+}
+#checkout_form #payment{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+#checkout_form #payment input{
+    height: 20px;
+    width: 20px;
+}
+#checkout_form #payment div{
+    width: 70%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
 /* for mini laptop */
 @media(max-width:1024px){
     #navbar{
@@ -911,6 +992,9 @@ button {
 }
 
 @media(max-width:790px){
+    #navbar{
+        height: 10vh;
+    }
     #home-product {
         width: 100%;
     }
@@ -939,6 +1023,9 @@ button {
 }
 
 @media(max-width:600px) {
+    #navbar{
+        height: 8vh;
+    }
     #home-product {
         width: 100%;
     }
