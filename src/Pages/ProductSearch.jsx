@@ -17,7 +17,7 @@ const ProductSearch = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1200);
     setIsLoading(true);
   }, [txtdata]);
 
@@ -50,6 +50,12 @@ const ProductSearch = () => {
   const detail = (id) => {
     navigate(`/details/${id}`);
   };
+
+  // Go to checkout page
+  const checkout = (id) =>{
+    navigate(`/checkout/${id}`)
+  }
+
   let count = 0;
   const res = mydata.map((key) => {
     const status = key.name.toLowerCase().includes(txtdata.toLowerCase());
@@ -111,6 +117,7 @@ const ProductSearch = () => {
                 >
                   Add to Cart
                 </Button>
+                <Button variant="outline-primary" style={{marginLeft:'10px'}} onClick={()=>{checkout(key.id)}}>By Now</Button>
               </div>
             </div>
             <br />
