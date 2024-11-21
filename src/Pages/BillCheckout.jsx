@@ -1,3 +1,4 @@
+import { message } from 'antd';
 import React, { useState } from 'react'
 import { Form, Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
@@ -14,16 +15,24 @@ const BillCheckout = () => {
 
   let result;
   if(payment.includes("upi")){
-    result = "UPI Payments"
+    result = <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/UPI_logo.svg/800px-UPI_logo.svg.png" alt="" height="100vh"/>
   }
-  if(payment.includes("debit")){
-    result = "Debit Card"
+  else if(payment.includes("debit")){
+    result = <img src="https://www.shutterstock.com/image-vector/set-credit-cards-vector-mockups-600nw-1924406663.jpg" alt="" height="150px"/>
   }
-  if(payment.includes("cash")){
-    result = "Cash on Delivery"
+  else if(payment.includes("cash")){
+    result = <img src="https://t4.ftcdn.net/jpg/08/40/17/79/360_F_840177909_VwMN47Mxk87ecEaEYH6eNlmN3jkbBiqo.jpg" alt="" height="180px"/>
   }
-  if(payment.includes("netbank")){
-    result = "Net Banking"
+  else if(payment.includes("netbank")){
+    result = <img src="https://img.freepik.com/free-vector/online-banking-concept-illustration_114360-12875.jpg" alt="" height="180px"/>
+  }
+  else{
+    result = <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/UPI_logo.svg/800px-UPI_logo.svg.png" alt="" height="100vh"/>
+  }
+
+  // Order success
+  const orderSuccess = () =>{
+    message.success("Your order will arrive in 3-4 working days")
   }
 
   const res = myData.map((key)=>{
@@ -62,15 +71,14 @@ const BillCheckout = () => {
         justifyContent:'end',
         width:'90%',
         margin:'auto',
-        fontWeight:'bold',
         padding:'20px 0px',
         color:'#183961'
       }}
-      ><h3>Total Bill : {total}{".00 ₹"}</h3></div>
+      ><h2 style={{fontWeight:'bold'}}>Total Bill : {total}{".00 ₹"}</h2></div>
       <br />
       <div id="checkout_form">
             <div id="shiped">
-                <h3 style={{fontWeight:'bold',padding:'10px 0px',color:'#183961'}}>Shifting Address</h3>
+                <h3 style={{fontWeight:'bold',padding:'10px 0px',color:'#183961'}}>Shipping Address</h3><br />
                 <Form>
                     <input type="text" placeholder='Name' />
                     <input type="text" placeholder='Mobile Number' />
@@ -83,7 +91,7 @@ const BillCheckout = () => {
                     <input type="text" placeholder='House Name / Number' />
                 </Form>
                 <br />
-                <button>Submit</button>
+                <button onClick={orderSuccess}>Submit</button>
             </div>
             <div id="payment">
             <h3 style={{fontWeight:'bold',padding:'10px 0px',color:'#183961'}}>Payment Methods</h3>
@@ -93,7 +101,7 @@ const BillCheckout = () => {
             <div><input type="radio" name='payment' onChange={handleInput} value="netbank"/> Internet Banking</div>
             <div><input type="radio" name='payment' onChange={handleInput} value="cash"/> Cash on Delivery</div>
             <hr />
-            <div style={{backgroundColor:'#183961',height:'30vh',color:'white',fontSize:'40px'}}>
+            <div id='result'>
                 {result}
             </div>
             </div>
