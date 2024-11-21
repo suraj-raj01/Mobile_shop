@@ -1,9 +1,15 @@
+import { message } from "antd";
 import { Button, Form } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 const Payment = () => {
   const { payopt } = useParams();
   console.log(payopt);
+
+  const order = () =>{
+    message.success("Your order will arive in 4-5 working days")
+  }
+
   if (payopt.includes("debit")) {
     return (
       <>
@@ -12,11 +18,11 @@ const Payment = () => {
           <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'capitalize'}}>{payopt}</span> Card</p>
           <Form>
             <div id="cards">
-              <input type="text" placeholder="Name on Card" />
-              <input type="text" placeholder="Debit / Credit Card Number" />
-              <input type="text" placeholder="Expiration" />
-              <input type="text" placeholder="CVV" />
-              <Button variant="outline-primary">Conform</Button>
+              <input required type="text" placeholder="Name on Card" />
+              <input required type="number" placeholder="Debit / Credit Card Number" />
+              <input required type="date" placeholder="Expiration" />
+              <input required type="text" placeholder="CVV" />
+              <Button variant="outline-primary" onClick={order}>Conform</Button>
             </div>
           </Form>
         </div>
@@ -47,8 +53,8 @@ const Payment = () => {
               </Form.Select>
               <input type="text" placeholder="Bank Holder Name" />
               <input type="text" placeholder="IFSC Code" />
-              <input type="text" placeholder="Account Number" />
-              <Button variant="outline-primary">Conform</Button>
+              <input type="number" placeholder="Account Number" />
+              <Button variant="outline-primary" onClick={order}>Conform</Button>
             </div>
           </Form>
         </div>
@@ -70,7 +76,7 @@ const Payment = () => {
               <div id="box"><input type="radio" name="upi"/><i class="fab fa-amazon-pay"></i></div>
               <div id="box"><input type="radio" name="upi"/><i class="fab fa-apple-pay"></i></div>
               <div id="box"><input type="radio" name="upi"/><img src="https://cdn.iconscout.com/icon/free/png-256/free-paytm-logo-icon-download-in-svg-png-gif-file-formats--online-payment-brand-logos-pack-icons-226448.png?f=webp&w=256" alt="paytm" height="30px" /></div>
-              <Button variant="outline-primary">Conform</Button>
+              <Button variant="outline-primary" onClick={order}>Conform</Button>
             </div>
           </Form>
         </div>
