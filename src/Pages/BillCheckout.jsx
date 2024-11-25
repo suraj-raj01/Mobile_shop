@@ -2,9 +2,10 @@ import { message } from 'antd';
 import React, { useState } from 'react'
 import { Form, Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const BillCheckout = () => {
+  const navigate = useNavigate();
   const {total} = useParams();
   const myData = useSelector((state)=>state.addCart.cart);
   const[payment,setPayment] = useState("");
@@ -12,6 +13,10 @@ const BillCheckout = () => {
     const val = e.target.value;
     setPayment(val);
   }
+
+  const details = (id) => {
+    navigate(`/details/${id}`);
+  };
 
   let result;
   if(payment.includes("upi")){
@@ -39,9 +44,9 @@ const BillCheckout = () => {
     return(
         <>
         <tr>
-            <td>{key.name}</td>
-            <td id='desc'>{key.description}</td>
-            <td id='price'>{key.price}{".00 ₹"}</td>
+            <td onClick={()=>{details(key.id)}}>{key.name}</td>
+            <td id='desc' onClick={()=>{details(key.id)}}>{key.description}</td>
+            <td id='price' onClick={()=>{details(key.id)}}>{key.price}{".00 ₹"}</td>
         </tr>
         </>
     )
