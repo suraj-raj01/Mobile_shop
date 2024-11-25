@@ -562,19 +562,15 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    box-shadow: 1px 1px 3px;
+    box-shadow: 0px 0px 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     /* background-color: deepskyblue; */
-    color: #18396193;
+    color: #183961;
     font-size: 20px;
     padding: 10px;
-}
-#updown:hover{
-    /* background-color: ; */
-    color: #183961;
 }
 
 
@@ -725,7 +721,7 @@ button {
 /* Payment method styling */
 #payment_method{
     width: 80%;
-    height: 80vh;
+    /* height: 80vh; */
     margin: auto;
     border: none;
     /* box-shadow: 0px 0px 2px; */
@@ -908,6 +904,7 @@ button {
     align-content: center;
     font-weight: bold;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* checkout form */
