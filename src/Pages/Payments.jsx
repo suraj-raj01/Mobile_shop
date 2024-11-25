@@ -67,8 +67,8 @@ const Payment = () => {
       <>
         <br />
         <div id="payment_method">
-          <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'uppercase'}}>{payopt} </span>Apps</p>
           <Form>
+          <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'uppercase'}}>{payopt} </span>Apps</p>
             <div id="cards">
               <div id="box"><input type="radio" name="upi"/><i class="fab fa-google-pay"></i></div>
               <div id="box"><input type="radio" name="upi"/><img src="https://cdn.worldvectorlogo.com/logos/phonepe-1.svg" alt="paytm" height="15px" /></div>
