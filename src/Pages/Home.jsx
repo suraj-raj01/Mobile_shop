@@ -153,6 +153,9 @@ const Home = () => {
               >
                 Add to Cart
               </Button>
+              <Button style={{marginLeft:'20px'}} variant="outline-primary"
+                  onClick={()=>{checkout(key.id)}}
+                  >by now</Button>
             </div>
           </div>
           <br />
