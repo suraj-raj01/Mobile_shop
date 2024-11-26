@@ -1399,10 +1399,10 @@
     },
     {
       "id": "c3a4",
-      "name": "mobileshop123",
+      "name": "admin",
       "email": "mobileshop123@gmail.com",
       "phone": "3214569870",
-      "adminpassword": "mobileshop@123"
+      "adminpassword": "admin123"
     },
     {
       "id": "8a41",
@@ -1431,6 +1431,50 @@
       "email": "shahnawazali323@gmail.com",
       "phone": "7779933898",
       "password": "1234566"
+    }
+  ],
+  "customers": [
+    {
+      "id": "c15c",
+      "name": "RAJAN KUMAR",
+      "mobileno": "4587962354",
+      "state": "Madhya Pradesh",
+      "pincode": "462023",
+      "houseno": "Board Office, Bhopal MP",
+      "email": "rajank123@gmail.com",
+      "district": "sitamarhi",
+      "village": "parsauni",
+      "block": "bairgania",
+      "items": "9 ",
+      "total": "192330 "
+    },
+    {
+      "id": "cda8",
+      "name": "SURAJ KUMAR",
+      "mobileno": "06206546029",
+      "state": "Madhya Pradesh",
+      "pincode": "462023",
+      "houseno": "07",
+      "email": "surajkumarbgu83@gmail.com",
+      "district": "sitamarhi",
+      "village": "parsauni",
+      "block": "bairgania",
+      "total": "120972 ",
+      "items": "6 "
+    },
+    {
+      "id": "a70d",
+      "name": "AMAN KUMAR",
+      "mobileno": "06206546029",
+      "state": "Madhya Pradesh",
+      "pincode": "462023",
+      "houseno": "07",
+      "email": "amank123@gmail.com",
+      "district": "afdasda",
+      "block": "sdfsadf",
+      "village": "bcde",
+      "total": "186394 ",
+      "items": "6 "
     }
   ]
 }
