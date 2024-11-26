@@ -84,7 +84,7 @@ const Mobile = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
-                placeholder="img"
+                placeholder="img link"
                 aria-describedby="basic-addon1"
                   onChange={handleInput}
                 name="img"
@@ -96,7 +96,7 @@ const Mobile = () => {
           <div id="box2">
             <InputGroup className="mb-3">
               <Form.Control
-                placeholder="img1"
+                placeholder="img1 link"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
                 name="img1"
@@ -104,7 +104,7 @@ const Mobile = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
-                placeholder="img2"
+                placeholder="img2 link"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
                 name="img2"
@@ -120,7 +120,7 @@ const Mobile = () => {
             </InputGroup>
             <InputGroup className="mb-3">
               <Form.Control
-                placeholder="offers"
+                placeholder="offers (yes/no)"
                 aria-describedby="basic-addon1"
                 onChange={handleInput}
                 name="offers"
