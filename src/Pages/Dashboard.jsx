@@ -8,6 +8,7 @@ const Dashboard = () => {
   const [username, setUserName] = useState("");
   const [usermail, setUserEmail] = useState("");
   const [usermobile, setUserMobile] = useState("");
+
   useEffect(() => {
     const name = localStorage.getItem("username");
     const email = localStorage.getItem("usermail");
@@ -16,6 +17,7 @@ const Dashboard = () => {
     setUserEmail(email);
     setUserMobile(mobile);
   }, []);
+
   const logOut = () => {
     localStorage.clear();
     message.success("logOut Successfull!!");
