@@ -12,8 +12,8 @@ const MyCart = () => {
   // const billgenerate = () => {
   //   navigate("/generatebill");
   // };
-  const BillCheckout = (total) =>{
-    navigate(`/billcheckout/${total}`)
+  const BillCheckout = (total,items) =>{
+    navigate(`/billcheckout/${total}/${items}`)
   }
 
   const inc = (id) => {
@@ -30,8 +30,10 @@ const MyCart = () => {
   };
 
   let grandTotal = 0;
+  let items = 0;
   const res = Data.map((key) => {
     grandTotal += key.price * key.qnty;
+    items+=key.qnty;
     return (
       <>
         <Container>
@@ -131,7 +133,7 @@ const MyCart = () => {
         Grand Total : {grandTotal}
         {".00 ₹"}
         {/* <button onClick={billgenerate}>Generete Bill</button> */}
-        <button onClick={()=>{BillCheckout(grandTotal)}}>Checkout Bill</button>
+        <button onClick={()=>{BillCheckout(grandTotal,items)}}>Checkout Bill</button>
       </div>
       <br />
     </>
