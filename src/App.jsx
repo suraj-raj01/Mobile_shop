@@ -146,9 +146,8 @@ function App() {
         <Route path="dashboard" element={<Dashboard/>}/>
         <Route path="payments/:payopt" element={<Payment/>}/>
         {/* <Route path="generatebill" element={<GenerateBill/>}/> */}
-        <Route path="billcheckout/:total" element={<BillCheckout/>}/>
+        <Route path="billcheckout/:total/:items" element={<BillCheckout/>}/>
        </Route>
-
      </Routes>
      </BrowserRouter>
     </>
