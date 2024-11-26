@@ -562,15 +562,18 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    box-shadow: 0px 0px 4px;
+    /* box-shadow: 0px 0px 4px; */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     /* background-color: deepskyblue; */
-    color: #183961;
+    color: #183961b6;
     font-size: 20px;
     padding: 10px;
+}
+#updown:hover{
+    color: #183961;
 }
 
 
@@ -945,6 +948,9 @@ button {
     padding: 7px;
     border-radius: 5px;
     border: 1px solid grey;
+    font-weight: 500;
+    color: #183961;
+    font-size: 13px;
 }
 #checkout_form #payment{
     width: 40%;
@@ -957,6 +963,7 @@ button {
     height: 20px;
     width: 20px;
 }
+
 #checkout_form #payment div{
     width: 70%;
     padding: 8px;
@@ -974,6 +981,25 @@ button {
     font-weight: bold;
 }
 
+/********************* Customers *******************/
+
+#customers{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+}
+
+#customerTable{
+    width: 83%;
+    margin: auto;
+}
+#customerTable th{
+    background-color: #18396193;
+    padding: 15px 10px;
+    color: white;
+}
 /* for mini laptop */
 @media(max-width:1024px){
     #navbar{
