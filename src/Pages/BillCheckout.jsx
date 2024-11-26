@@ -1,15 +1,16 @@
 import { message } from 'antd';
-import React, { useState } from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import { Form, Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom'
 
 const BillCheckout = () => {
   const navigate = useNavigate();
-  const {total} = useParams();
+  const {total,items} = useParams();
   const myData = useSelector((state)=>state.addCart.cart);
   const[payment,setPayment] = useState("");
-  const handleInput = (e) =>{
+  const handleInputRadio = (e) =>{
     const val = e.target.value;
     setPayment(val);
   }
@@ -18,6 +19,23 @@ const BillCheckout = () => {
     navigate(`/details/${id}`);
   };
 
+  const[inputval,setInputVal] = useState({});
+  const handleInput = (e) =>{
+    let name = e.target.name;
+    let value = e.target.value;
+    setInputVal(values=>({...values,[name]:value}));
+    console.log(inputval);
+  }
+
+  const handleSubmit = () =>{
+    let url = 'http://localhost:3000/customers';
+    axios.post(url,inputval).then((res)=>{
+      console.log(res.data);
+      message.success("ordered has been successfull!!!")
+      navigate("/home");
+    })
+  }
+  
   let result;
   if(payment.includes("upi")){
     result = <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/UPI_logo.svg/800px-UPI_logo.svg.png" alt="" height="100vh"/>
@@ -36,9 +54,6 @@ const BillCheckout = () => {
   }
 
   // Order success
-  const orderSuccess = () =>{
-    message.success("Your order will arrive in 3-4 working days")
-  }
 
   const res = myData.map((key)=>{
     return(
@@ -85,26 +100,28 @@ const BillCheckout = () => {
             <div id="shiped">
                 <h3 style={{fontWeight:'bold',padding:'10px 0px',color:'#183961'}}>Shipping Address</h3><br />
                 <Form>
-                    <input type="text" placeholder='Name' />
-                    <input type="text" placeholder='Mobile Number' />
-                    <input type="text" placeholder='Email' />
-                    <input type="text" placeholder='State' />
-                    <input type="text" placeholder='District' />
-                    <input type="text" placeholder='Pin Code' />
-                    <input type="text" placeholder='Block Name' />
-                    <input type="text" placeholder='Village Name' />
-                    <input type="text" placeholder='House Name / Number' />
+                    <input name='name' onChange={handleInput} type="text" placeholder='Name' />
+                    <input name='mobileno' onChange={handleInput} type="text" placeholder='Mobile Number' />
+                    <input name='email' onChange={handleInput} type="text" placeholder='Email' />
+                    <input name='state' onChange={handleInput} type="text" placeholder='State' />
+                    <input name='district' onChange={handleInput} type="text" placeholder='District' />
+                    <input name='pincode' onChange={handleInput} type="text" placeholder='Pin Code' />
+                    <input name='block' onChange={handleInput} type="text" placeholder='Block Name' />
+                    <input name='village' onChange={handleInput} type="text" placeholder='Village / Colony Name' />
+                    <input name='houseno' onChange={handleInput} type="text" placeholder='House Name / Number' />
+                    <input type="text" name='total' value={Number(total)} onChange={handleInput} placeholder='total'/>
+                    <input type="text" name='items' value={Number(items)} onChange={handleInput} placeholder='items'/>
                 </Form>
                 <br />
-                <button onClick={orderSuccess}>Submit</button>
+                <button onClick={handleSubmit}>ORDER</button>
             </div>
             <div id="payment">
             <h3 style={{fontWeight:'bold',padding:'10px 0px',color:'#183961'}}>Payment Methods</h3>
             
-            <div><input type="radio" name='payment' onChange={handleInput} value="debit"/> Debit / Credit Card</div>
-            <div><input type="radio" name='payment' onChange={handleInput} value="upi"/> UPI Payment</div>
-            <div><input type="radio" name='payment' onChange={handleInput} value="netbank"/> Internet Banking</div>
-            <div><input type="radio" name='payment' onChange={handleInput} value="cash"/> Cash on Delivery</div>
+            <div><input type="radio" name='payment' onChange={handleInputRadio} value="debit"/> Debit / Credit Card</div>
+            <div><input type="radio" name='payment' onChange={handleInputRadio} value="upi"/> UPI Payment</div>
+            <div><input type="radio" name='payment' onChange={handleInputRadio} value="netbank"/> Internet Banking</div>
+            <div><input type="radio" name='payment' onChange={handleInputRadio} value="cash"/> Cash on Delivery</div>
             <hr />
             <div id='result'>
                 {result}
