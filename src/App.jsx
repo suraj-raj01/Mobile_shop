@@ -62,6 +62,7 @@ import FemaleWatch from "./Brand_Watches/FemaleWatch"
 import KidsWatch from "./Brand_Watches/KidsWatch"
 import Watch_Layout from "./Brand_Watches/Watch_Layout"
 import BillCheckout from "./Pages/BillCheckout"
+import CustomerOrder from "./Pages/CustomerOrder"
 
 
 function App() {
@@ -96,6 +97,7 @@ function App() {
           <Route path="keyboarddata" element={<Keyboard/>}/>
           <Route path="watchdata" element={<Watches/>}/>
           <Route path="remotedata" element={<Remote/>}/>
+          <Route path="customerdetails" element={<CustomerOrder/>}/>
         </Route>
         <Route path="realme" element={<Realme/>}/>
         <Route path="vivo" element={<Vivo/>}/>
