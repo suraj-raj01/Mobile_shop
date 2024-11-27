@@ -109,8 +109,8 @@ const BillCheckout = () => {
                     <input name='block' onChange={handleInput} type="text" placeholder='Block Name' />
                     <input name='village' onChange={handleInput} type="text" placeholder='Village / Colony Name' />
                     <input name='houseno' onChange={handleInput} type="text" placeholder='House Name / Number' />
-                    <input type="text" name='total' value={Number(total)} onChange={handleInput} placeholder='total'/>
-                    <input type="text" name='items' value={Number(items)} onChange={handleInput} placeholder='items'/>
+                    <span style={{fontWeight:'bold',color:'#183961'}}>Total : <input type="text" name='total' value={Number(total)} onChange={handleInput} placeholder='total' style={{border:'none',outline:'none',fontWeight:'bold'}}/></span>
+                    <span style={{fontWeight:'bold',color:'#183961'}}>Items : <input type="text" name='items' value={Number(items)} onChange={handleInput} placeholder='items' style={{border:'none',outline:'none',fontWeight:'bold'}}/></span>
                 </Form>
                 <br />
                 <button onClick={handleSubmit}>ORDER</button>
