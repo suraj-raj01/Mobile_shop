@@ -99,7 +99,7 @@ const Dashboard = () => {
             <span
               style={{
                 textTransform: "capitalize",
-                color: "deepskyblue",
+                color: "#183961",
                 cursor: "pointer",
                 fontWeight: "700",
                 fontSize:'14px'
