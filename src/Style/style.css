@@ -19,10 +19,12 @@ button {
     z-index: 10;
     background-color: white;
 }
-#navbar a{
+
+#navbar a {
     font-weight: 500;
 }
-#navbar .container{
+
+#navbar .container {
     background-color: white;
 }
 
@@ -32,7 +34,8 @@ button {
     color: #183961;
     padding: 0;
 }
-.navbar-toggler span:focus{
+
+.navbar-toggler span:focus {
     outline: none;
 }
 
@@ -137,7 +140,8 @@ button {
     margin: auto;
     padding: 20px 0px;
 }
-#items{
+
+#items {
     width: 100%;
     /* background-color: #EEEEEE; */
     margin-top: -20px;
@@ -194,7 +198,8 @@ button {
 #box2 span {
     font-weight: 500;
 }
-#products{
+
+#products {
     justify-content: space-between;
 }
 
@@ -219,7 +224,8 @@ button {
     justify-content: center;
     margin: 0px 20px;
 }
-#checkout-products #box2{
+
+#checkout-products #box2 {
     width: 400px;
 }
 
@@ -360,7 +366,7 @@ button {
 
 #offers #offer-opt {
     width: 350px;
-    padding: 0px 20px;
+    padding: 25px 20px;
     position: sticky;
     top: 120px;
 }
@@ -431,7 +437,8 @@ button {
     margin: auto;
     height: 60vh;
 }
-#bill-gen th{
+
+#bill-gen th {
     background-color: lightblue;
     color: #183961;
     padding: 10px 10px;
@@ -439,57 +446,64 @@ button {
     border: 1px solid #e7e4e4;
     font-weight: bold;
 }
-#bill-gen td{
+
+#bill-gen td {
     font-weight: 500;
     border: 1px solid #e7e4e4;
 }
 
 /* Accordian items */
-#navbarScrollingDropdown .accordion-header{
+#navbarScrollingDropdown .accordion-header {
     border: none;
     box-shadow: none;
     width: 244px;
     margin-left: 3px;
 }
- .accordion-button{
+
+.accordion-button {
     font-weight: bold;
     color: #183961;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     border: none;
     background-color: transparent;
     width: 250px;
     box-shadow: none;
 }
-.dropdown-item{
+
+.dropdown-item {
     font-weight: 500;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     background-color: #eaeef0;
 }
 
 
 /* Data insert into database */
-#dataInsert{
+#dataInsert {
     margin: 10px auto;
     /* box-shadow: 0px 0px 2px; */
     padding: 10px 15px;
     border-radius: 10px;
     width: 700px;
 }
-#dataInsert #form{
+
+#dataInsert #form {
     width: 100%;
     margin: auto;
     box-shadow: 0px 0px 1px #183961;
-    padding: 10px 30px;
+    padding: 30px 30px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-    background-color:ghostwhite;
+    background-color: #18396193;
 }
-#dataInsert #form #box1{
+
+#dataInsert #form #box1 {
     width: 270px;
     display: flex;
     flex-direction: column;
@@ -497,32 +511,38 @@ button {
     justify-content: center;
     box-shadow: none;
 }
-#dataInsert #form #box2{
+
+#dataInsert #form #box2 {
     width: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 }
-#dataInsert #form input{
+
+#dataInsert #form input {
     background-color: white;
     color: black;
     border-radius: 5px;
     border: 1px solid #e7e4e4;
 }
-#dataInsert #form input::placeholder{
+
+#dataInsert #form input::placeholder {
     color: gray;
     text-transform: capitalize;
     font-size: 14px;
 }
 
-#add_data_hero{
+#add_data_hero {
     display: grid;
     grid-template-columns: auto auto;
     align-items: start;
     justify-content: space-around;
+    width: 95%;
+    margin: auto;
 }
-#add_data{
+
+#add_data {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -530,7 +550,7 @@ button {
     padding: 10px;
     gap: 15px;
     width: 300px;
-    height: 410px;
+    height: 500px;
     font-weight: 500;
     color: #183961;
     margin: 80px auto;
@@ -538,24 +558,30 @@ button {
     box-shadow: 0px 0px 1px;
     text-align: center;
 }
-#add_data a{
+
+#add_data a {
     background-color: #EEEEEE;
     box-shadow: 0px 0px 2px;
     border-radius: 25px;
-    width: 180px;
+    width: 190px;
     font-weight: 600;
     font-size: 14px;
     padding: 8px 15px;
     color: #183961;
 }
-#add_data a:focus{
+
+#add_data a:focus {
     background-color: #183961;
     color: #EEEEEE;
     box-shadow: 0px 0px 2px;
 }
 
+#outlets {
+    width: 900px;
+}
+
 /* UpDoun Button */
-#updown{
+#updown {
     position: fixed;
     top: 92%;
     right: 10px;
@@ -572,30 +598,33 @@ button {
     font-size: 20px;
     padding: 10px;
 }
-#updown:hover{
+
+#updown:hover {
     color: #183961;
 }
 
 
 /* watch layout */
-#watch_layout{
-        display:grid;
-        grid-template-columns: auto auto;
-        align-items: start;
-        justify-content: start;
-        width:100%;
-        margin:30px auto;
-        font-weight: 600;
-        gap:20px;
-        color:#183961;
-        padding:15px;
+#watch_layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    margin: 30px auto;
+    font-weight: 600;
+    gap: 20px;
+    color: #183961;
+    padding: 15px;
 }
-#navigatehero{
-    width:280px;
-    height:900px;
+
+#navigatehero {
+    width: 280px;
+    height: 900px;
     margin: 0 auto;
 }
-#navigate{
+
+#navigate {
     width: 380px;
     /* height: 1000px; */
     /* border: 1px solid; */
@@ -608,33 +637,38 @@ button {
     justify-content: start;
     padding: 15px;
 }
-#navigate a{
+
+#navigate a {
     padding: 10px;
     box-shadow: 0px 0px 2px;
     width: 200px;
     border-radius: 25px;
     text-align: center;
 }
-#navigate a:focus{
+
+#navigate a:focus {
     background-color: #183961;
     color: white;
 }
-#watch_layout #outlet{
-    width:1200px;
+
+#watch_layout #outlet {
+    width: 1200px;
 }
-#watch_layout #outlet b{
+
+#watch_layout #outlet b {
     font-weight: 600;
 }
 
 /* Dashboard */
-#main{
+#main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 75vh;
     width: 100%;
 }
-#main #box1{
+
+#main #box1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -646,11 +680,13 @@ button {
     box-shadow: 0px 0px 1px;
     text-transform: lowercase;
 }
-#main #box1 #logout{
+
+#main #box1 #logout {
     position: sticky;
     left: 100%;
 }
-#main #box1 #logout #logoutbtn{
+
+#main #box1 #logout #logoutbtn {
     font-weight: bold;
     border: none;
     background-color: deepskyblue;
@@ -662,10 +698,12 @@ button {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-#main #box1 hr{
+
+#main #box1 hr {
     width: 100%;
 }
-#main #box1 #profile{
+
+#main #box1 #profile {
     margin: 10px 0px;
     height: 80px;
     width: 75px;
@@ -683,7 +721,8 @@ button {
     background-color: black;
     /* border: 1px solid; */
 }
-#main #box1 #profile #camera{
+
+#main #box1 #profile #camera {
     height: 40px;
     background-color: #80808040;
     width: 100%;
@@ -696,7 +735,7 @@ button {
     transition: .6s;
 }
 
-#main #box2{
+#main #box2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -706,7 +745,7 @@ button {
 }
 
 /* Big Image */
-#bigimg{
+#bigimg {
     height: 550px;
     width: 550px;
     position: fixed;
@@ -722,7 +761,7 @@ button {
 }
 
 /* Payment method styling */
-#payment_method{
+#payment_method {
     width: 80%;
     /* height: 80vh; */
     margin: auto;
@@ -736,7 +775,8 @@ button {
     font-size: 25px;
     text-transform: capitalize;
 }
-#cards{
+
+#cards {
     width: 40%;
     height: 350px;
     border: none;
@@ -754,10 +794,11 @@ button {
     padding: 10px;
 }
 
-#cards ::placeholder{
+#cards ::placeholder {
     font-size: 13px;
 }
-#cards input{
+
+#cards input {
     width: 60%;
     padding: 8px 10px;
     border-radius: 5px;
@@ -765,35 +806,41 @@ button {
     border: none;
     font-weight: 600;
 }
-#cards Button{
+
+#cards Button {
     text-transform: capitalize;
     font-weight: 500;
     width: 60%;
     padding: 8px;
 }
-#cards Select{
+
+#cards Select {
     width: 60%;
 }
-#cards #box{
+
+#cards #box {
     display: flex;
     flex-direction: row-reverse;
     width: 60%;
     align-items: center;
     justify-content: space-between;
 }
-#cards #box input{
+
+#cards #box input {
     height: 20px;
     width: 20px;
     border: 5px solid;
     box-shadow: none;
     cursor: pointer;
 }
-#cards #box i{
+
+#cards #box i {
     font-size: 22px;
     font-weight: bold;
 }
+
 /* Home cards */
-#home_cards{
+#home_cards {
     width: 100%;
     margin: auto;
     /* border: 1px solid; */
@@ -806,14 +853,16 @@ button {
     gap: 10px;
     background-color: #EEEEEE;
 }
-#home_cards::-webkit-scrollbar{
+
+#home_cards::-webkit-scrollbar {
     display: none;
 }
-#home_cards #card{
+
+#home_cards #card {
     height: 35vh;
     width: 50vh;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px ;
+    box-shadow: 0px 0px 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -823,13 +872,15 @@ button {
     background-repeat: no-repeat;
     background-size: contain;
 }
-#home_cards h3{
+
+#home_cards h3 {
     padding: 10px;
     font-weight: 500;
     color: #183961;
-    text-shadow: 0px 0px 2px ;
+    text-shadow: 0px 0px 2px;
 }
-#home_cards button{
+
+#home_cards button {
     color: #183961;
     padding: 8px 15px;
     margin-bottom: 10px;
@@ -838,15 +889,17 @@ button {
     background-color: transparent;
     box-shadow: 0px 0px 1px;
 }
-#home_cards button:hover{
+
+#home_cards button:hover {
     background-color: #183961;
     color: #fff;
 }
-#home_cards #card1{
+
+#home_cards #card1 {
     height: 35vh;
     width: 50vh;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px ;
+    box-shadow: 0px 0px 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -856,11 +909,12 @@ button {
     background-repeat: no-repeat;
     background-size: contain;
 }
-#home_cards #card2{
+
+#home_cards #card2 {
     height: 35vh;
     width: 50vh;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px ;
+    box-shadow: 0px 0px 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -870,7 +924,8 @@ button {
     background-repeat: no-repeat;
     background-size: contain;
 }
-#home_cards #card3{
+
+#home_cards #card3 {
     height: 35vh;
     width: 50vh;
     border-radius: 10px;
@@ -886,24 +941,28 @@ button {
 }
 
 /*********BillCheckout************/
-#billcheckout{
+#billcheckout {
     width: 90%;
     margin: auto;
 }
-#billcheckout th{
+
+#billcheckout th {
     background-color: #18396193;
     font-weight: bold;
     color: white;
     padding: 15px 10px;
 }
-#billcheckout #desc{
+
+#billcheckout #desc {
     width: 50%;
     font-weight: normal;
 }
-#billcheckout #price{
+
+#billcheckout #price {
     width: 20%;
 }
-#billcheckout td{
+
+#billcheckout td {
     align-content: center;
     font-weight: bold;
     padding: 10px;
@@ -911,7 +970,7 @@ button {
 }
 
 /* checkout form */
-#checkout_form{
+#checkout_form {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -922,12 +981,14 @@ button {
     border-radius: 10px;
     /* height: 50vh; */
 }
-#checkout_form #shiped{
+
+#checkout_form #shiped {
     width: 40%;
     padding: 10px;
     border-radius: 10px;
 }
-#checkout_form #shiped button{
+
+#checkout_form #shiped button {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
@@ -935,16 +996,19 @@ button {
     background-color: white;
     color: #183961;
 }
-#checkout_form #shiped button:hover{
+
+#checkout_form #shiped button:hover {
     background-color: #183961;
     color: white;
 }
-#checkout_form #shiped Form{
+
+#checkout_form #shiped Form {
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
 }
-#checkout_form #shiped Form input{
+
+#checkout_form #shiped Form input {
     padding: 7px;
     border-radius: 5px;
     border: 1px solid grey;
@@ -952,19 +1016,21 @@ button {
     color: #183961;
     font-size: 13px;
 }
-#checkout_form #payment{
+
+#checkout_form #payment {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
-#checkout_form #payment input{
+
+#checkout_form #payment input {
     height: 20px;
     width: 20px;
 }
 
-#checkout_form #payment div{
+#checkout_form #payment div {
     width: 70%;
     padding: 8px;
     display: flex;
@@ -972,7 +1038,8 @@ button {
     font-weight: bold;
     justify-content: space-between;
 }
-#checkout_form #payment #result{
+
+#checkout_form #payment #result {
     /* background-color: #183961; */
     height: 20vh;
     display: flex;
@@ -983,7 +1050,7 @@ button {
 
 /********************* Customers *******************/
 
-#customers{
+#customers {
     width: 100%;
     display: flex;
     align-items: center;
@@ -991,103 +1058,177 @@ button {
     background-color: #EEEEEE;
 }
 
-#customerTable{
-    width: 83%;
+#customerTable {
+    width: 100%;
     margin: auto;
 }
-#customerTable th{
+
+#customerTable th {
     background-color: #18396193;
     padding: 15px 10px;
     color: white;
 }
+
 /* for mini laptop */
-@media(max-width:1024px){
-    #navbar{
+@media(max-width:1024px) {
+    #navbar {
         height: 12vh;
     }
-    #navbar a{
+
+    #navbar a {
         font-size: 12px;
     }
-    #main #box1{
+
+    #main #box1 {
         width: 30%;
     }
-    #main #box1 #profile{
+
+    #main #box1 #profile {
         height: 80px;
         width: 80px;
     }
-    #main #box2{
+
+    #main #box2 {
         width: 60%;
     }
-    #main #box2 h2{
+
+    #main #box2 h2 {
         font-size: 22px;
     }
-    #bigimg{
+
+    #bigimg {
         height: 380px;
         width: 380px;
-        position: fixed ;
+        position: fixed;
         top: 120px;
         right: 45%;
     }
+
     #checkout-products {
         display: grid;
         grid-template-columns: auto auto;
     }
-    #checkout-products #box1{
+
+    #checkout-products #box1 {
         margin-bottom: 40px;
     }
-    #checkout_form{
+
+    #checkout_form {
         display: flex;
         flex-direction: column;
     }
-    #checkout_form #shiped{
+
+    #checkout_form #shiped {
         width: 70%;
     }
-    #checkout_form #payment{
+
+    #checkout_form #payment {
         width: 70%;
     }
-    #checkout_form #payment div{
+
+    #checkout_form #payment div {
         width: 100%;
     }
-    #checkout_form #payment #result{
+
+    #checkout_form #payment #result {
         justify-content: center;
     }
+
+    /* add data */
+    #add_data_hero {
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    #add_data {
+        width: 60%;
+        height: 520px;
+    }
+
+    #outlets {
+        width: 100%;
+        height: 550px;
+    }
+
+    #header h1 {
+        font-size: 30px;
+    }
+        /* Offer Page */
+        #offers {
+            grid-template-columns: auto;
+        }
+    
+        #offers #offer-opt {
+            width: 40%;
+            margin: auto;
+            justify-content: space-between;
+            padding: 0px;
+            position: inherit;
+        }
+        #offers #product {
+            width: 900px;
+        }
+        #homepage {
+            grid-template-columns: auto;        }
+        #search-opt{
+            width: 600px;
+            margin: auto;
+            position: inherit; 
+        }
 }
 
-@media(max-width:790px){
-    #navbar{
+@media(max-width:790px) {
+    #navbar {
         height: 10vh;
     }
+
     #home-product {
         width: 100%;
     }
-    #products{
+    #homepage {
+        grid-template-columns: auto;
+    }
+    #search-opt{
+        width: 500px;
+        margin: auto;
+        position: inherit; 
+    }
+
+    #products {
         width: 100%;
     }
-    .home_products{
+
+    .home_products {
         width: 90%;
         display: flex;
         flex-direction: column;
     }
-    #home-box1{
+
+    #home-box1 {
         width: 40%;
     }
-    #main{
+
+    #main {
         flex-direction: column;
         margin: 20px auto;
         height: 100vh;
     }
-    #main #box1{
+
+    #main #box1 {
         width: 50%;
         height: 800px;
     }
-    #main #box1 #profile{
+
+    #main #box1 #profile {
         height: 80px;
         width: 80px;
     }
-    #main #box2 h2{
+
+    #main #box2 h2 {
         font-size: 22px;
     }
-    #box1{
+
+    #box1 {
         width: 280px;
         box-shadow: 0px 0px 1px;
         border-radius: 5px;
@@ -1098,28 +1239,71 @@ button {
         width: 350px;
         text-transform: capitalize;
     }
-    #checkout_form{
+
+    #checkout_form {
         display: flex;
         flex-direction: column;
     }
-    #checkout_form #shiped{
+
+    #checkout_form #shiped {
         width: 80%;
     }
-    #checkout_form #payment{
+
+    #checkout_form #payment {
         width: 80%;
     }
-    #checkout_form #payment div{
+
+    #checkout_form #payment div {
         width: 100%;
     }
-    #checkout_form #payment #result{
+
+    #checkout_form #payment #result {
         justify-content: center;
+    }
+
+    /* add data */
+    #add_data_hero {
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    #add_data {
+        width: 50%;
+        height: 520px;
+    }
+
+    #outlets {
+        width: 100%;
+        height: 550px;
+    }
+
+    #header h1 {
+        font-size: 25px;
+    }
+
+    /* Offer Page */
+    #offers {
+        grid-template-columns: auto;
+    }
+
+    #offers #offer-opt {
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        padding: 0px;
+        position: inherit;
+    }
+    #offers #product {
+        width: 800px;
     }
 }
 
+
 @media(max-width:600px) {
-    #navbar{
+    #navbar {
         height: 8vh;
     }
+
     #home-product {
         width: 100%;
     }
@@ -1133,7 +1317,8 @@ button {
         align-items: center;
         justify-content: center;
     }
-    #box1{
+
+    #box1 {
         width: 90%;
         box-shadow: 0px 0px 1px;
         border-radius: 5px;
@@ -1156,6 +1341,9 @@ button {
 
     #homepage {
         grid-template-columns: auto;
+    }
+    #search-opt{
+        position: absolute;
     }
 
     #crousel img {
@@ -1191,7 +1379,8 @@ button {
         width: 350px;
         margin: auto;
     }
-    #checkout-products #box2{
+
+    #checkout-products #box2 {
         width: 320px;
     }
 
@@ -1211,7 +1400,7 @@ button {
 
     #offers {
         grid-template-columns: auto;
-        width:100%;
+        width: 100%;
     }
 
     #offers #product {
@@ -1249,55 +1438,69 @@ button {
         width: 95%;
         margin: auto;
     }
-    #bill-gen td,th{
+
+    #bill-gen td,
+    th {
         font-size: 12px;
     }
-    #bill-gen Button{
+
+    #bill-gen Button {
         padding: 8px;
         font-size: 12px;
     }
+
     /* database form */
-    #add_data{
+    #add_data {
         align-items: start;
         justify-content: start;
         height: 370px;
         padding: 20px 40px;
     }
-    #add_data_hero{
+
+    #add_data_hero {
         grid-template-columns: auto;
     }
-    #dataInsert{
+
+    #dataInsert {
         width: 350px;
     }
-    #dataInsert #form{
+
+    #dataInsert #form {
         width: 100%;
     }
-    #dataInsert #form{
+
+    #dataInsert #form {
         grid-template-columns: auto;
     }
-    #adddata-btn{
+
+    #adddata-btn {
         margin-top: 10px;
     }
-    #adddata-btn Button{
+
+    #adddata-btn Button {
         font-size: 10px;
         font-weight: bold;
         text-transform: capitalize;
     }
+
     /* up-down */
-    #updown{
+    #updown {
         position: fixed;
         width: 40px;
         height: 40px;
         font-size: 15px;
         padding: 15px;
     }
-    #watch_layout{
+
+    #watch_layout {
         grid-template-columns: auto;
     }
-    #navigatehero{
+
+    #navigatehero {
         height: 300px;
     }
-    #navigate{
+
+    #navigate {
         position: static;
         width: 100%;
         height: 300px;
@@ -1305,24 +1508,29 @@ button {
         justify-content: center;
         font-size: 14px;
     }
-    #watch_layout #outlet{
+
+    #watch_layout #outlet {
         width: 100%;
     }
+
     /* Dashboard */
-    #main{
+    #main {
         flex-direction: column;
         margin: 20px auto;
         height: 100vh;
     }
-    #main #box1{
+
+    #main #box1 {
         width: 70%;
         height: 800px;
     }
-    #main #box1 #profile{
+
+    #main #box1 #profile {
         height: 80px;
         width: 80px;
     }
-    #main #box2{
+
+    #main #box2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1331,59 +1539,113 @@ button {
         text-align: center;
         height: 50vh;
     }
-    #main #box2 h2{
+
+    #main #box2 h2 {
         font-size: 22px;
     }
+
     /* big image */
-    #bigimg{
+    #bigimg {
         height: 380px;
         width: 380px;
-        position: fixed ;
+        position: fixed;
         top: 100px;
         left: 5%;
         /* display: none; */
     }
+
     /* Payment method */
-    #payment_method{
+    #payment_method {
         width: 95%;
         box-shadow: none;
     }
-    #cards{
+
+    #cards {
         width: 95%;
     }
-    #cards input{
+
+    #cards input {
         width: 90%;
     }
-    #cards Button{
+
+    #cards Button {
         width: 90%;
     }
-    #cards Select{
+
+    #cards Select {
         width: 90%;
     }
+
     /* data not found */
     /* #data_notfound img{
         height: 250px;
     } */
-    #checkout_form{
+    #checkout_form {
         display: flex;
         flex-direction: column;
     }
-    #checkout_form #shiped{
+
+    #checkout_form #shiped {
         width: 100%;
     }
-    #checkout_form #shiped Form{
+
+    #checkout_form #shiped Form {
         display: grid;
         grid-template-columns: auto;
         gap: 20px;
     }
-    #checkout_form #payment{
+
+    #checkout_form #payment {
         width: 100%;
     }
-    #checkout_form #payment div{
+
+    #checkout_form #payment div {
         width: 100%;
     }
-    #checkout_form #payment #result{
+
+    #checkout_form #payment #result {
         justify-content: center;
+    }
+
+    /* add data */
+    #add_data_hero {
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    #add_data {
+        width: 80%;
+        height: 520px;
+    }
+
+    #outlets {
+        width: 100%;
+        height: 900px;
+    }
+
+    #header h1 {
+        font-size: 25px;
+    }
+
+    /* Offer Page */
+    #offers {
+        grid-template-columns: auto;
+    }
+
+    #offers #offer-opt {
+        width: 95%;
+        margin: auto;
+        justify-content: space-between;
+        padding: 0px;
+        position: inherit;
+    }
+
+    #offers #product {
+        width: 400px;
+    }
+
+    #updown {
+        left: 87%;
     }
 }
 
@@ -1443,38 +1705,43 @@ button {
     padding: 0px 1px;
 }
 
-#offer_time h5{
+#offer_time h5 {
     font-weight: 600;
     color: #183961;
 }
-#offer_time span{
+
+#offer_time span {
     color: red;
 }
-.carousel-control-next-icon{
-    display: none;
-}
-.carousel-control-prev-icon{
+
+.carousel-control-next-icon {
     display: none;
 }
 
-#mode{
+.carousel-control-prev-icon {
+    display: none;
+}
+
+#mode {
     position: fixed;
     top: 20px;
     z-index: 10;
     right: 10px;
 }
-#products Button{
+
+#products Button {
     text-transform: capitalize;
 }
 
 /* Product layout */
-#product_lyt{
+#product_lyt {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-#product_lyt a{
+
+#product_lyt a {
     padding: 10px 20px;
     box-shadow: 0px 0px 3px;
     background-color: #183961;
@@ -1482,7 +1749,8 @@ button {
     border-radius: 5px;
     font-size: 16px;
 }
-#product_lyt a:focus{
+
+#product_lyt a:focus {
     background-color: white;
     color: #183961;
 }
