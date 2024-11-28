@@ -5,7 +5,6 @@ const AddData = () => {
 
   return (
     <>
-    <br />
       <div id="add_data_hero">
         <div id="add_data">
         <div style={{
