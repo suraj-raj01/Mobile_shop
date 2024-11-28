@@ -1,6 +1,7 @@
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Nav from 'react-bootstrap/Nav';
+import { Button, Form } from "react-bootstrap";
 import {
   MDBFooter,
   MDBContainer,
@@ -9,7 +10,12 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
+import { message } from "antd";
 const Footer = () => {
+  const subscribe = (e) =>{
+    e.preventDefault();
+    message.success("Congratulation, for add with us!!!")
+  }
   return (
     <>
       <MDBFooter
@@ -19,6 +25,22 @@ const Footer = () => {
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div className="me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
+          </div>
+          <div className="me-5 d-none d-lg-block">
+          <Form className="d-flex">
+              <Form.Control
+              style={{backgroundColor:'#fff',border:'1px solid deepskyblue'}}
+                placeholder="enter your email"
+                className="me-2"
+                aria-label="Search"
+                id="searching"
+                type="email"
+                required
+              />
+              <Button variant="outline-primary" type="submit" onClick={subscribe} style={{textTransform:'capitalize'}}>
+                Subscribe
+              </Button>
+            </Form>
           </div>
 
           <div style={{display:'flex',gap:'15px',color:'#183961'}}>
