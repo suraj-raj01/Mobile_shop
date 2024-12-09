@@ -12,10 +12,10 @@ import {
 import { Link } from "react-router-dom";
 import { message } from "antd";
 const Footer = () => {
-  const subscribe = (e) =>{
-    e.preventDefault();
-    message.success("Congratulation, for add with us!!!")
-  }
+  // const subscribe = (e) =>{
+  //   e.preventDefault();
+  //   message.success("Thanks, for add with us!!!")
+  // }
   return (
     <>
       <MDBFooter
@@ -27,7 +27,7 @@ const Footer = () => {
             <span>Get connected with us on social networks:</span>
           </div>
           <div className="me-5 d-none d-lg-block">
-          <Form className="d-flex">
+          {/* <Form className="d-flex">
               <Form.Control
               style={{backgroundColor:'#fff',border:'1px solid deepskyblue'}}
                 placeholder="enter your email"
@@ -40,7 +40,7 @@ const Footer = () => {
               <Button variant="outline-primary" type="submit" onClick={subscribe} style={{textTransform:'capitalize'}}>
                 Subscribe
               </Button>
-            </Form>
+            </Form> */}
           </div>
 
           <div style={{display:'flex',gap:'15px',color:'#183961'}}>
