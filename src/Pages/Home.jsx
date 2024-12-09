@@ -768,20 +768,6 @@ const Home = () => {
               <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
-          {/* remotes */}
-          <Carousel.Item>
-            <img
-              src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2023/01/amazon-alexa-voice-remote-pro-sitting-next-to-an-amazon-fire-stickjpg_52567060992_o.jpg"
-              alt=""
-              width="100%"
-              height="400px"
-            />
-            <Carousel.Caption>
-              <h3 style={{ color: "black" }}></h3>
-              <p style={{ color: "black" }}></p>
-              <Button variant="outline-primary">Info →</Button>
-            </Carousel.Caption>
-          </Carousel.Item>
           {/* keyboards */}
           <Carousel.Item>
             <img
