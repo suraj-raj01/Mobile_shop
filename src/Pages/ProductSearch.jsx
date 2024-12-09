@@ -56,7 +56,6 @@ const ProductSearch = () => {
     navigate(`/checkout/${id}`)
   }
 
-  let count = 0;
   const res = mydata.map((key) => {
     const status = key.name.toLowerCase().includes(txtdata.toLowerCase());
     if (status) {
