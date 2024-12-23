@@ -1489,6 +1489,34 @@
       "village": "Bharti Niketan",
       "total": "98083 ",
       "items": "5 "
+    },
+    {
+      "id": "e8d0",
+      "name": "HARIOM GUPTA",
+      "mobileno": "5682478954",
+      "email": "hariom123@gmail.com",
+      "state": "MP",
+      "district": "BHOPAL",
+      "pincode": "462023",
+      "houseno": "LIG-140, Bharti Niketan Bhopal MP",
+      "block": "Govindpura",
+      "village": "Bharti Niketan Bhopal",
+      "total": "233723 ",
+      "items": "7 "
+    },
+    {
+      "id": "2bdd",
+      "total": "95475 ",
+      "items": "5 ",
+      "name": "Chandan Kumar ",
+      "mobileno": "8795621438",
+      "email": "ckgupta12@gmail.com",
+      "state": "Bihar",
+      "district": "Sitamarhi",
+      "pincode": "843313",
+      "block": "Bairgania",
+      "village": "Bairgania",
+      "houseno": "145"
     }
   ]
 }
