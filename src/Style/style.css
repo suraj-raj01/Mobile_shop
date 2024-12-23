@@ -1368,8 +1368,8 @@ button {
 @media(max-width:600px) {
     #navbar {
         height: 8vh;
+        font-size: 12px;
     }
-
     #home-product {
         width: 100%;
     }
