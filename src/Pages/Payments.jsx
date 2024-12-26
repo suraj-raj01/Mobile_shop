@@ -91,6 +91,9 @@ const Payment = () => {
         <div id="payment_method">
           <p>Paymennt Option <span style={{color:'deepskyblue',textTransform:'uppercase'}}>{payopt} </span></p>
         </div>
+        <center id="header">
+        <h1>Not Availabe this Option !!!</h1>
+        </center>
         <br />
       </>
     );
