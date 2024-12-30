@@ -18,7 +18,7 @@ const Products = () =>{
         gap:'10px',
         fontSize:'18px',
         marginTop:'10px',
-        backgroundColor:'#183961'
+        backgroundColor:'whitesmoke'
         }}>
       <div id="product_lyt">
       <Nav.Link as={Link} to="allproducts">All Products</Nav.Link>
