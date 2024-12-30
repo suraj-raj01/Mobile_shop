@@ -19,8 +19,6 @@ const Home = () => {
   const [myprice, setPrice] = useState("");
   const [priceData, setPriceData] = useState([]);
   const [isVisible, setIsVisible] = useState(true);
-  const [offers, setOffers] = useState("");
-  const [offerData, setOfferData] = useState([]);
 
   const loadData = () => {
     let api = "http://localhost:3000/products";
