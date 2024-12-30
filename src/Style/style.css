@@ -1811,13 +1811,13 @@ button {
 #product_lyt a {
     padding: 10px 20px;
     box-shadow: 0px 0px 3px;
-    background-color: #183961;
-    color: white;
+    background-color: white;
+    color: #183961;
     border-radius: 5px;
     font-size: 16px;
 }
 
 #product_lyt a:focus {
-    background-color: white;
-    color: #183961;
+    background-color: #183961;
+    color: white;
 }
