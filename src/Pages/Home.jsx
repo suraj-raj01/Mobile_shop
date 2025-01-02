@@ -11,7 +11,11 @@ import CustomerReview from "../Components/CustomerReview";
 // import Colors from "../Components/Colors";
 import Accordion from "react-bootstrap/Accordion";
 
+import { Flex, Rate } from "antd";
+const desc = ["terrible", "bad", "normal", "good", "wonderful"];
+
 const Home = () => {
+  const [value, setValue] = useState(4);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [mydata, setMydata] = useState([]);
@@ -30,9 +34,9 @@ const Home = () => {
     loadData();
   }, []);
 
-  const checkout = (id) =>{
-    navigate(`/checkout/${id}`)
-  }
+  const checkout = (id) => {
+    navigate(`/checkout/${id}`);
+  };
 
   const addDataToCart = (id, name, model, brand, OS, price, img, desc) => {
     dispatch(
@@ -55,7 +59,7 @@ const Home = () => {
   };
 
   const res = mydata.map((key) => {
-    const rating = Math.floor(Math.random()*1000)+50;
+    const rating = Math.floor(Math.random() * 1000) + 50;
     return (
       <>
         <Container>
@@ -84,55 +88,35 @@ const Home = () => {
               <h3>{key.name}</h3>
               <b>{key.description}</b>
               <br />
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "start",
-                  gap: "2px",
-                  padding: "10px 0px",
-                  color: "goldenrod",
-                }}
-              >
-                <span
-                  style={{
-                    padding: "1px 10px 0px 0px",
-                    fontWeight: "bold",
-                    fontSize: "14px",
-                    color: "black",
-                  }}
-                >
-                  4.5
-                </span>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
-                <span
-                  style={{
-                    padding: "1px 0px 0px 10px",
-                    fontSize: "14px",
-                    color: "black",
-                    textTransform: "lowercase",
-                    color: "#000",
-                    fontWeight:'600'
-                  }}
-                >
-                  {rating} ratings
-                </span>
-              </div>
+              <br />
               <span>Model : {key.model}</span>
               <br />
               <span>Brand : {key.brand}</span>
               <br />
               <span>OS : {key.OS}</span>
               <br />
+              <span></span>
               <span>
                 Price : {key.price}
                 {".00 ₹"}
               </span>
               <br />
+              <Flex gap="middle" vertical>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "15px",
+                    padding: "10px 0px",
+                  }}
+                >
+                  <Rate tooltips={desc} onChange={setValue} value={value} />
+                  {value ? (
+                    <span style={{ fontWeight: "bold" }}>
+                      {desc[value - 1]}
+                    </span>
+                  ) : null}
+                </div>
+              </Flex>
               <br />
               <Button
                 variant="outline-primary"
@@ -151,9 +135,15 @@ const Home = () => {
               >
                 Add to Cart
               </Button>
-              <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+              <Button
+                style={{ marginLeft: "20px" }}
+                variant="outline-primary"
+                onClick={() => {
+                  checkout(key.id);
+                }}
+              >
+                by now
+              </Button>
             </div>
           </div>
           <br />
@@ -182,7 +172,7 @@ const Home = () => {
     let api = "http://localhost:3000/products";
     axios.get(api).then((res) => {
       setOfferData(res.data);
-      navigate("/offer")
+      navigate("/offer");
     });
     setIsVisible(false);
   };
@@ -228,6 +218,22 @@ const Home = () => {
                     {".00 ₹"}
                   </span>
                   <br />
+                  <Flex gap="middle" vertical>
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "15px",
+                        padding: "10px 0px",
+                      }}
+                    >
+                      <Rate tooltips={desc} onChange={setValue} value={value} />
+                      {value ? (
+                        <span style={{ fontWeight: "bold" }}>
+                          {desc[value - 1]}
+                        </span>
+                      ) : null}
+                    </div>
+                  </Flex>
                   <br />
                   <Button
                     variant="outline-primary"
@@ -246,9 +252,15 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
-                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+                  <Button
+                    style={{ marginLeft: "20px" }}
+                    variant="outline-primary"
+                    onClick={() => {
+                      checkout(key.id);
+                    }}
+                  >
+                    by now
+                  </Button>
                 </div>
               </div>
               <br />
@@ -300,6 +312,16 @@ const Home = () => {
                     {".00 ₹"}
                   </span>
                   <br />
+                  <Flex gap="middle" vertical>
+                <div style={{
+                  display:'flex',
+                  gap:'15px',
+                  padding:'10px 0px'
+                }}>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span style={{fontWeight:'bold'}}>{desc[value - 1]}</span> : null}
+                </div>
+              </Flex>
                   <br />
                   <Button
                     variant="outline-primary"
@@ -318,9 +340,15 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
-                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+                  <Button
+                    style={{ marginLeft: "20px" }}
+                    variant="outline-primary"
+                    onClick={() => {
+                      checkout(key.id);
+                    }}
+                  >
+                    by now
+                  </Button>
                 </div>
               </div>
               <br />
@@ -370,6 +398,16 @@ const Home = () => {
                     {".00 ₹"}
                   </span>
                   <br />
+                  <Flex gap="middle" vertical>
+                <div style={{
+                  display:'flex',
+                  gap:'15px',
+                  padding:'10px 0px'
+                }}>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span style={{fontWeight:'bold'}}>{desc[value - 1]}</span> : null}
+                </div>
+              </Flex>
                   <br />
                   <Button
                     variant="outline-primary"
@@ -388,9 +426,15 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
-                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+                  <Button
+                    style={{ marginLeft: "20px" }}
+                    variant="outline-primary"
+                    onClick={() => {
+                      checkout(key.id);
+                    }}
+                  >
+                    by now
+                  </Button>
                 </div>
               </div>
               <br />
@@ -441,6 +485,16 @@ const Home = () => {
                     {".00 ₹"}
                   </span>
                   <br />
+                  <Flex gap="middle" vertical>
+                <div style={{
+                  display:'flex',
+                  gap:'15px',
+                  padding:'10px 0px'
+                }}>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span style={{fontWeight:'bold'}}>{desc[value - 1]}</span> : null}
+                </div>
+              </Flex>
                   <br />
                   <Button
                     variant="outline-primary"
@@ -459,9 +513,15 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
-                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+                  <Button
+                    style={{ marginLeft: "20px" }}
+                    variant="outline-primary"
+                    onClick={() => {
+                      checkout(key.id);
+                    }}
+                  >
+                    by now
+                  </Button>
                 </div>
               </div>
               <br />
@@ -512,6 +572,16 @@ const Home = () => {
                     {".00 ₹"}
                   </span>
                   <br />
+                  <Flex gap="middle" vertical>
+                <div style={{
+                  display:'flex',
+                  gap:'15px',
+                  padding:'10px 0px'
+                }}>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span style={{fontWeight:'bold'}}>{desc[value - 1]}</span> : null}
+                </div>
+              </Flex>
                   <br />
                   <Button
                     variant="outline-primary"
@@ -530,9 +600,15 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
-                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+                  <Button
+                    style={{ marginLeft: "20px" }}
+                    variant="outline-primary"
+                    onClick={() => {
+                      checkout(key.id);
+                    }}
+                  >
+                    by now
+                  </Button>
                 </div>
               </div>
               <br />
@@ -583,6 +659,16 @@ const Home = () => {
                     {".00 ₹"}
                   </span>
                   <br />
+                  <Flex gap="middle" vertical>
+                <div style={{
+                  display:'flex',
+                  gap:'15px',
+                  padding:'10px 0px'
+                }}>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span style={{fontWeight:'bold'}}>{desc[value - 1]}</span> : null}
+                </div>
+              </Flex>
                   <br />
                   <Button
                     variant="outline-primary"
@@ -601,9 +687,15 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
-                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+                  <Button
+                    style={{ marginLeft: "20px" }}
+                    variant="outline-primary"
+                    onClick={() => {
+                      checkout(key.id);
+                    }}
+                  >
+                    by now
+                  </Button>
                 </div>
               </div>
               <br />
@@ -653,6 +745,16 @@ const Home = () => {
                     {".00 ₹"}
                   </span>
                   <br />
+                  <Flex gap="middle" vertical>
+                <div style={{
+                  display:'flex',
+                  gap:'15px',
+                  padding:'10px 0px'
+                }}>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span style={{fontWeight:'bold'}}>{desc[value - 1]}</span> : null}
+                </div>
+              </Flex>
                   <br />
                   <Button
                     variant="outline-primary"
@@ -671,9 +773,15 @@ const Home = () => {
                   >
                     Add to Cart
                   </Button>
-                  <Button style={{marginLeft:'20px'}} variant="outline-primary"
-                  onClick={()=>{checkout(key.id)}}
-                  >by now</Button>
+                  <Button
+                    style={{ marginLeft: "20px" }}
+                    variant="outline-primary"
+                    onClick={() => {
+                      checkout(key.id);
+                    }}
+                  >
+                    by now
+                  </Button>
                 </div>
               </div>
               <br />
@@ -727,32 +835,8 @@ const Home = () => {
               <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src="https://www.nicepng.com/png/detail/278-2782290_led-tvs-led-24-inch.png"
-              alt=""
-              width="100%"
-              height="400px"
-            />
-            <Carousel.Caption>
-              <h3 style={{ color: "black" }}></h3>
-              <p style={{ color: "black" }}></p>
-              <Button variant="outline-primary">Info →</Button>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src="https://assets2.razerzone.com/images/pnx.assets/7fb8deac5d3c73e360bc687ed62be6cf/gaming-laptops-og-image.webp"
-              alt=""
-              width="100%"
-              height="400px"
-            />
-            <Carousel.Caption>
-              <h3 style={{ color: "black" }}></h3>
-              <p style={{ color: "black" }}></p>
-              <Button variant="outline-primary">Info →</Button>
-            </Carousel.Caption>
-          </Carousel.Item>
+        
+          
           <Carousel.Item>
             <img
               src="https://www.top10mobileshop.com/images/top10mobiles.com/slider/747523986202408151132.jpg"
@@ -780,7 +864,7 @@ const Home = () => {
               <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item >
+          <Carousel.Item>
             <img
               src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg"
               alt=""
@@ -788,7 +872,7 @@ const Home = () => {
               height="400px"
             />
             <Carousel.Caption>
-            <h3 style={{ color: "black" }}></h3>
+              <h3 style={{ color: "black" }}></h3>
               <p style={{ color: "black" }}></p>
               <Button variant="outline-primary">Info →</Button>
             </Carousel.Caption>
@@ -797,7 +881,10 @@ const Home = () => {
       </div>
       <div id="items">
         <h4>
-        "Welcome To Mobileshop.com" Buy Mobiles, Laptops, TV and many Mores . . .<br/> Online | Best Prices, Top Brands Premium Mobiles, Laptops, TV and many more | Gaming, Business, & More Discover Your Perfect Products.
+          "Welcome To Mobileshop.com" Buy Mobiles, Laptops, TV and many Mores .
+          . .<br /> Online | Best Prices, Top Brands Premium Mobiles, Laptops,
+          TV and many more | Gaming, Business, & More Discover Your Perfect
+          Products.
         </h4>
       </div>
       {/* <div id="home_cards">
@@ -822,7 +909,10 @@ const Home = () => {
         <div id="search-opt">
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
-              <Accordion.Header> <span style={{fontWeight:'bold'}}>Filter by Price</span> </Accordion.Header>
+              <Accordion.Header>
+                {" "}
+                <span style={{ fontWeight: "bold" }}>Filter by Price</span>{" "}
+              </Accordion.Header>
               <Accordion.Body>
                 <div id="search">
                   <span>10000 & below</span>{" "}
@@ -915,7 +1005,9 @@ const Home = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header><span style={{fontWeight:'bold'}}>Filter by Name</span></Accordion.Header>
+              <Accordion.Header>
+                <span style={{ fontWeight: "bold" }}>Filter by Name</span>
+              </Accordion.Header>
               <Accordion.Body>
                 <div id="search">
                   <span>Realme</span>{" "}
@@ -1061,22 +1153,26 @@ const Home = () => {
                     aria-label="radio 1"
                   />
                 </div>
-                    <br />
+                <br />
                 <button id="search-btn" onClick={catValHandle}>
                   Search
                 </button>
               </Accordion.Body>
             </Accordion.Item>
-          {/* From CustomerReview Components */}
+            {/* From CustomerReview Components */}
 
             <Accordion.Item eventKey="2">
-              <Accordion.Header><span style={{fontWeight:'bold'}}>See Reviews</span></Accordion.Header>
+              <Accordion.Header>
+                <span style={{ fontWeight: "bold" }}>See Reviews</span>
+              </Accordion.Header>
               <Accordion.Body>
                 <CustomerReview />
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header><span style={{fontWeight:'bold'}}>See Offers</span></Accordion.Header>
+              <Accordion.Header>
+                <span style={{ fontWeight: "bold" }}>See Offers</span>
+              </Accordion.Header>
               <Accordion.Body>
                 <div id="search">
                   <Form.Check
@@ -1147,16 +1243,16 @@ const Home = () => {
           </Accordion>
           <br />
           {/* from color Components */}
-          <p style={{fontWeight:'bold',color:'#183961'}}>Colors</p>
+          <p style={{ fontWeight: "bold", color: "#183961" }}>Colors</p>
           <div id="Search">
-            <div id="clr-box" style={{backgroundColor:'red'}}></div>
-            <div id="clr-box" style={{backgroundColor:'grey'}}></div>
-            <div id="clr-box" style={{backgroundColor:'pink'}}></div>
-            <div id="clr-box" style={{backgroundColor:'blue'}}></div>
-            <div id="clr-box" style={{backgroundColor:'orange'}}></div>
-            <div id="clr-box" style={{backgroundColor:'skyblue'}}></div>
-            <div id="clr-box" style={{backgroundColor:'black'}}></div>
-            <div id="clr-box" style={{backgroundColor:'white'}}></div>
+            <div id="clr-box" style={{ backgroundColor: "red" }}></div>
+            <div id="clr-box" style={{ backgroundColor: "grey" }}></div>
+            <div id="clr-box" style={{ backgroundColor: "pink" }}></div>
+            <div id="clr-box" style={{ backgroundColor: "blue" }}></div>
+            <div id="clr-box" style={{ backgroundColor: "orange" }}></div>
+            <div id="clr-box" style={{ backgroundColor: "skyblue" }}></div>
+            <div id="clr-box" style={{ backgroundColor: "black" }}></div>
+            <div id="clr-box" style={{ backgroundColor: "white" }}></div>
           </div>
           <br />
           <br />
@@ -1168,8 +1264,10 @@ const Home = () => {
         )}
       </div>
       <div id="updown">
-            <Nav.Link href="#crousel"><i class="fa-solid fa-angles-up fa-xl"></i></Nav.Link>
-        </div>
+        <Nav.Link href="#crousel">
+          <i class="fa-solid fa-angles-up fa-xl"></i>
+        </Nav.Link>
+      </div>
     </>
   );
 };
