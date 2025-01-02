@@ -8,7 +8,11 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 // import Accordion from "react-bootstrap/Accordion";
 
+import { Flex, Rate } from "antd";
+const desc = ["terrible", "bad", "normal", "good", "wonderful"];
+
 const Details = () => {
+  const [value, setValue] = useState(3);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [mydata, setMydata] = useState([]);
@@ -122,6 +126,16 @@ const Details = () => {
                 {".00 ₹"}
               </span>
               <br />
+              <Flex gap="middle" vertical>
+                <div style={{
+                  display:'flex',
+                  gap:'15px',
+                  padding:'10px 0px'
+                }}>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span style={{fontWeight:'bold'}}>{desc[value - 1]}</span> : null}
+                </div>
+              </Flex>
               <br />
 
               <div id="imgOpt">
