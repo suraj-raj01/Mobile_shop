@@ -1,9 +1,37 @@
 import { message } from "antd";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+
+import { Upload } from "antd";
+import ImgCrop from "antd-img-crop";
 
 const Dashboard = () => {
+  const [fileList, setFileList] = useState([
+    {
+      uid: "-1",
+      name: "image.png",
+      status: "done",
+      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+    },
+  ]);
+  const onChange = ({ fileList: newFileList }) => {
+    setFileList(newFileList);
+  };
+  const onPreview = async (file) => {
+    let src = file.url;
+    if (!src) {
+      src = await new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file.originFileObj);
+        reader.onload = () => resolve(reader.result);
+      });
+    }
+    const image = new Image();
+    image.src = src;
+    const imgWindow = window.open(src);
+    imgWindow?.document.write(image.outerHTML);
+  };
+
   const navigate = useNavigate();
   const [username, setUserName] = useState("");
   const [usermail, setUserEmail] = useState("");
@@ -24,15 +52,6 @@ const Dashboard = () => {
     navigate("/");
   };
 
-  // on mouse enter camera icon will appear
-  const camera = () => {
-    document.getElementById("camera").style.display = "block";
-  };
-  // on mouse leave camera icon will disappear
-  const camera1 = () => {
-    document.getElementById("camera").style.display = "none";
-  };
-
   // complete your profile
   const completeProf = () => {
     navigate("/register");
@@ -44,18 +63,28 @@ const Dashboard = () => {
         {/* logout function */}
         <div id="box1">
           <div id="logout">
-          <button id="logoutbtn" onClick={logOut}>
-            LogOut
-          </button>
+            <button id="logoutbtn" onClick={logOut}>
+              LogOut
+            </button>
           </div>
-          <div id="profile" onMouseOver={camera} onMouseLeave={camera1}>
-            {/* camera iconn */}
-            <div id="camera">
-              <i class="fa-solid fa-camera"></i>
-            </div>
+          <div >
+            <ImgCrop rotationSlider>
+              <Upload
+                action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
+                listType="picture-card"
+                fileList={fileList}
+                onChange={onChange}
+                onPreview={onPreview}
+
+              >
+                {fileList.length < 1 && "Upload + photo"}
+              </Upload>
+            </ImgCrop>
           </div>
           <br />
-          <h3 style={{ fontWeight: "bold",textTransform:'capitalize' }}>{username}</h3>
+          <h3 style={{ fontWeight: "bold", textTransform: "capitalize" }}>
+            {username}
+          </h3>
           <hr />
           <div
             style={{
@@ -70,15 +99,11 @@ const Dashboard = () => {
               flexDirection: "column",
               borderRadius: "7px",
               gap: "5px",
-              textTransform:'none'
+              textTransform: "none",
             }}
           >
-            <span>
-              Email : {usermail}
-            </span>
-            <span>
-              Mobile : {usermobile}
-            </span>
+            <span>Email : {usermail}</span>
+            <span>Mobile : {usermobile}</span>
           </div>
           <div
             style={{
@@ -88,12 +113,12 @@ const Dashboard = () => {
               textAlign: "center",
               display: "flex",
               flexDirection: "column",
-              alignItems:'center',
-              justifyContent:'center',
+              alignItems: "center",
+              justifyContent: "center",
               // margin:'2px',
-              backgroundColor:'whitesmoke',
-              borderBottomRightRadius:'5px',
-              borderBottomLeftRadius:'5px'
+              backgroundColor: "whitesmoke",
+              borderBottomRightRadius: "5px",
+              borderBottomLeftRadius: "5px",
             }}
           >
             <span
@@ -102,7 +127,7 @@ const Dashboard = () => {
                 color: "#183961",
                 cursor: "pointer",
                 fontWeight: "700",
-                fontSize:'14px'
+                fontSize: "14px",
               }}
               onClick={completeProf}
             >
@@ -121,7 +146,6 @@ const Dashboard = () => {
             </center>{" "}
           </h2>
           <br />
-          
         </div>
       </div>
     </>
