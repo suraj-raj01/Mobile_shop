@@ -1,6 +1,6 @@
 import { message } from 'antd';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import { Form, Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom'
@@ -23,7 +23,7 @@ const BillCheckout = () => {
   const handleInput = (e) =>{
     let name = e.target.name;
     let value = e.target.value;
-    setInputVal(values=>({...values,[name]:value}));
+    setInputVal((values)=>({...values,[name]:value}));
     console.log(inputval);
   }
 
@@ -81,7 +81,7 @@ const BillCheckout = () => {
         </tr>
         </thead>
         <tbody>
-            {res}
+        {res}
         </tbody>
      </Table>
       <div
