@@ -89,8 +89,8 @@ function App() {
         <Route path="productsearch/:txtdata" element={<ProductSearch/>}/>
 
         <Route path="/" element={<AddData/>}>
-          <Route path="adddata" element={<Mobile/>}/>
           <Route index element={<Mobile/>}/>
+          <Route path="adddata" element={<Mobile/>}/>
           <Route path="laptopdata" element={<Laptop/>}/>
           <Route path="mobiledata" element={<Mobile/>}/>
           <Route path="tvdata" element={<TV/>}/>
@@ -148,7 +148,7 @@ function App() {
         <Route path="dashboard" element={<Dashboard/>}/>
         <Route path="payments/:payopt" element={<Payment/>}/>
         {/* <Route path="generatebill" element={<GenerateBill/>}/> */}
-        <Route path="billcheckout/:total/:items" element={<BillCheckout/>}/>
+        <Route path="billcheckout" element={<BillCheckout/>}/>
        </Route>
      </Routes>
      </BrowserRouter>

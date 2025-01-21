@@ -26,8 +26,7 @@ const CustomerOrder = () => {
   };
 
   const result = custVal.map((key) => {
-    console.log(key.items);
-    console.log(key.total);
+    
     return (
       <>
         <tr>

@@ -7,8 +7,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 const BillCheckout = () => {
   const navigate = useNavigate();
-  const {total,items} = useParams();
   const myData = useSelector((state)=>state.addCart.cart);
+  const items = myData.length;
   const[payment,setPayment] = useState("");
   const handleInputRadio = (e) =>{
     const val = e.target.value;
@@ -27,9 +27,25 @@ const BillCheckout = () => {
     console.log(inputval);
   }
 
+    // Order success
+    let total = 0;
+    const res = myData.map((key)=>{
+      let newprice = Number(key.price*key.qnty);
+      total+=newprice;
+      return(
+          <>
+          <tr>
+              <td onClick={()=>{details(key.id)}}>{key.name}</td>
+              <td id='desc' onClick={()=>{details(key.id)}}>{key.description}</td>
+              <td id='price' onClick={()=>{details(key.id)}}>{key.price}{".00 ₹"}</td>
+          </tr>
+          </>
+      )
+    })
+
   const handleSubmit = () =>{
     let url = 'http://localhost:3000/customers';
-    axios.post(url,inputval).then((res)=>{
+    axios.post(url,{items:items,total:total,...inputval}).then((res)=>{
       console.log(res.data);
       message.success("ordered has been successfull!!!")
       navigate("/home");
@@ -53,19 +69,7 @@ const BillCheckout = () => {
     result = <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/UPI_logo.svg/800px-UPI_logo.svg.png" alt="" height="100vh"/>
   }
 
-  // Order success
 
-  const res = myData.map((key)=>{
-    return(
-        <>
-        <tr>
-            <td onClick={()=>{details(key.id)}}>{key.name}</td>
-            <td id='desc' onClick={()=>{details(key.id)}}>{key.description}</td>
-            <td id='price' onClick={()=>{details(key.id)}}>{key.price}{".00 ₹"}</td>
-        </tr>
-        </>
-    )
-  })
   return (
     <>
       <div id="header">
@@ -109,8 +113,8 @@ const BillCheckout = () => {
                     <input name='block' onChange={handleInput} type="text" placeholder='Block Name' />
                     <input name='village' onChange={handleInput} type="text" placeholder='Village / Colony Name' />
                     <input name='houseno' onChange={handleInput} type="text" placeholder='House Name / Number' />
-                    <span style={{fontWeight:'bold',color:'#183961'}}>Total : <input type="text" name='total' value={Number(total)} onChange={handleInput} placeholder='total' style={{border:'none',outline:'none',fontWeight:'bold'}}/></span>
-                    <span style={{fontWeight:'bold',color:'#183961'}}>Items : <input type="text" name='items' value={Number(items)} onChange={handleInput} placeholder='items' style={{border:'none',outline:'none',fontWeight:'bold'}}/></span>
+                    <span style={{fontWeight:'bold',color:'#183961'}}>Total : {total} </span>
+                    <span style={{fontWeight:'bold',color:'#183961'}}>Items : {items} </span>
                 </Form>
                 <br />
                 <button onClick={handleSubmit}>ORDER</button>

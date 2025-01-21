@@ -11,7 +11,7 @@ const Dashboard = () => {
       uid: "-1",
       name: "image.png",
       status: "done",
-      url: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+      url: "",
     },
   ]);
   const onChange = ({ fileList: newFileList }) => {

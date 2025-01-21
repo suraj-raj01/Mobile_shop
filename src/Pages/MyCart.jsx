@@ -13,7 +13,7 @@ const MyCart = () => {
   //   navigate("/generatebill");
   // };
   const BillCheckout = (total,items) =>{
-    navigate(`/billcheckout/${total}/${items}`)
+    navigate(`/billcheckout`)
   }
 
   const inc = (id) => {
